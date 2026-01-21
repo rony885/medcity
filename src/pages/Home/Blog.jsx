@@ -1,0 +1,255 @@
+// import React from "react";
+
+// const Blog = () => {
+//   return (
+//     <section class="blog-grid pb-50">
+//       <div class="container">
+//         <div class="row">
+//           <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+//             <div class="heading text-center mb-40">
+//               <h2 class="heading__subtitle">Resource Library</h2>
+//               <h3 class="heading__title">Recent Articles</h3>
+//             </div>
+//           </div>
+//         </div>
+
+//         <div class="row">
+//           <div class="col-sm-12 col-md-6 col-lg-4">
+//             <div class="post-item">
+//               <div class="post__img">
+//                 <a href="blog-single-post.html">
+//                   <img
+//                     src="assets/images/blog/grid/1.jpg"
+//                     alt="post image"
+//                     loading="lazy"
+//                   />
+//                 </a>
+//               </div>
+
+//               <div class="post__body">
+//                 <div class="post__meta-cat">
+//                   <a href="#">Mental Health</a>
+//                 </div>
+
+//                 <div class="post__meta d-flex">
+//                   <span class="post__meta-date">Jan 30, 2022</span>
+//                   <a class="post__meta-author" href="#">
+//                     Martin King
+//                   </a>
+//                 </div>
+//                 <h4 class="post__title">
+//                   <a href="#">
+//                     6 Tips to Protect Your Mental Health When You’re Sick
+//                   </a>
+//                 </h4>
+
+//                 <p class="post__desc">
+//                   It’s normal to feel anxiety, worry and grief any time you’re
+//                   diagnosed with a condition that’s certainly true if you test
+//                   positive for COVID-19, or are presumed to be positive...
+//                 </p>
+//                 <a
+//                   href="blog-single-post.html"
+//                   class="btn btn__secondary btn__link btn__rounded"
+//                 >
+//                   <span>Read More</span>
+//                   <i class="icon-arrow-right"></i>
+//                 </a>
+//               </div>
+//             </div>
+//           </div>
+
+//           <div class="col-sm-12 col-md-6 col-lg-4">
+//             <div class="post-item">
+//               <div class="post__img">
+//                 <a href="blog-single-post.html">
+//                   <img
+//                     src="assets/images/blog/grid/2.jpg"
+//                     alt="post image"
+//                     loading="lazy"
+//                   />
+//                 </a>
+//               </div>
+
+//               <div class="post__body">
+//                 <div class="post__meta-cat">
+//                   <a href="#">Infectious</a>
+//                   <a href="#">Tips</a>
+//                 </div>
+
+//                 <div class="post__meta d-flex">
+//                   <span class="post__meta-date">Jan 30, 2022</span>
+//                   <a class="post__meta-author" href="#">
+//                     John Ezak
+//                   </a>
+//                 </div>
+//                 <h4 class="post__title">
+//                   <a href="#">
+//                     Unsure About Wearing a Face Mask? Here’s How and Why
+//                   </a>
+//                 </h4>
+//                 <p class="post__desc">
+//                   That means that you should still be following any
+//                   shelter-in-place orders in your community. But when you’re
+//                   venturing out to the grocery store, pharmacy or hospital..
+//                 </p>
+//                 <a
+//                   href="blog-single-post.html"
+//                   class="btn btn__secondary btn__link btn__rounded"
+//                 >
+//                   <span>Read More</span>
+//                   <i class="icon-arrow-right"></i>
+//                 </a>
+//               </div>
+//             </div>
+//           </div>
+
+//           <div class="col-sm-12 col-md-6 col-lg-4">
+//             <div class="post-item">
+//               <div class="post__img">
+//                 <a href="blog-single-post.html">
+//                   <img
+//                     src="assets/images/blog/grid/3.jpg"
+//                     alt="post image"
+//                     loading="lazy"
+//                   />
+//                 </a>
+//               </div>
+
+//               <div class="post__body">
+//                 <div class="post__meta-cat">
+//                   <a href="#">Life Style</a>
+//                   <a href="#">Nutrition</a>
+//                 </div>
+
+//                 <div class="post__meta d-flex">
+//                   <span class="post__meta-date">Jan 28, 2022</span>
+//                   <a class="post__meta-author" href="#">
+//                     Saul Wade
+//                   </a>
+//                 </div>
+//                 <h4 class="post__title">
+//                   <a href="#">
+//                     Tips for Eating Healthy When You’re Working From Home
+//                   </a>
+//                 </h4>
+
+//                 <p class="post__desc">
+//                   It’s normal to feel anxiety, worry and grief any time you’re
+//                   diagnosed with a condition that’s certainly true if you test
+//                   positive for COVID-19, or are presumed to be positive...
+//                 </p>
+//                 <a
+//                   href="blog-single-post.html"
+//                   class="btn btn__secondary btn__link btn__rounded"
+//                 >
+//                   <span>Read More</span>
+//                   <i class="icon-arrow-right"></i>
+//                 </a>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Blog;
+
+import React from "react";
+import { Link } from "react-router-dom";
+
+const Blog = () => {
+  const posts = [
+    {
+      id: 1,
+      image: "assets/images/blog/grid/1.jpg",
+      category: ["Mental Health"],
+      date: "Jan 30, 2022",
+      author: "Martin King",
+      title: "6 Tips to Protect Your Mental Health When You’re Sick",
+      desc: "It’s normal to feel anxiety, worry and grief any time you’re diagnosed with a condition that’s certainly true if you test positive for COVID-19, or are presumed to be positive...",
+    },
+    {
+      id: 2,
+      image: "assets/images/blog/grid/2.jpg",
+      category: ["Infectious", "Tips"],
+      date: "Jan 30, 2022",
+      author: "John Ezak",
+      title: "Unsure About Wearing a Face Mask? Here’s How and Why",
+      desc: "That means that you should still be following any shelter-in-place orders in your community. But when you’re venturing out to the grocery store, pharmacy or hospital...",
+    },
+    {
+      id: 3,
+      image: "assets/images/blog/grid/3.jpg",
+      category: ["Life Style", "Nutrition"],
+      date: "Jan 28, 2022",
+      author: "Saul Wade",
+      title: "Tips for Eating Healthy When You’re Working From Home",
+      desc: "It’s normal to feel anxiety, worry and grief any time you’re diagnosed with a condition that’s certainly true if you test positive for COVID-19, or are presumed to be positive...",
+    },
+  ];
+
+  return (
+    <section className="blog-grid pb-50">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+            <div className="heading text-center mb-40">
+              <h2 className="heading__subtitle">Resource Library</h2>
+              <h3 className="heading__title">Recent Articles</h3>
+            </div>
+          </div>
+        </div>
+
+        <div className="row">
+          {posts.map((post) => (
+            <div key={post.id} className="col-sm-12 col-md-6 col-lg-4">
+              <div className="post-item">
+                <div className="post__img">
+                  <a href={post.link}>
+                    <img src={post.image} alt="post imagee" loading="lazy" />
+                  </a>
+                </div>
+
+                <div className="post__body">
+                  <div className="post__meta-cat">
+                    {post.category.map((cat, index) => (
+                      <Link key={index} to="#">
+                        {cat}
+                      </Link>
+                    ))}
+                  </div>
+
+                  <div className="post__meta d-flex">
+                    <span className="post__meta-date">{post.date}</span>
+                    <Link className="post__meta-author" to="#">
+                      {post.author}
+                    </Link>
+                  </div>
+
+                  <h4 className="post__title">
+                    <Link to="#">{post.title}</Link>
+                  </h4>
+
+                  <p className="post__desc">{post.desc}</p>
+
+                  <Link
+                    to="/blog-details"
+                    className="btn btn__secondary btn__link btn__rounded"
+                  >
+                    <span>Read More</span>
+                    <i className="icon-arrow-right"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Blog;
