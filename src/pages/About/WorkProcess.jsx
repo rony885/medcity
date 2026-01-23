@@ -182,9 +182,6 @@
 
 // export default WorkProcess;
 
-
-
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -233,9 +230,9 @@ const WorkProcess = () => {
 
   return (
     <section className="work-process work-process-carousel pt-130 pb-0 bg-overlay bg-overlay-secondary">
-      <div className="bg-img">
+      {/* <div className="bg-img">
         <img src="/assets/images/banners/1.jpg" alt="background" />
-      </div>
+      </div> */}
       <div className="container">
         <div className="row heading-layout2">
           <div className="col-12">
@@ -343,4 +340,3 @@ const WorkProcess = () => {
 };
 
 export default WorkProcess;
-

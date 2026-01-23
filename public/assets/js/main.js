@@ -32,9 +32,9 @@ $(function () {
     var $win = $(window);
 
     /*==========  Pre Loading   ==========*/
-    setTimeout(function () {
-        $(".preloader").remove();
-    }, 2000);
+    // setTimeout(function () {
+    //     $(".preloader").remove();
+    // }, 2000);
 
     /*==========   Mobile Menu   ==========*/
     $('.navbar-toggler').on('click', function () {

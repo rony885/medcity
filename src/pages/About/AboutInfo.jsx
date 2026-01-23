@@ -4,20 +4,24 @@ import { Link } from "react-router-dom";
 const AboutInfo = () => {
   return (
     <>
-      <section class="page-title page-title-layout5 bg-overlay">
-        <div class="bg-img">
-          <img src="/assets/images/page-titles/8.jpg" alt="background" />
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h1 class="pagetitle__heading">About Us</h1>
+      <section
+        className="page-title page-title-layout5 bg-overlay bg-img"
+        style={{
+          backgroundImage: 'url("/assets/images/page-titles/8.jpg")',
+          backgroundSize: "cover",
+          backgroundPosition: "center center",
+        }}
+      >
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <h1 className="pagetitle__heading">About Us</h1>
               <nav>
-                <ol class="breadcrumb mb-0">
-                  <li class="breadcrumb-item">
+                <ol className="breadcrumb mb-0">
+                  <li className="breadcrumb-item">
                     <Link to="/">Home</Link>
                   </li>
-                  <li class="breadcrumb-item active" aria-current="page">
+                  <li className="breadcrumb-item active" aria-current="page">
                     About
                   </li>
                 </ol>

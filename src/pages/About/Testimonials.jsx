@@ -246,7 +246,11 @@
 
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Thumbs } from "swiper";
+
+// ✅ Correct module imports for Swiper v10+
+// import { Navigation } from "swiper/modules/navigation/navigation";
+// import { Thumbs } from "swiper/modules/thumbs/thumbs";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
@@ -259,19 +263,19 @@ const Testimonials = () => {
       name: "Sami Wade",
       company: "7oroof Inc",
       image: "assets/images/testimonials/thumbs/1.png",
-      quote: `“Their doctors include highly qualified practitioners who come from a range of backgrounds and bring with them a diversity of skills and special interests. They also have registered nurses on staff who are available to triage any urgent matters, and the administration and support staff all have exceptional people skills”`,
+      quote: `“Their doctors include highly qualified practitioners ...”`,
     },
     {
       name: "Ahmed",
       company: "Web Inc",
       image: "assets/images/testimonials/thumbs/2.png",
-      quote: `“Their doctors include highly qualified practitioners who come from a range of backgrounds and bring with them a diversity of skills and special interests. They also have registered nurses on staff who are available to triage any urgent matters, and the administration and support staff all have exceptional people skills”`,
+      quote: `“Their doctors include highly qualified practitioners ...”`,
     },
     {
       name: "Sonia Blake",
       company: "Web Inc",
       image: "assets/images/testimonials/thumbs/3.png",
-      quote: `“Their doctors include highly qualified practitioners who come from a range of backgrounds and bring with them a diversity of skills and special interests. They also have registered nurses on staff who are available to triage any urgent matters, and the administration and support staff all have exceptional people skills”`,
+      quote: `“Their doctors include highly qualified practitioners ...”`,
     },
   ];
 
@@ -293,11 +297,11 @@ const Testimonials = () => {
                 spaceBetween={10}
                 slidesPerView={1}
                 direction="vertical"
-                modules={[Thumbs]}
+                // modules={[Thumbs]}
                 className="slider-nav mb-60"
               >
-                {testimonials.map((t, index) => (
-                  <SwiperSlide key={index}>
+                {testimonials.map((t, i) => (
+                  <SwiperSlide key={i}>
                     <div className="testimonial__meta d-flex align-items-center">
                       <div className="testimonial__thmb me-3">
                         <img src={t.image} alt={t.name} />
@@ -318,11 +322,11 @@ const Testimonials = () => {
                 spaceBetween={30}
                 navigation
                 thumbs={{ swiper: thumbsSwiper.current }}
-                modules={[Navigation, Thumbs]}
+                // modules={[ Thumbs]}
                 className="slider-with-navs"
               >
-                {testimonials.map((t, index) => (
-                  <SwiperSlide key={index}>
+                {testimonials.map((t, i) => (
+                  <SwiperSlide key={i}>
                     <div className="testimonial-item">
                       <h3 className="testimonial__title">{t.quote}</h3>
                     </div>
