@@ -12,7 +12,7 @@
 //             <div className="contact-panel mb-50">
 //               <form
 //                 className="contact-panel__form"
-            
+
 //                 id="contactForm"
 //               >
 //                 <div className="row">
@@ -221,11 +221,14 @@ import React from "react";
 
 const BookingForm = () => {
   return (
-    <section className="contact-layout3 bg-overlay bg-overlay-primary-gradient pb-60">
-      {/* <div className="bg-img">
-        <img src="/assets/images/banners/3.jpg" alt="banner" />
-      </div> */}
-
+    <section
+      className="contact-layout3 bg-overlay bg-overlay-primary-gradient pb-60"
+      // style={{
+      //   backgroundImage: 'url("/assets/images/banners/3.jpg")',
+      //   backgroundSize: "cover",
+      //   backgroundPosition: "center center",
+      // }}
+    >
       <div className="container">
         <div className="row">
           {/* LEFT FORM */}
@@ -238,9 +241,9 @@ const BookingForm = () => {
                       Book An Appointment
                     </h4>
                     <p className="contact-panel__desc mb-30">
-                      Please feel welcome to contact our friendly reception staff
-                      with any general or medical enquiry. Our doctors will
-                      receive or return any urgent calls.
+                      Please feel welcome to contact our friendly reception
+                      staff with any general or medical enquiry. Our doctors
+                      will receive or return any urgent calls.
                     </p>
                   </div>
 
@@ -359,9 +362,7 @@ const BookingForm = () => {
                 <div className="video__player">
                   <i className="fa fa-play"></i>
                 </div>
-                <span className="video__btn-title color-white">
-                  Play Video
-                </span>
+                <span className="video__btn-title color-white">Play Video</span>
               </a>
             </div>
 
@@ -376,10 +377,7 @@ const BookingForm = () => {
               </div>
             </div>
 
-           <div className="">
-            {/* <button>Button</button> */}
-           </div>
-      
+            <div className="">{/* <button>Button</button> */}</div>
           </div>
         </div>
       </div>
@@ -388,4 +386,3 @@ const BookingForm = () => {
 };
 
 export default BookingForm;
-

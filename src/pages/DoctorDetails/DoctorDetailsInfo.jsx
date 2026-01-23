@@ -443,12 +443,7 @@ const DoctorDetailsInfo = () => {
                 <img src="assets/images/banners/3.jpg" alt="banner" />
               </div>
               <div className="contact-panel mb-0">
-                <form
-                  className="contact-panel__form"
-                  method="post"
-                  action="https://7oroof.com/demos/medcity/assets/php/contact.php"
-                  id="contactForm"
-                >
+                <form className="contact-panel__form" id="contactForm">
                   <div className="row">
                     <div className="col-sm-12">
                       <h4 className="contact-panel__title">

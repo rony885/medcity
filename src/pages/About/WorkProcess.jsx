@@ -229,10 +229,14 @@ const WorkProcess = () => {
   ];
 
   return (
-    <section className="work-process work-process-carousel pt-130 pb-0 bg-overlay bg-overlay-secondary">
-      {/* <div className="bg-img">
-        <img src="/assets/images/banners/1.jpg" alt="background" />
-      </div> */}
+    <section
+      className="work-process work-process-carousel pt-130 pb-0 bg-overlay bg-overlay-secondary"
+      // style={{
+      //   backgroundImage: 'url("/assets/images/banners/1.jpg")',
+      //   backgroundSize: "cover",
+      //   backgroundPosition: "center center",
+      // }}
+    >
       <div className="container">
         <div className="row heading-layout2">
           <div className="col-12">

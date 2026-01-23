@@ -296,11 +296,14 @@ const featuresData = [
 
 const Features = () => {
   return (
-    <section className="features-layout2 pt-130 bg-overlay bg-overlay-primary">
-      {/* <div className="bg-img">
-        <img src="/assets/images/backgrounds/2.jpg" alt="background" />
-      </div> */}
-
+    <section
+      className="features-layout2 pt-130 bg-overlay bg-overlay-primary"
+      // style={{
+      //   backgroundImage: 'url("/assets/images/backgrounds/2.jpg")',
+      //   backgroundSize: "cover",
+      //   backgroundPosition: "center center",
+      // }}
+    >
       <div className="container">
         {/* Heading */}
         <div className="row">

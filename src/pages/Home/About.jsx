@@ -25,18 +25,18 @@
 //               </div>
 //               <div className="text__content">
 //                 <p className="heading__desc font-weight-bold color-secondary mb-30">
-//                   Our goal is to deliver quality of care in a courteous,
+//                   Our goal is to deliver quality of care in Link courteous,
 //                   respectful, and compassionate manner. We hope you will allow
 //                   us to care for you and strive to be the first and best choice
 //                   for healthcare.
 //                 </p>
-//                 <a
+//                 <Link
 //                   href="doctors-timetable.html"
 //                   className="btn btn__secondary btn__rounded mb-70"
 //                 >
 //                   <span>Find A Doctor</span>{" "}
 //                   <i className="icon-arrow-right"></i>
-//                 </a>
+//                 </Link>
 //               </div>
 //             </div>
 //             <div className="video-banner-layout2 bg-overlay">
@@ -45,7 +45,7 @@
 //                 alt="about"
 //                 className="w-100"
 //               />
-//               <a
+//               <Link
 //                 className="video__btn video__btn-white popup-video"
 //                 href="https://www.youtube.com/watch?v=nrJtHemSPW4"
 //               >
@@ -55,7 +55,7 @@
 //                 <span className="video__btn-title color-white">
 //                   Watch Our Video!
 //                 </span>
-//               </a>
+//               </Link>
 //             </div>
 //             {/* <!-- /.video-banner --> */}
 //           </div>
@@ -63,7 +63,7 @@
 //           <div className="col-sm-12 col-md-12 col-lg-7">
 //             <div className="about__text bg-white">
 //               <p className="heading__desc mb-30">
-//                 Our goal is to deliver quality of care in a courteous,
+//                 Our goal is to deliver quality of care in Link courteous,
 //                 respectful, and compassionate manner. We hope you will allow us
 //                 to care for you and to be the first and best choice for
 //                 healthcare.
@@ -76,15 +76,15 @@
 //               </p>
 //               <ul className="list-items list-unstyled">
 //                 <li>
-//                   We conduct a range of tests to help us work out why you're not
+//                   We conduct Link range of tests to help us work out why you're not
 //                   feeling well and determine the right treatment for you.
 //                 </li>
 //                 <li>
 //                   Our expert doctors, nurses and allied health professionals
-//                   manage patients with a broad range of medical issues.
+//                   manage patients with Link broad range of medical issues.
 //                 </li>
 //                 <li>
-//                   We offer a wide range of care and support to our patients,
+//                   We offer Link wide range of care and support to our patients,
 //                   from diagnosis to treatment and rehabilitation.
 //                 </li>
 //               </ul>
@@ -129,7 +129,7 @@ const About = () => {
 
               <div className="text__content">
                 <p className="heading__desc font-weight-bold color-secondary mb-30">
-                  Our goal is to deliver quality of care in a courteous,
+                  Our goal is to deliver quality of care in Link courteous,
                   respectful, and compassionate manner. We hope you will allow
                   us to care for you and strive to be the first and best choice
                   for healthcare.
@@ -152,9 +152,9 @@ const About = () => {
                 className="w-100"
               />
 
-              <a
+              <Link
                 className="video__btn video__btn-white popup-video"
-                href="https://www.youtube.com/watch?v=nrJtHemSPW4"
+                to="https://www.youtube.com/watch?v=nrJtHemSPW4"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -164,7 +164,7 @@ const About = () => {
                 <span className="video__btn-title color-white">
                   Watch Our Video!
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -172,7 +172,7 @@ const About = () => {
           <div className="col-sm-12 col-md-12 col-lg-7">
             <div className="about__text bg-white">
               <p className="heading__desc mb-30">
-                Our goal is to deliver quality of care in a courteous,
+                Our goal is to deliver quality of care in Link courteous,
                 respectful, and compassionate manner. We hope you will allow us
                 to care for you and to be the first and best choice for
                 healthcare.
@@ -187,15 +187,15 @@ const About = () => {
 
               <ul className="list-items list-unstyled">
                 <li>
-                  We conduct a range of tests to help us work out why you're not
-                  feeling well and determine the right treatment for you.
+                  We conduct Link range of tests to help us work out why you're
+                  not feeling well and determine the right treatment for you.
                 </li>
                 <li>
                   Our expert doctors, nurses and allied health professionals
-                  manage patients with a broad range of medical issues.
+                  manage patients with Link broad range of medical issues.
                 </li>
                 <li>
-                  We offer a wide range of care and support to our patients,
+                  We offer Link wide range of care and support to our patients,
                   from diagnosis to treatment and rehabilitation.
                 </li>
               </ul>

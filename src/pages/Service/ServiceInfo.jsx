@@ -208,8 +208,6 @@
 
 // export default ServiceInfo;
 
-
-
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
@@ -291,11 +289,14 @@ const ServiceInfo = () => {
         </div>
       </section>
 
-      <section className="services-layout1 pt-130">
-        {/* <div className="bg-img">
-        <img src="/assets/images/backgrounds/2.jpg" alt="background" />
-      </div> */}
-
+      <section
+        className="services-layout1 pt-130"
+        style={{
+          backgroundImage: 'url("/assets/images/backgrounds/2.jpg")',
+          backgroundSize: "cover",
+          backgroundPosition: "center center",
+        }}
+      >
         <div className="container">
           <div className="row">
             <div className="col-lg-6 offset-lg-3">

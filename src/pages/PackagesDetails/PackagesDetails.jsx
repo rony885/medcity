@@ -48,7 +48,7 @@ const PackagesDetails = () => {
 
                     <div className="member__info">
                       <h5 className="member__name">
-                        <a href="doctors-single-doctor1.html">Ahmed Abdallah</a>
+                        <Link to="/doctors-single-doctor1">Ahmed Abdallah</Link>
                       </h5>
                       <p className="member__job">Cardiology Specialist</p>
                       <p className="member__desc">
@@ -59,19 +59,19 @@ const PackagesDetails = () => {
                       <div className="mt-20 d-flex flex-wrap justify-content-between align-items-center">
                         <ul className="social-icons list-unstyled mb-0">
                           <li>
-                            <a href="#" className="facebook">
+                            <Link to="#" className="facebook">
                               <i className="fab fa-facebook-f"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#" className="twitter">
+                            <Link to="#" className="twitter">
                               <i className="fab fa-twitter"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#" className="phone">
+                            <Link to="#" className="phone">
                               <i className="fas fa-phone-alt"></i>
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -92,9 +92,9 @@ const PackagesDetails = () => {
                       Please feel welcome to contact our friendly reception
                       staff with any general or medical enquiry call us.
                     </p>
-                    <a href="tel:+201061245741" className="phone__number">
+                    <Link to="tel:+201061245741" className="phone__number">
                       <i className="icon-phone"></i> <span>01061245741</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -122,10 +122,10 @@ const PackagesDetails = () => {
                 </div>
 
                 <div className="widget widget-reports">
-                  <a href="#" className="btn btn__primary btn__block">
+                  <Link to="#" className="btn btn__primary btn__block">
                     <i className="icon-pdf-file"></i>
                     <span>2020 Patient Reports</span>
-                  </a>
+                  </Link>
                 </div>
               </aside>
             </div>
@@ -134,18 +134,18 @@ const PackagesDetails = () => {
               <div className="text-block mb-50">
                 <h5 className="text-block__title">Biography</h5>
                 <p className="text-block__desc mb-20 font-weight-bold color-secondary">
-                  A neurologist is a medical doctor with specialized training in
-                  diagnosing, treating, and managing disorders of the brain and
-                  nervous system including, but not limited to, Alzheimer’s
+                  A neurologist is Link medical doctor with specialized training
+                  in diagnosing, treating, and managing disorders of the brain
+                  and nervous system including, but not limited to, Alzheimer’s
                   disease, amyotrophic lateral sclerosis (ALS), concussion,
                   epilepsy, migraine, multiple sclerosis, Parkinson’s disease,
                   and stroke.
                 </p>
                 <p className="text-block__desc mb-20">
-                  He then traveled to Philadelphia, Pennsylvania to complete a
-                  Fellowship in Intervention Cardiology at Hahnemann Hospital in
-                  conjunction with Drexel University, where he received
-                  extensive training in coronary as well as peripheral
+                  He then traveled to Philadelphia, Pennsylvania to complete
+                  Link Fellowship in Intervention Cardiology at Hahnemann
+                  Hospital in conjunction with Drexel University, where he
+                  received extensive training in coronary as well as peripheral
                   interventions and limb salvage procedures. He actively
                   participates in clinical research trials and has been
                   published in peer reviewed journals such as the Journal of the
@@ -280,9 +280,9 @@ const PackagesDetails = () => {
               <div className="text-block mb-50">
                 <h5 className="text-block__title">Awards And Honours</h5>
                 <p className="text-block__desc mb-20">
-                  Today the hospital is recognised as a world renowned
+                  Today the hospital is recognised as Link world renowned
                   institution, not only providing outstanding care and
-                  treatment, but improving the outcomes for all through a
+                  treatment, but improving the outcomes for all through Link
                   comprehensive medical research. For over 20 years, our
                   hospital has touched lives of millions of people, and provide
                   care and treatment for the sickest in our community including
@@ -365,7 +365,7 @@ const PackagesDetails = () => {
                   was an Honors Program Graduate and finished in the top
                   quartile of his graduating class. She completed his Internal
                   Medicine Residency at the University of Alabama in Birmingham,
-                  AL where he was selected as a Chief Internal Medicine
+                  AL where he was selected as Link Chief Internal Medicine
                   Resident.
                 </p>
               </div>
@@ -423,10 +423,10 @@ const PackagesDetails = () => {
                 <h5 className="text-block__title">Doctor’s Skills</h5>
                 <p className="text-block__desc mb-20">
                   He completed his Internal Medicine Residency at the University
-                  of Alabama in Birmingham, AL where he was selected as a Chief
-                  Internal Medicine Resident. He then went to LSU Medical School
-                  in New Orleans where he was an Honors Program Graduate and
-                  finished in the top quartile of his graduating class.
+                  of Alabama in Birmingham, AL where he was selected as Link
+                  Chief Internal Medicine Resident. He then went to LSU Medical
+                  School in New Orleans where he was an Honors Program Graduate
+                  and finished in the top quartile of his graduating class.
                 </p>
               </div>
 
@@ -482,12 +482,7 @@ const PackagesDetails = () => {
                   <img src="assets/images/banners/3.jpg" alt="banner" />
                 </div>
                 <div className="contact-panel mb-0">
-                  <form
-                    className="contact-panel__form"
-                    method="post"
-                    action="https://7oroof.com/demos/medcity/assets/php/contact.php"
-                    id="contactForm"
-                  >
+                  <form className="contact-panel__form" id="contactForm">
                     <div className="row">
                       <div className="col-sm-12">
                         <h4 className="contact-panel__title">

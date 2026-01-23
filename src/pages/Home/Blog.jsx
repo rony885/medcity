@@ -17,44 +17,44 @@
 //           <div className="col-sm-12 col-md-6 col-lg-4">
 //             <div className="post-item">
 //               <div className="post__img">
-//                 <a href="blog-single-post.html">
+//                 <Link href="blog-single-post.html">
 //                   <img
 //                     src="assets/images/blog/grid/1.jpg"
 //                     alt="post image"
 //                     loading="lazy"
 //                   />
-//                 </a>
+//                 </Link>
 //               </div>
 
 //               <div className="post__body">
 //                 <div className="post__meta-cat">
-//                   <a href="#">Mental Health</a>
+//                   <Link href="#">Mental Health</Link>
 //                 </div>
 
 //                 <div className="post__meta d-flex">
 //                   <span className="post__meta-date">Jan 30, 2022</span>
-//                   <a className="post__meta-author" href="#">
+//                   <Link className="post__meta-author" href="#">
 //                     Martin King
-//                   </a>
+//                   </Link>
 //                 </div>
 //                 <h4 className="post__title">
-//                   <a href="#">
+//                   <Link href="#">
 //                     6 Tips to Protect Your Mental Health When You’re Sick
-//                   </a>
+//                   </Link>
 //                 </h4>
 
 //                 <p className="post__desc">
 //                   It’s normal to feel anxiety, worry and grief any time you’re
-//                   diagnosed with a condition that’s certainly true if you test
+//                   diagnosed with Link condition that’s certainly true if you test
 //                   positive for COVID-19, or are presumed to be positive...
 //                 </p>
-//                 <a
+//                 <Link
 //                   href="blog-single-post.html"
 //                   className="btn btn__secondary btn__link btn__rounded"
 //                 >
 //                   <span>Read More</span>
 //                   <i className="icon-arrow-right"></i>
-//                 </a>
+//                 </Link>
 //               </div>
 //             </div>
 //           </div>
@@ -62,44 +62,44 @@
 //           <div className="col-sm-12 col-md-6 col-lg-4">
 //             <div className="post-item">
 //               <div className="post__img">
-//                 <a href="blog-single-post.html">
+//                 <Link href="blog-single-post.html">
 //                   <img
 //                     src="assets/images/blog/grid/2.jpg"
 //                     alt="post image"
 //                     loading="lazy"
 //                   />
-//                 </a>
+//                 </Link>
 //               </div>
 
 //               <div className="post__body">
 //                 <div className="post__meta-cat">
-//                   <a href="#">Infectious</a>
-//                   <a href="#">Tips</a>
+//                   <Link href="#">Infectious</Link>
+//                   <Link href="#">Tips</Link>
 //                 </div>
 
 //                 <div className="post__meta d-flex">
 //                   <span className="post__meta-date">Jan 30, 2022</span>
-//                   <a className="post__meta-author" href="#">
+//                   <Link className="post__meta-author" href="#">
 //                     John Ezak
-//                   </a>
+//                   </Link>
 //                 </div>
 //                 <h4 className="post__title">
-//                   <a href="#">
-//                     Unsure About Wearing a Face Mask? Here’s How and Why
-//                   </a>
+//                   <Link href="#">
+//                     Unsure About Wearing Link Face Mask? Here’s How and Why
+//                   </Link>
 //                 </h4>
 //                 <p className="post__desc">
 //                   That means that you should still be following any
 //                   shelter-in-place orders in your community. But when you’re
 //                   venturing out to the grocery store, pharmacy or hospital..
 //                 </p>
-//                 <a
+//                 <Link
 //                   href="blog-single-post.html"
 //                   className="btn btn__secondary btn__link btn__rounded"
 //                 >
 //                   <span>Read More</span>
 //                   <i className="icon-arrow-right"></i>
-//                 </a>
+//                 </Link>
 //               </div>
 //             </div>
 //           </div>
@@ -107,45 +107,45 @@
 //           <div className="col-sm-12 col-md-6 col-lg-4">
 //             <div className="post-item">
 //               <div className="post__img">
-//                 <a href="blog-single-post.html">
+//                 <Link href="blog-single-post.html">
 //                   <img
 //                     src="assets/images/blog/grid/3.jpg"
 //                     alt="post image"
 //                     loading="lazy"
 //                   />
-//                 </a>
+//                 </Link>
 //               </div>
 
 //               <div className="post__body">
 //                 <div className="post__meta-cat">
-//                   <a href="#">Life Style</a>
-//                   <a href="#">Nutrition</a>
+//                   <Link href="#">Life Style</Link>
+//                   <Link href="#">Nutrition</Link>
 //                 </div>
 
 //                 <div className="post__meta d-flex">
 //                   <span className="post__meta-date">Jan 28, 2022</span>
-//                   <a className="post__meta-author" href="#">
+//                   <Link className="post__meta-author" href="#">
 //                     Saul Wade
-//                   </a>
+//                   </Link>
 //                 </div>
 //                 <h4 className="post__title">
-//                   <a href="#">
+//                   <Link href="#">
 //                     Tips for Eating Healthy When You’re Working From Home
-//                   </a>
+//                   </Link>
 //                 </h4>
 
 //                 <p className="post__desc">
 //                   It’s normal to feel anxiety, worry and grief any time you’re
-//                   diagnosed with a condition that’s certainly true if you test
+//                   diagnosed with Link condition that’s certainly true if you test
 //                   positive for COVID-19, or are presumed to be positive...
 //                 </p>
-//                 <a
+//                 <Link
 //                   href="blog-single-post.html"
 //                   className="btn btn__secondary btn__link btn__rounded"
 //                 >
 //                   <span>Read More</span>
 //                   <i className="icon-arrow-right"></i>
-//                 </a>
+//                 </Link>
 //               </div>
 //             </div>
 //           </div>
@@ -169,7 +169,7 @@ const Blog = () => {
       date: "Jan 30, 2022",
       author: "Martin King",
       title: "6 Tips to Protect Your Mental Health When You’re Sick",
-      desc: "It’s normal to feel anxiety, worry and grief any time you’re diagnosed with a condition that’s certainly true if you test positive for COVID-19, or are presumed to be positive...",
+      desc: "It’s normal to feel anxiety, worry and grief any time you’re diagnosed with Link condition that’s certainly true if you test positive for COVID-19, or are presumed to be positive...",
     },
     {
       id: 2,
@@ -177,7 +177,7 @@ const Blog = () => {
       category: ["Infectious", "Tips"],
       date: "Jan 30, 2022",
       author: "John Ezak",
-      title: "Unsure About Wearing a Face Mask? Here’s How and Why",
+      title: "Unsure About Wearing Link Face Mask? Here’s How and Why",
       desc: "That means that you should still be following any shelter-in-place orders in your community. But when you’re venturing out to the grocery store, pharmacy or hospital...",
     },
     {
@@ -187,7 +187,7 @@ const Blog = () => {
       date: "Jan 28, 2022",
       author: "Saul Wade",
       title: "Tips for Eating Healthy When You’re Working From Home",
-      desc: "It’s normal to feel anxiety, worry and grief any time you’re diagnosed with a condition that’s certainly true if you test positive for COVID-19, or are presumed to be positive...",
+      desc: "It’s normal to feel anxiety, worry and grief any time you’re diagnosed with Link condition that’s certainly true if you test positive for COVID-19, or are presumed to be positive...",
     },
   ];
 
@@ -208,9 +208,9 @@ const Blog = () => {
             <div key={post.id} className="col-sm-12 col-md-6 col-lg-4">
               <div className="post-item">
                 <div className="post__img">
-                  <a href={post.link}>
+                  <Link to="/blog-details">
                     <img src={post.image} alt="post imagee" loading="lazy" />
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="post__body">

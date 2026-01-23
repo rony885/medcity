@@ -199,14 +199,13 @@
 
 // export default Gallery;
 
-
-
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules"; // Only Navigation needed for popup
 import "swiper/css";
 import "swiper/css/navigation";
+import { Link } from "react-router-dom";
 
 const Gallery = () => {
   const galleryImages = [
@@ -241,7 +240,7 @@ const Gallery = () => {
               >
                 {galleryImages.map((img, index) => (
                   <SwiperSlide key={index}>
-                    <a
+                    <Link
                       className="popup-gallery-item"
                       onClick={() => {
                         setActiveIndex(index);
@@ -250,7 +249,7 @@ const Gallery = () => {
                       style={{ cursor: "pointer" }}
                     >
                       <img src={img} alt={`gallery img ${index + 1}`} />
-                    </a>
+                    </Link>
                   </SwiperSlide>
                 ))}
               </Swiper>
@@ -273,7 +272,11 @@ const Gallery = () => {
             >
               {galleryImages.map((img, index) => (
                 <SwiperSlide key={index}>
-                  <img src={img} alt={`gallery img ${index + 1}`} className="popup-img" />
+                  <img
+                    src={img}
+                    alt={`gallery img ${index + 1}`}
+                    className="popup-img"
+                  />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -285,52 +288,51 @@ const Gallery = () => {
 };
 
 const Wrapper = styled.section`
-.gallery .popup-gallery-item img {
-  width: 100%;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
-}
-.gallery .popup-gallery-item:hover img {
-  transform: scale(1.05);
-}
+  .gallery .popup-gallery-item img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+  .gallery .popup-gallery-item:hover img {
+    transform: scale(1.05);
+  }
 
-/* Popup Overlay */
-.popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-}
+  /* Popup Overlay */
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
 
-.popup-close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 40px;
-  color: #fff;
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 10000;
-}
+  .popup-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10000;
+  }
 
-.popup-swiper {
-  width: 80%;
-  max-width: 900px;
-}
+  .popup-swiper {
+    width: 80%;
+    max-width: 900px;
+  }
 
-.popup-img {
-  width: 100%;
-  border-radius: 12px;
-}
+  .popup-img {
+    width: 100%;
+    border-radius: 12px;
+  }
 `;
 
 export default Gallery;
-

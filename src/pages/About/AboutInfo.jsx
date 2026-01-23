@@ -77,14 +77,14 @@ const AboutInfo = () => {
             <div className="col-sm-12 col-md-12 col-lg-6">
               <div className="video-banner">
                 <img src="assets/images/about/1.jpg" alt="about" />
-                <a
+                <Link
                   className="video__btn video__btn-white popup-video"
-                  href="https://www.youtube.com/watch?v=nrJtHemSPW4"
+                  to="https://www.youtube.com/watch?v=nrJtHemSPW4"
                 >
                   <div className="video__player">
                     <i className="fa fa-play"></i>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

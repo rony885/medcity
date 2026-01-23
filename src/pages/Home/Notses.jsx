@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Notses = () => {
   return (
@@ -9,13 +10,13 @@ const Notses = () => {
             <div className="note font-weight-bold">
               <i className="far fa-file-alt color-primary"></i>
               <span>Delivering tomorrow’s health care for your family.</span>
-              <a
-                href="doctors-timetable.html"
+              <Link
+                to="/doctors-timetable"
                 className="btn btn__link btn__secondary"
               >
                 <span>View Doctors’ Timetable</span>
                 <i className="icon-arrow-right"></i>
-              </a>
+              </Link>
             </div>
           </div>
           {/* <!-- /.col-sm-6 --> */}
@@ -32,13 +33,10 @@ const Notses = () => {
                 {/* <!-- /.testimonials__rating-inner --> */}
               </div>
               {/* <!-- /.testimonials__rating --> */}
-              <a
-                href="appointment.html"
-                className="btn btn__primary btn__rounded"
-              >
+              <Link to="/appointment" className="btn btn__primary btn__rounded">
                 <span>Make Appointment</span>{" "}
                 <i className="icon-arrow-right"></i>
-              </a>
+              </Link>
             </div>
             {/* <!-- /.info__meta --> */}
           </div>

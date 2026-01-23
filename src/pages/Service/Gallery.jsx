@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules"; // Only Navigation needed for popup
 import "swiper/css";
 import "swiper/css/navigation";
+import { Link } from "react-router-dom";
 
 const Gallery = () => {
   const galleryImages = [
@@ -38,7 +39,7 @@ const Gallery = () => {
               >
                 {galleryImages.map((img, index) => (
                   <SwiperSlide key={index}>
-                    <a
+                    <Link
                       className="popup-gallery-item"
                       onClick={() => {
                         setActiveIndex(index);
@@ -47,7 +48,7 @@ const Gallery = () => {
                       style={{ cursor: "pointer" }}
                     >
                       <img src={img} alt={`gallery img ${index + 1}`} />
-                    </a>
+                    </Link>
                   </SwiperSlide>
                 ))}
               </Swiper>

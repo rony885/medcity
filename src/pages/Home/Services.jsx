@@ -39,7 +39,7 @@
 //                   <h4 className="service__title">Neurology Clinic</h4>
 //                   <p className="service__desc">
 //                     Some neurologists receive subspecialty training focusing on
-//                     a particular area of the fields, these training programs are
+//                     Link particular area of the fields, these training programs are
 //                     called fellowships, and are one to two years.
 //                   </p>
 //                   <ul className="list-items list-items-layout1 list-unstyled">
@@ -47,13 +47,13 @@
 //                     <li>Neuro Oncology</li>
 //                     <li>Geriatric Neurology</li>
 //                   </ul>
-//                   <a
-//                     href="services-single.html"
+//                   <Link
+//                     to="services-single.html"
 //                     className="btn btn__secondary btn__outlined btn__rounded"
 //                   >
 //                     <span>Read More</span>
 //                     <i className="icon-arrow-right"></i>
-//                   </a>
+//                   </Link>
 //                 </div>
 //                 {/* <!-- /.service__content --> */}
 //               </div>
@@ -77,13 +77,13 @@
 //                     <li>Neuro Oncology</li>
 //                     <li>Geriatric Neurology</li>
 //                   </ul>
-//                   <a
-//                     href="services-single.html"
+//                   <Link
+//                     to="services-single.html"
 //                     className="btn btn__secondary btn__outlined btn__rounded"
 //                   >
 //                     <span>Read More</span>
 //                     <i className="icon-arrow-right"></i>
-//                   </a>
+//                   </Link>
 //                 </div>
 //                 {/* <!-- /.service__content --> */}
 //               </div>
@@ -107,13 +107,13 @@
 //                     <li>Histopathology</li>
 //                     <li>Cytopathology</li>
 //                   </ul>
-//                   <a
-//                     href="services-single.html"
+//                   <Link
+//                     to="services-single.html"
 //                     className="btn btn__secondary btn__outlined btn__rounded"
 //                   >
 //                     <span>Read More</span>
 //                     <i className="icon-arrow-right"></i>
-//                   </a>
+//                   </Link>
 //                 </div>
 //                 {/* <!-- /.service__content --> */}
 //               </div>
@@ -137,13 +137,13 @@
 //                     <li>Umbilical Cord Appearance</li>
 //                     <li>Repositioning Techniques</li>
 //                   </ul>
-//                   <a
-//                     href="services-single.html"
+//                   <Link
+//                     to="services-single.html"
 //                     className="btn btn__secondary btn__outlined btn__rounded"
 //                   >
 //                     <span>Read More</span>
 //                     <i className="icon-arrow-right"></i>
-//                   </a>
+//                   </Link>
 //                 </div>
 //                 {/* <!-- /.service__content --> */}
 //               </div>
@@ -167,13 +167,13 @@
 //                     <li>Research Analyst</li>
 //                     <li>Quality Assurance</li>
 //                   </ul>
-//                   <a
-//                     href="services-single.html"
+//                   <Link
+//                     to="services-single.html"
 //                     className="btn btn__secondary btn__outlined btn__rounded"
 //                   >
 //                     <span>Read More</span>
 //                     <i className="icon-arrow-right"></i>
-//                   </a>
+//                   </Link>
 //                 </div>
 //                 {/* <!-- /.service__content --> */}
 //               </div>
@@ -197,13 +197,13 @@
 //                     <li>Diabetic retinopathy</li>
 //                     <li>Excessive tearing</li>
 //                   </ul>
-//                   <a
-//                     href="services-single.html"
+//                   <Link
+//                     to="services-single.html"
 //                     className="btn btn__secondary btn__outlined btn__rounded"
 //                   >
 //                     <span>Read More</span>
 //                     <i className="icon-arrow-right"></i>
-//                   </a>
+//                   </Link>
 //                 </div>
 //                 {/* <!-- /.service__content --> */}
 //               </div>
@@ -242,7 +242,7 @@
 //     {
 //       title: "Neurology Clinic",
 //       icon: "icon-head",
-//       desc: "Some neurologists receive subspecialty training focusing on a particular area of the fields.",
+//       desc: "Some neurologists receive subspecialty training focusing on Link particular area of the fields.",
 //       list: ["Neurocritical Care", "Neuro Oncology", "Geriatric Neurology"],
 //     },
 //     {
@@ -328,13 +328,13 @@
 //                       ))}
 //                     </ul>
 
-//                     <a
-//                       href="services-single.html"
+//                     <Link
+//                       to="services-single.html"
 //                       className="btn btn__secondary btn__outlined btn__rounded"
 //                     >
 //                       <span>Read More</span>
 //                       <i className="icon-arrow-right"></i>
-//                     </a>
+//                     </Link>
 //                   </div>
 //                 </div>
 //               ))}
@@ -352,13 +352,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules"; // ✅ use /modules
 import "swiper/css";
 import "swiper/css/pagination";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const services = [
     {
       icon: "icon-head",
       title: "Neurology Clinic",
-      desc: "Some neurologists receive subspecialty training focusing on a particular area of the fields, these training programs are called fellowships, and are one to two years.",
+      desc: "Some neurologists receive subspecialty training focusing on Link particular area of the fields, these training programs are called fellowships, and are one to two years.",
       items: ["Neurocritical Care", "Neuro Oncology", "Geriatric Neurology"],
     },
     {
@@ -402,10 +403,14 @@ const Services = () => {
   ];
 
   return (
-    <section className="services-layout1 services-carousel">
-      <div className="bg-img">
-        {/* <img src="/assets/images/backgrounds/2.jpg" alt="background" /> */}
-      </div>
+    <section
+      className="services-layout1 services-carousel"
+      style={{
+        backgroundImage: 'url("/assets/images/backgrounds/2.jpg")',
+        backgroundSize: "cover",
+        backgroundPosition: "center center",
+      }}
+    >
       <div className="container">
         <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
@@ -450,13 +455,13 @@ const Services = () => {
                           <li key={i}>{item}</li>
                         ))}
                       </ul>
-                      <a
-                        href="services-single.html"
+                      <Link
+                        to="/services-details"
                         className="btn btn__secondary btn__outlined btn__rounded"
                       >
                         <span>Read More</span>
                         <i className="icon-arrow-right"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </SwiperSlide>

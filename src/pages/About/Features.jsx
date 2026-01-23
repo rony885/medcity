@@ -210,10 +210,14 @@ const Features = () => {
   ];
 
   return (
-    <section className="features-layout1 pt-130 pb-50 mt--90">
-      {/* <div className="bg-img">
-        <img src="assets/images/backgrounds/1.jpg" alt="background" />
-      </div> */}
+    <section
+      className="features-layout1 pt-130 pb-50 mt--90"
+      style={{
+        backgroundImage: 'url("/assets/images/backgrounds/1.jp")',
+        backgroundSize: "cover",
+        backgroundPosition: "center center",
+      }}
+    >
       <div className="container">
         <div className="row mb-40">
           <div className="col-sm-12 col-md-12 col-lg-5">
@@ -233,7 +237,10 @@ const Features = () => {
               change for patients!
             </p>
             <div className="d-flex flex-wrap align-items-center mt-40 mb-30">
-              <Link to="/appointment" className="btn btn__primary btn__rounded mr-30">
+              <Link
+                to="/appointment"
+                className="btn btn__primary btn__rounded mr-30"
+              >
                 <span>Make Appointment</span>
                 <i className="icon-arrow-right"></i>
               </Link>
@@ -284,4 +291,3 @@ const Features = () => {
 };
 
 export default Features;
-
