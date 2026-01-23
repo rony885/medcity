@@ -90,14 +90,6 @@ const ContactInfo = () => {
   );
 };
 
-const Wrapper = styled.section`
-  /* .contact-info .boxes-wrapper {
-    position: relative !important;
-    z-index: 3 !important;
-    margin-top: -40px !important;
-    overflow: hidden !important;
-    border-radius: 10px !important;
-  } */
-`;
+const Wrapper = styled.section``;
 
 export default ContactInfo;

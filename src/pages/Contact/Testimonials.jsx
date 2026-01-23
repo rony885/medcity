@@ -2,20 +2,20 @@
 
 // const Testimonials = () => {
 //   return (
-//     <section class="testimonials-layout2 pt-40 pb-40">
-//       <div class="container">
-//         <div class="testimonials-wrapper">
-//           <div class="row">
-//             <div class="col-sm-12 col-md-12 col-lg-5">
-//               <div class="heading-layout2">
-//                 <h3 class="heading__title">Inspiring Stories!</h3>
+//     <section className="testimonials-layout2 pt-40 pb-40">
+//       <div className="container">
+//         <div className="testimonials-wrapper">
+//           <div className="row">
+//             <div className="col-sm-12 col-md-12 col-lg-5">
+//               <div className="heading-layout2">
+//                 <h3 className="heading__title">Inspiring Stories!</h3>
 //               </div>
 //             </div>
 
-//             <div class="col-sm-12 col-md-12 col-lg-7">
-//               <div class="slider-with-navs">
-//                 <div class="testimonial-item">
-//                   <h3 class="testimonial__title">
+//             <div className="col-sm-12 col-md-12 col-lg-7">
+//               <div className="slider-with-navs">
+//                 <div className="testimonial-item">
+//                   <h3 className="testimonial__title">
 //                     “Their doctors include highly qualified practitioners who
 //                     come from a range of backgrounds and bring with them a
 //                     diversity of skills and special interests. They also have
@@ -25,8 +25,8 @@
 //                   </h3>
 //                 </div>
 
-//                 <div class="testimonial-item">
-//                   <h3 class="testimonial__title">
+//                 <div className="testimonial-item">
+//                   <h3 className="testimonial__title">
 //                     “Their doctors include highly qualified practitioners who
 //                     come from a range of backgrounds and bring with them a
 //                     diversity of skills and special interests. They also have
@@ -36,8 +36,8 @@
 //                   </h3>
 //                 </div>
 
-//                 <div class="testimonial-item">
-//                   <h3 class="testimonial__title">
+//                 <div className="testimonial-item">
+//                   <h3 className="testimonial__title">
 //                     “Their doctors include highly qualified practitioners who
 //                     come from a range of backgrounds and bring with them a
 //                     diversity of skills and special interests. They also have
@@ -48,9 +48,9 @@
 //                 </div>
 //               </div>
 
-//               <div class="slider-nav mb-60">
-//                 <div class="testimonial__meta">
-//                   <div class="testimonial__thmb">
+//               <div className="slider-nav mb-60">
+//                 <div className="testimonial__meta">
+//                   <div className="testimonial__thmb">
 //                     <img
 //                       src="assets/images/testimonials/thumbs/1.png"
 //                       alt="author thumb"
@@ -58,13 +58,13 @@
 //                   </div>
 
 //                   <div>
-//                     <h4 class="testimonial__meta-title">Sami Wade</h4>
-//                     <p class="testimonial__meta-desc">7oroof Inc</p>
+//                     <h4 className="testimonial__meta-title">Sami Wade</h4>
+//                     <p className="testimonial__meta-desc">7oroof Inc</p>
 //                   </div>
 //                 </div>
 
-//                 <div class="testimonial__meta">
-//                   <div class="testimonial__thmb">
+//                 <div className="testimonial__meta">
+//                   <div className="testimonial__thmb">
 //                     <img
 //                       src="assets/images/testimonials/thumbs/2.png"
 //                       alt="author thumb"
@@ -72,13 +72,13 @@
 //                   </div>
 
 //                   <div>
-//                     <h4 class="testimonial__meta-title">Ahmed</h4>
-//                     <p class="testimonial__meta-desc">Web Inc</p>
+//                     <h4 className="testimonial__meta-title">Ahmed</h4>
+//                     <p className="testimonial__meta-desc">Web Inc</p>
 //                   </div>
 //                 </div>
 
-//                 <div class="testimonial__meta">
-//                   <div class="testimonial__thmb">
+//                 <div className="testimonial__meta">
+//                   <div className="testimonial__thmb">
 //                     <img
 //                       src="assets/images/testimonials/thumbs/3.png"
 //                       alt="author thumb"
@@ -86,8 +86,8 @@
 //                   </div>
 
 //                   <div>
-//                     <h4 class="testimonial__meta-title">Sonia Blake</h4>
-//                     <p class="testimonial__meta-desc">Web Inc</p>
+//                     <h4 className="testimonial__meta-title">Sonia Blake</h4>
+//                     <p className="testimonial__meta-desc">Web Inc</p>
 //                   </div>
 //                 </div>
 //               </div>

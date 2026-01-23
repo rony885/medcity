@@ -2,32 +2,32 @@
 
 // const BookingFrom = () => {
 //   return (
-//     <section class="contact-layout3 bg-overlay bg-overlay-primary-gradient pb-60">
-//       <div class="bg-img">
+//     <section className="contact-layout3 bg-overlay bg-overlay-primary-gradient pb-60">
+//       <div className="bg-img">
 //         <img src="/assets/images/banners/3.jpg" alt="banner" />
 //       </div>
-//       <div class="container">
-//         <div class="row">
-//           <div class="col-sm-12 col-md-12 col-lg-7">
-//             <div class="contact-panel mb-50">
+//       <div className="container">
+//         <div className="row">
+//           <div className="col-sm-12 col-md-12 col-lg-7">
+//             <div className="contact-panel mb-50">
 //               <form
-//                 class="contact-panel__form"
+//                 className="contact-panel__form"
             
 //                 id="contactForm"
 //               >
-//                 <div class="row">
-//                   <div class="col-sm-12">
-//                     <h4 class="contact-panel__title">Book An Appointment</h4>
-//                     <p class="contact-panel__desc mb-30">
+//                 <div className="row">
+//                   <div className="col-sm-12">
+//                     <h4 className="contact-panel__title">Book An Appointment</h4>
+//                     <p className="contact-panel__desc mb-30">
 //                       Please feel welcome to contact our friendly reception
 //                       staff with any general or medical enquiry. Our doctors
 //                       will receive or return any urgent calls.
 //                     </p>
 //                   </div>
-//                   <div class="col-sm-6 col-md-6 col-lg-6">
-//                     <div class="form-group">
-//                       <i class="icon-widget form-group-icon"></i>
-//                       <select class="form-control">
+//                   <div className="col-sm-6 col-md-6 col-lg-6">
+//                     <div className="form-group">
+//                       <i className="icon-widget form-group-icon"></i>
+//                       <select className="form-control">
 //                         <option value="0">Choose Clinic</option>
 //                         <option value="1">Pathology Clinic</option>
 //                         <option value="2">Pathology Clinic</option>
@@ -35,10 +35,10 @@
 //                     </div>
 //                   </div>
 
-//                   <div class="col-sm-6 col-md-6 col-lg-6">
-//                     <div class="form-group">
-//                       <i class="icon-user form-group-icon"></i>
-//                       <select class="form-control">
+//                   <div className="col-sm-6 col-md-6 col-lg-6">
+//                     <div className="form-group">
+//                       <i className="icon-user form-group-icon"></i>
+//                       <select className="form-control">
 //                         <option value="0">Choose Doctor</option>
 //                         <option value="1">Ahmed Abdallah</option>
 //                         <option value="2">Mahmoud Begha</option>
@@ -46,12 +46,12 @@
 //                     </div>
 //                   </div>
 
-//                   <div class="col-sm-6 col-md-6 col-lg-6">
-//                     <div class="form-group">
-//                       <i class="icon-news form-group-icon"></i>
+//                   <div className="col-sm-6 col-md-6 col-lg-6">
+//                     <div className="form-group">
+//                       <i className="icon-news form-group-icon"></i>
 //                       <input
 //                         type="text"
-//                         class="form-control"
+//                         className="form-control"
 //                         placeholder="Name"
 //                         id="contact-name"
 //                         name="contact-name"
@@ -60,12 +60,12 @@
 //                     </div>
 //                   </div>
 
-//                   <div class="col-sm-6 col-md-6 col-lg-6">
-//                     <div class="form-group">
-//                       <i class="icon-email form-group-icon"></i>
+//                   <div className="col-sm-6 col-md-6 col-lg-6">
+//                     <div className="form-group">
+//                       <i className="icon-email form-group-icon"></i>
 //                       <input
 //                         type="email"
-//                         class="form-control"
+//                         className="form-control"
 //                         placeholder="Email"
 //                         id="contact-email"
 //                         name="contact-email"
@@ -74,12 +74,12 @@
 //                     </div>
 //                   </div>
 
-//                   <div class="col-sm-4 col-md-4 col-lg-4">
-//                     <div class="form-group">
-//                       <i class="icon-phone form-group-icon"></i>
+//                   <div className="col-sm-4 col-md-4 col-lg-4">
+//                     <div className="form-group">
+//                       <i className="icon-phone form-group-icon"></i>
 //                       <input
 //                         type="text"
-//                         class="form-control"
+//                         className="form-control"
 //                         placeholder="Phone"
 //                         id="contact-Phone"
 //                         name="contact-phone"
@@ -88,12 +88,12 @@
 //                     </div>
 //                   </div>
 
-//                   <div class="col-sm-4 col-md-4 col-lg-4">
-//                     <div class="form-group form-group-date">
-//                       <i class="icon-calendar form-group-icon"></i>
+//                   <div className="col-sm-4 col-md-4 col-lg-4">
+//                     <div className="form-group form-group-date">
+//                       <i className="icon-calendar form-group-icon"></i>
 //                       <input
 //                         type="date"
-//                         class="form-control"
+//                         className="form-control"
 //                         id="contact-date"
 //                         name="contact-date"
 //                         required
@@ -101,12 +101,12 @@
 //                     </div>
 //                   </div>
 
-//                   <div class="col-sm-4 col-md-4 col-lg-4">
-//                     <div class="form-group form-group-date">
-//                       <i class="icon-clock form-group-icon"></i>
+//                   <div className="col-sm-4 col-md-4 col-lg-4">
+//                     <div className="form-group form-group-date">
+//                       <i className="icon-clock form-group-icon"></i>
 //                       <input
 //                         type="time"
-//                         class="form-control"
+//                         className="form-control"
 //                         id="contact-time"
 //                         name="contact-time"
 //                         required
@@ -114,96 +114,96 @@
 //                     </div>
 //                   </div>
 
-//                   <div class="col-12">
+//                   <div className="col-12">
 //                     <button
 //                       type="submit"
-//                       class="btn btn__secondary btn__rounded btn__block btn__xhight mt-10"
+//                       className="btn btn__secondary btn__rounded btn__block btn__xhight mt-10"
 //                     >
 //                       <span>Book Appointment</span>
-//                       <i class="icon-arrow-right"></i>
+//                       <i className="icon-arrow-right"></i>
 //                     </button>
-//                     <div class="contact-result"></div>
+//                     <div className="contact-result"></div>
 //                   </div>
 //                 </div>
 //               </form>
 //             </div>
 //           </div>
 
-//           <div class="col-sm-12 col-md-12 col-lg-5">
-//             <div class="heading heading-light mb-30">
-//               <h3 class="heading__title mb-30">
+//           <div className="col-sm-12 col-md-12 col-lg-5">
+//             <div className="heading heading-light mb-30">
+//               <h3 className="heading__title mb-30">
 //                 Helping Patients From Around the Globe!!
 //               </h3>
-//               <p class="heading__desc">
+//               <p className="heading__desc">
 //                 Our staff strives to make each interaction with patients clear,
 //                 concise, and inviting. Support the important work of Medicsh
 //                 Hospital by making a much-needed donation today.
 //               </p>
 //             </div>
-//             <div class="d-flex align-items-center">
+//             <div className="d-flex align-items-center">
 //               <a
 //                 href="contact-us.html"
-//                 class="btn btn__white btn__rounded mr-30"
+//                 className="btn btn__white btn__rounded mr-30"
 //               >
-//                 <i class="fas fa-heart"></i> <span>Make A Gift</span>
+//                 <i className="fas fa-heart"></i> <span>Make A Gift</span>
 //               </a>
 //               <a
-//                 class="video__btn video__btn-white popup-video"
+//                 className="video__btn video__btn-white popup-video"
 //                 href="https://www.youtube.com/watch?v=nrJtHemSPW4"
 //               >
-//                 <div class="video__player">
-//                   <i class="fa fa-play"></i>
+//                 <div className="video__player">
+//                   <i className="fa fa-play"></i>
 //                 </div>
-//                 <span class="video__btn-title color-white">Play Video</span>
+//                 <span className="video__btn-title color-white">Play Video</span>
 //               </a>
 //             </div>
-//             <div class="text__block">
-//               <p class="text__block-desc color-white font-weight-bold">
+//             <div className="text__block">
+//               <p className="text__block-desc color-white font-weight-bold">
 //                 We provide a comprehensive range of plans for families and
 //                 individuals at every stage of life, with annual limits ranging
 //                 from £1.5m to unlimited.
 //               </p>
-//               <div class="sinature color-white">
-//                 <span class="font-weight-bold">Martin Qube</span>
+//               <div className="sinature color-white">
+//                 <span className="font-weight-bold">Martin Qube</span>
 //                 <span>, Medcity Manager</span>
 //               </div>
 //             </div>
 
 //             <div
-//               class="slick-carousel clients-light mt-20"
+//               className="slick-carousel clients-light mt-20"
 //               data-slick='{"slidesToShow": 3, "arrows": false, "dots": false, "autoplay": true,"autoplaySpeed": 2000, "infinite": true, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 3}}, {"breakpoint": 767, "settings": {"slidesToShow": 2}}, {"breakpoint": 480, "settings": {"slidesToShow": 2}}]}'
 //             >
-//               <div class="client">
+//               <div className="client">
 //                 <img src="assets/images/clients/1.png" alt="client" />
 //                 <img src="assets/images/clients/1.png" alt="client" />
 //               </div>
 
-//               <div class="client">
+//               <div className="client">
 //                 <img src="assets/images/clients/2.png" alt="client" />
 //                 <img src="assets/images/clients/2.png" alt="client" />
 //               </div>
 
-//               <div class="client">
+//               <div className="client">
 //                 <img src="assets/images/clients/3.png" alt="client" />
 //                 <img src="assets/images/clients/3.png" alt="client" />
 //               </div>
 
-//               <div class="client">
+//               <div className="client">
 //                 <img src="assets/images/clients/4.png" alt="client" />
 //                 <img src="assets/images/clients/4.png" alt="client" />
 //               </div>
 
-//               <div class="client">
+//               <div className="client">
 //                 <img src="assets/images/clients/5.png" alt="client" />
 //                 <img src="assets/images/clients/5.png" alt="client" />
 //               </div>
 
-//               <div class="client">
+//               <div className="client">
 //                 <img src="assets/images/clients/6.png" alt="client" />
 //                 <img src="assets/images/clients/6.png" alt="client" />
 //               </div>
 
-//               <div class="client">
+//               <div className="client">
 //                 <img src="assets/images/clients/7.png" alt="client" />
 //                 <img src="assets/images/clients/7.png" alt="client" />
 //               </div>
