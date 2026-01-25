@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpenDepartment, setIsOpenDepartment] = useState(false);
 
   const togglePopup = () => {
     setIsOpen((prev) => !prev);
@@ -133,55 +134,6 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
             className={`collapse navbar-collapse ${menuOpen ? "menu-opened" : ""}`}
             id="mainNavigation"
           >
-            {/* <ul className="navbar-nav ml-auto">
-              <li className="nav__item">
-                <Link to="/" className="nav__item-link active">
-                  Home
-                </Link>
-              </li>
-
-              <li className="nav__item">
-                <Link to="/about" className=" nav__item-link">
-                  About
-                </Link>
-              </li>
-
-              <li className="nav__item">
-                <Link to="/services" className="nav__item-link">
-                  Services
-                </Link>
-              </li>
-
-              <li className="nav__item">
-                <Link to="/doctors" className="nav__item-link">
-                  Doctors
-                </Link>
-              </li>
-
-              <li className="nav__item">
-                <Link to="/packages" className="nav__item-link">
-                  Packages
-                </Link>
-              </li>
-
-              <li className="nav__item">
-                <Link to="/gallery" className="nav__item-link">
-                  Gallery
-                </Link>
-              </li>
-
-              <li className="nav__item">
-                <Link to="/blog" className=" nav__item-link">
-                  Blog
-                </Link>
-              </li>
-
-              <li className="nav__item">
-                <Link to="/contact" className="nav__item-link">
-                  Contacts
-                </Link>
-              </li>
-            </ul> */}
             <ul className="navbar-nav ml-auto">
               <li className="nav__item">
                 <NavLink
@@ -288,58 +240,61 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
               <i className="fas fa-times"></i>
             </button>
           </div>
-          {/* <!-- /.navbar-collapse --> */}
+
           <div className="d-none d-xl-flex align-items-center position-relative ml-30">
-            <div className="miniPopup-departments-trigger">
+            <div
+              className="miniPopup-departments-trigger"
+              onClick={() => setIsOpenDepartment(!isOpenDepartment)}
+              style={{ cursor: "pointer" }}
+            >
               <span
-                className="menu-lines"
+                className={`menu-lines ${isOpenDepartment ? "active" : ""}`}
                 id="miniPopup-departments-trigger-icon"
               >
                 <span></span>
               </span>
+
               <Link to="/departments">Departments</Link>
             </div>
+
             <ul
               id="miniPopup-departments"
-              className="miniPopup miniPopup-departments dropdown-menu"
+              className={`miniPopup miniPopup-departments dropdown-menu ${
+                isOpenDepartment ? "active" : ""
+              }`}
             >
               <li className="nav__item">
                 <Link to="/department" className="nav__item-link">
                   Neurology Clinic
                 </Link>
               </li>
-
               <li className="nav__item">
                 <Link to="/department" className="nav__item-link">
                   Cardiology Clinic
                 </Link>
               </li>
-
               <li className="nav__item">
                 <Link to="/department" className="nav__item-link">
                   Pathology Clinic
                 </Link>
               </li>
-
               <li className="nav__item">
                 <Link to="/department" className="nav__item-link">
                   Laboratory Clinic
                 </Link>
               </li>
-
               <li className="nav__item">
                 <Link to="/department" className="nav__item-link">
                   Pediatric Clinic
                 </Link>
               </li>
-
               <li className="nav__item">
                 <Link to="/department" className="nav__item-link">
                   Cardiac Clinic
                 </Link>
               </li>
             </ul>
-            {/* <!-- /.miniPopup-departments --> */}
+
             <Link
               to="/appointment"
               className="btn btn__primary btn__rounded ml-30"

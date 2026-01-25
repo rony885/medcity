@@ -12,7 +12,6 @@ const Appointment = () => {
       <DoctorTeam />
       <Testimonials />
       <ContactForm />
-      <ContactForm />
       <About />
     </div>
   );
