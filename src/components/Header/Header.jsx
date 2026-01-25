@@ -210,18 +210,6 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
 
               <li className="nav__item">
                 <NavLink
-                  to="/services"
-                  className={({ isActive }) =>
-                    `nav__item-link ${isActive ? "active" : ""}`
-                  }
-                  onClick={closeMenu}
-                >
-                  Services
-                </NavLink>
-              </li>
-
-              <li className="nav__item">
-                <NavLink
                   to="/doctors"
                   className={({ isActive }) =>
                     `nav__item-link ${isActive ? "active" : ""}`
@@ -241,6 +229,18 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
                   onClick={closeMenu}
                 >
                   Packages
+                </NavLink>
+              </li>
+
+              <li className="nav__item">
+                <NavLink
+                  to="/services"
+                  className={({ isActive }) =>
+                    `nav__item-link ${isActive ? "active" : ""}`
+                  }
+                  onClick={closeMenu}
+                >
+                  Services
                 </NavLink>
               </li>
 

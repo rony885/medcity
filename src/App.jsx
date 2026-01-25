@@ -18,6 +18,7 @@ import BlogDetails from "./pages/BlogDetails/BlogDetails";
 import ScrollTopBtn from "./components/ScrollTopBtn";
 import Top from "./components/Top";
 import NotFound from "./components/NotFound";
+import Appointment from "./pages/Appointment/Appointment";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -63,6 +64,7 @@ function App() {
             ></Route>
             <Route path="/blog" element={<Blog />}></Route>
             <Route path="/blog-details" element={<BlogDetails />}></Route>
+            <Route path="/appointment" element={<Appointment />}></Route>
             <Route path="*" element={<NotFound />}></Route>
           </Routes>
           <Footer />

@@ -3,8 +3,10 @@ import HeroSection from "./HeroSection";
 import About from "./About";
 import ContactInfo from "./ContactInfo";
 import Services from "./Services";
+import DoctorTeam from "./DoctorTeam";
 import Notses from "./Notses";
 import Blog from "./Blog";
+import Packages from "./Packages";
 
 const Home = () => {
   return (
@@ -12,6 +14,8 @@ const Home = () => {
       <HeroSection />
       <ContactInfo />
       <About />
+      <DoctorTeam />
+      <Packages />
       <Services />
       <Notses />
       <Blog />

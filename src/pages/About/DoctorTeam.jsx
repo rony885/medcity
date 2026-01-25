@@ -433,7 +433,7 @@ import { Navigation, Autoplay } from "swiper/modules"; // ✅ v11+
 import "swiper/css";
 import "swiper/css/navigation";
 
-const Team = () => {
+const DoctorTeam = () => {
   const members = [
     {
       name: "Mike Dooley",
@@ -553,4 +553,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default DoctorTeam;
