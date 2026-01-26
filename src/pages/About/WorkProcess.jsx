@@ -278,6 +278,8 @@ const WorkProcess = () => {
                 spaceBetween={30}
                 slidesPerView={4}
                 breakpoints={{
+                  375: { slidesPerView: 1 },
+                  425: { slidesPerView: 1 },
                   480: { slidesPerView: 1 },
                   768: { slidesPerView: 2 },
                   992: { slidesPerView: 2 },

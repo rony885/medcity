@@ -14,10 +14,11 @@ const Home = () => {
       <HeroSection />
       <ContactInfo />
       <About />
-      <DoctorTeam />
       <Packages />
       <Services />
       <Notses />
+      <DoctorTeam />
+
       <Blog />
     </div>
   );

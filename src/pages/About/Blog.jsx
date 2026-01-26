@@ -33,7 +33,7 @@ const Blog = () => {
   ];
 
   return (
-    <section className="blog-grid pb-50">
+    <section className="blog-grid pb-50 mt-0 pt-0">
       <div className="container">
         <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-6 offset-lg-3">

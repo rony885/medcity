@@ -424,7 +424,7 @@ const HeroSection = () => {
 };
 
 const Wrapper = styled.section`
-  @media (max-width: 375px) {
+  @media (max-width: 425px) {
     .slide-item {
       min-height: 400px !important;
       background-position: center top;

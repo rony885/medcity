@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isOpenDepartment, setIsOpenDepartment] = useState(false);
+  // const [isOpenDepartment, setIsOpenDepartment] = useState(false);
 
   const togglePopup = () => {
     setIsOpen((prev) => !prev);
@@ -156,19 +156,7 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
                   }
                   onClick={closeMenu}
                 >
-                  About
-                </NavLink>
-              </li>
-
-              <li className="nav__item">
-                <NavLink
-                  to="/doctors"
-                  className={({ isActive }) =>
-                    `nav__item-link ${isActive ? "active" : ""}`
-                  }
-                  onClick={closeMenu}
-                >
-                  Doctors
+                  About Us
                 </NavLink>
               </li>
 
@@ -198,6 +186,18 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
 
               <li className="nav__item">
                 <NavLink
+                  to="/doctors"
+                  className={({ isActive }) =>
+                    `nav__item-link ${isActive ? "active" : ""}`
+                  }
+                  onClick={closeMenu}
+                >
+                  Doctors
+                </NavLink>
+              </li>
+
+              <li className="nav__item">
+                <NavLink
                   to="/gallery"
                   className={({ isActive }) =>
                     `nav__item-link ${isActive ? "active" : ""}`
@@ -216,7 +216,7 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
                   }
                   onClick={closeMenu}
                 >
-                  Blog
+                  Blogs
                 </NavLink>
               </li>
 
@@ -228,7 +228,7 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
                   }
                   onClick={closeMenu}
                 >
-                  Contacts
+                  Contact Us
                 </NavLink>
               </li>
             </ul>
@@ -242,7 +242,7 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
           </div>
 
           <div className="d-none d-xl-flex align-items-center position-relative ml-30">
-            <div
+            {/* <div
               className="miniPopup-departments-trigger"
               onClick={() => setIsOpenDepartment(!isOpenDepartment)}
               style={{ cursor: "pointer" }}
@@ -255,9 +255,9 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
               </span>
 
               <Link to="/departments">Departments</Link>
-            </div>
+            </div> */}
 
-            <ul
+            {/* <ul
               id="miniPopup-departments"
               className={`miniPopup miniPopup-departments dropdown-menu ${
                 isOpenDepartment ? "active" : ""
@@ -293,7 +293,7 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
                   Cardiac Clinic
                 </Link>
               </li>
-            </ul>
+            </ul> */}
 
             <Link
               to="/appointment"

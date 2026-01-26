@@ -72,7 +72,7 @@ const Blog = () => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <h1 className="pagetitle__heading">Blog</h1>
+              <h1 className="pagetitle__heading">Blogs</h1>
               <nav>
                 <ol className="breadcrumb mb-0">
                   <li className="breadcrumb-item">
