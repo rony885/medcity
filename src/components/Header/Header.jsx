@@ -60,8 +60,8 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
 
                   <li>
                     <i className="icon-phone"></i>
-                    <Link to="tel:+5565454117">
-                      Emergency Line: (002) 01061245741
+                    <Link to="tel:01936209467">
+                      Emergency Line: 01936209467
                     </Link>
                   </li>
                   <li>

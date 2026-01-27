@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BookingForm = () => {
   return (
@@ -128,28 +129,28 @@ const BookingForm = () => {
             </div>
 
             <div className="d-flex align-items-center">
-              <a
-                href="contact-us.html"
+              <Link
+                to="/contact"
                 className="btn btn__white btn__rounded mr-30"
               >
                 <i className="fas fa-heart"></i>
                 <span> Make A Gift</span>
-              </a>
+              </Link>
 
-              <a
+              <Link
                 className="video__btn video__btn-white popup-video"
-                href="https://www.youtube.com/watch?v=nrJtHemSPW4"
+                to="https://www.youtube.com/watch?v=nrJtHemSPW4"
               >
                 <div className="video__player">
                   <i className="fa fa-play"></i>
                 </div>
                 <span className="video__btn-title color-white">Play Video</span>
-              </a>
+              </Link>
             </div>
 
             <div className="text__block">
               <p className="text__block-desc color-white font-weight-bold">
-                We provide a comprehensive range of plans for families and
+                We provide Link comprehensive range of plans for families and
                 individuals at every stage of life.
               </p>
               <div className="sinature color-white">

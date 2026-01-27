@@ -58,7 +58,6 @@ const Doctor = () => {
         }}
       >
         <div className="container">
-          
           <div className="row">
             <div className="col-12">
               <h1 className="pagetitle__heading">Doctors</h1>
@@ -79,7 +78,7 @@ const Doctor = () => {
 
       <section className="team-layout2 pb-40">
         <div className="container">
-            <div className="row">
+          <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
               <div className="heading text-center mb-40">
                 <h3 className="heading__title">Meet Our Consultants</h3>
@@ -134,6 +133,13 @@ const Doctor = () => {
                         </li>
                       </ul>
                     </div>
+                    <Link
+                      to="/appointment"
+                      className="btn btn__secondary btn__link btn__rounded w-100 mt-4"
+                    >
+                      <span>Appointment</span>
+                      <i className="icon-arrow-right"></i>
+                    </Link>
                   </div>
                 </div>
               </div>

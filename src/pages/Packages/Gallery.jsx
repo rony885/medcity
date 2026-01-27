@@ -26,7 +26,7 @@ const Gallery = () => {
           <div className="row">
             <div className="col-12">
               <Swiper
-                modules={[Navigation]}
+                // modules={[Navigation]}
                 slidesPerView={4}
                 spaceBetween={20}
                 // navigation
@@ -137,3 +137,4 @@ const Wrapper = styled.section`
 `;
 
 export default Gallery;
+

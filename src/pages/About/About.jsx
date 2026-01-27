@@ -4,7 +4,7 @@ import Features from "./Features";
 import WorkProcess from "./WorkProcess";
 import DoctorTeam from "./DoctorTeam";
 // import Testimonials from "./Testimonials";
-import Blog from "./Blog";
+// import Blog from "./Blog";
 
 const About = () => {
   return (
@@ -14,7 +14,7 @@ const About = () => {
       <WorkProcess />
       <DoctorTeam />
       {/* <Testimonials /> */}
-      <Blog />
+      {/* <Blog /> */}
     </div>
   );
 };

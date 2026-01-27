@@ -39,24 +39,24 @@ const Blog = () => {
       title: "Why Coronavirus Cases Among Adults Is Bad News",
       desc: "A new surge of coronavirus cases has spread across the country and while there’s still so much to learn about virus, how it’s transmitted and its long-term effects",
     },
-    {
-      id: 5,
-      img: "assets/images/blog/grid/5.jpg",
-      categories: ["Mental Health", "Sales"],
-      date: "Jan 30, 2022",
-      author: "Martin King",
-      title: "Why Do People Get Kidney Stones in the Summer?",
-      desc: "Summer may have just officially started, but kidney stone season began a couple of weeks ago. Doctors see an increase in kidney stone cases when the weather warms up...",
-    },
-    {
-      id: 6,
-      img: "assets/images/blog/grid/6.jpg",
-      categories: ["Infectious", "Disease"],
-      date: "Feb 07, 2022",
-      author: "Marie Black",
-      title: "Do Any Drugs Really Work to Treat Coronavirus?",
-      desc: "While most people who get COVID-19 are able to recover at home, the rush is on to find a treatment that’s safe and effective against life-threatening cases of the disease...",
-    },
+    // {
+    //   id: 5,
+    //   img: "assets/images/blog/grid/5.jpg",
+    //   categories: ["Mental Health", "Sales"],
+    //   date: "Jan 30, 2022",
+    //   author: "Martin King",
+    //   title: "Why Do People Get Kidney Stones in the Summer?",
+    //   desc: "Summer may have just officially started, but kidney stone season began a couple of weeks ago. Doctors see an increase in kidney stone cases when the weather warms up...",
+    // },
+    // {
+    //   id: 6,
+    //   img: "assets/images/blog/grid/6.jpg",
+    //   categories: ["Infectious", "Disease"],
+    //   date: "Feb 07, 2022",
+    //   author: "Marie Black",
+    //   title: "Do Any Drugs Really Work to Treat Coronavirus?",
+    //   desc: "While most people who get COVID-19 are able to recover at home, the rush is on to find a treatment that’s safe and effective against life-threatening cases of the disease...",
+    // },
   ];
 
   return (
@@ -101,7 +101,8 @@ const Blog = () => {
 
           <div className="row">
             {blogPosts.map((post) => (
-              <div className="col-sm-12 col-md-6 col-lg-4" key={post.id}>
+              // <div className="col-sm-12 col-md-6 col-lg-4" key={post.id}>
+              <div className="col-sm-12 col-md-6 col-lg-6" key={post.id}>
                 <div className="post-item">
                   <div className="post__img">
                     <Link to="/blog-details">
@@ -145,7 +146,7 @@ const Blog = () => {
           </div>
 
           {/* Pagination */}
-          <div className="row">
+          <div className="row d-none">
             <div className="col-12 text-center">
               <nav className="pagination-area">
                 <ul className="pagination justify-content-center">

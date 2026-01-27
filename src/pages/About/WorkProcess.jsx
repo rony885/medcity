@@ -241,16 +241,15 @@ const WorkProcess = () => {
       >
         <div className="container">
           <div className="row heading-layout2">
-            <div className="col-12">
+            {/* <div className="col-12">
               <h2 className="heading__subtitle color-primary">
                 Caring For The Health Of You And Your Family.
               </h2>
-            </div>
+            </div> */}
 
             <div className="col-sm-12 col-md-12 col-lg-6 col-xl-5">
               <h3 className="heading__title color-white">
-                We Provide All Aspects Of Medical Practice For Your Whole
-                Family!
+                Why Choose Unity Health Centre?
               </h3>
             </div>
 
@@ -263,11 +262,12 @@ const WorkProcess = () => {
                 in the strictest confidence.
               </p>
               <ul className="list-items list-items-layout2 list-items-light list-horizontal list-unstyled">
-                <li>Fractures and dislocations</li>
-                <li>Health Assessments</li>
-                <li>Desensitisation injections</li>
-                <li>High Quality Care</li>
-                <li>Desensitisation injections</li>
+                <li>Experienced Psychiatrists & Specialists</li>
+                <li>Evidence-Based Treatment Protocols</li>
+                <li>Separate & Secure Units</li>
+                <li>Confidential & Ethical Care</li>
+                <li>Affordable Treatment Packages</li>
+                <li>Family-Centered Recovery Approach</li>
               </ul>
             </div>
           </div>

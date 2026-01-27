@@ -19,6 +19,7 @@ import ScrollTopBtn from "./components/ScrollTopBtn";
 import Top from "./components/Top";
 import NotFound from "./components/NotFound";
 import Appointment from "./pages/Appointment/Appointment";
+import Gallery from "./pages/Gallery/Gallery";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -62,6 +63,7 @@ function App() {
               path="/package-details"
               element={<PackagesDetails />}
             ></Route>
+            <Route path="/gallery" element={<Gallery />}></Route>
             <Route path="/blog" element={<Blog />}></Route>
             <Route path="/blog-details" element={<BlogDetails />}></Route>
             <Route path="/appointment" element={<Appointment />}></Route>
