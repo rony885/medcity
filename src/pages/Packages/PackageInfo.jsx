@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Package = () => {
+const PackageInfo = () => {
   const teamMembers = [
     {
       id: 1,
@@ -422,4 +422,4 @@ const Package = () => {
   );
 };
 
-export default Package;
+export default PackageInfo;

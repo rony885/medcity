@@ -38,9 +38,9 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
                         <i className="icon-call3"></i>
                       </div>
 
-                      <Link to="tel:+201061245741" className="phone__number">
+                      <Link to="tel:01936209467" className="phone__number">
                         <i className="icon-phone"></i>
-                        <span> +2 01061245741</span>
+                        <span>01936209467</span>
                       </Link>
 
                       <p>
@@ -66,11 +66,11 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
                   </li>
                   <li>
                     <i className="icon-location"></i>
-                    <Link to="#">Location: Brooklyn, New York</Link>
+                    <Link to="#">Near Circuit House, Gaital, Kishoreganj</Link>
                   </li>
                   <li>
                     <i className="icon-clock"></i>
-                    <Link to="contact-us">Mon - Fri: 8:00 am - 7:00 pm</Link>
+                    <Link to="/contact-us">SAT - THU : 8:00 am - 10:00 pm</Link>
                   </li>
                 </ul>
 
@@ -88,7 +88,7 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
                     </li>
                     <li>
                       <Link to="#">
-                        <i className="fab fa-twitter"></i>
+                        <i className="fab fa-x"></i>
                       </Link>
                     </li>
                   </ul>
@@ -229,6 +229,17 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
                   onClick={closeMenu}
                 >
                   Contact Us
+                </NavLink>
+              </li>
+              <li className="nav__item d-lg-none d-md-block">
+                <NavLink
+                  to="/appointmen"
+                  className={({ isActive }) =>
+                    `nav__item-link ${isActive ? "active" : ""}`
+                  }
+                  onClick={closeMenu}
+                >
+                  Appointment
                 </NavLink>
               </li>
             </ul>

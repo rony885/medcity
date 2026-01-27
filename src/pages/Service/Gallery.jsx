@@ -31,7 +31,9 @@ const Gallery = () => {
                 spaceBetween={20}
                 navigation
                 breakpoints={{
-                  480: { slidesPerView: 1 },
+                  320: { slidesPerView: 1 },
+                  375: { slidesPerView: 1 },
+                  425: { slidesPerView: 1 },
                   767: { slidesPerView: 2 },
                   992: { slidesPerView: 2 },
                   1200: { slidesPerView: 4 },

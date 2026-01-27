@@ -69,7 +69,7 @@ const DoctorTeam = () => {
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
               <div className="heading text-center mb-40">
-                <h3 className="heading__title">Meet Our Doctors</h3>
+                <h3 className="heading__title">Meet Our Consultants</h3>
                 <p className="heading__desc">
                   Our administration and support staff all have exceptional
                   people skills and trained to assist you with all medical
@@ -114,7 +114,7 @@ const DoctorTeam = () => {
                           <Link to="#">{member.name}</Link>
                         </h5>
                         <p className="member__job">{member.job}</p>
-                        <p className="member__desc">{member.desc}</p>
+                        {/* <p className="member__desc">{member.desc}</p> */}
                         <div className="mt-20 d-flex flex-wrap justify-content-between align-items-center">
                           <Link
                             to="#"

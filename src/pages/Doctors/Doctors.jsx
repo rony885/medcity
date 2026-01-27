@@ -58,6 +58,7 @@ const Doctor = () => {
         }}
       >
         <div className="container">
+          
           <div className="row">
             <div className="col-12">
               <h1 className="pagetitle__heading">Doctors</h1>
@@ -78,6 +79,19 @@ const Doctor = () => {
 
       <section className="team-layout2 pb-40">
         <div className="container">
+            <div className="row">
+            <div className="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+              <div className="heading text-center mb-40">
+                <h3 className="heading__title">Meet Our Consultants</h3>
+                <p className="heading__desc">
+                  Our administration and support staff all have exceptional
+                  people skills and trained to assist you with all medical
+                  enquiries.
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div className="row">
             {teamMembers.map((member) => (
               <div className="col-sm-6 col-md-4 col-lg-4" key={member.id}>
@@ -91,7 +105,7 @@ const Doctor = () => {
                       <Link to="/doctor-details">{member.name}</Link>
                     </h5>
                     <p className="member__job">{member.job}</p>
-                    <p className="member__desc">{member.desc}</p>
+                    {/* <p className="member__desc">{member.desc}</p> */}
 
                     <div className="mt-20 d-flex flex-wrap justify-content-between align-items-center">
                       <Link
@@ -127,7 +141,7 @@ const Doctor = () => {
           </div>
 
           {/* Pagination */}
-          <div className="row">
+          <div className="row d-none">
             <div className="col-12 text-center">
               <nav className="pagination-area">
                 <ul className="pagination justify-content-center">

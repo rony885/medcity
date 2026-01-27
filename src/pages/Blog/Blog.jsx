@@ -91,6 +91,15 @@ const Blog = () => {
       <section className="blog-grid">
         <div className="container">
           <div className="row">
+            <div className="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+              <div className="heading text-center mb-40">
+                <h2 className="heading__subtitle">Resource Library</h2>
+                <h3 className="heading__title">Recent Articles</h3>
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
             {blogPosts.map((post) => (
               <div className="col-sm-12 col-md-6 col-lg-4" key={post.id}>
                 <div className="post-item">

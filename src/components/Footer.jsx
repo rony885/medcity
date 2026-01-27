@@ -201,11 +201,12 @@ const Footer = () => {
                   alt="logo"
                   className="mb-30"
                 />
-                <p className="color-gray">
-                  Our goal is to deliver quality of care in a courteous,
-                  respectful, and compassionate manner. We hope you will allow
-                  us to care for you and strive to be the first and best choice
-                  for your family healthcare.
+                <p className="color-gray" style={{ textAlign: "justify" }}>
+                  Unity Health Centre is Link professional mental health and
+                  addiction treatment hospital dedicated to ethical care,
+                  confidentiality, and long-term recovery. Our experienced team
+                  ensures compassionate treatment following international
+                  standards.
                 </p>
                 <Link
                   to="/appointment"
@@ -220,25 +221,31 @@ const Footer = () => {
             {/* Departments */}
             <div className="col-sm-6 col-md-6 col-lg-2 offset-lg-1">
               <div className="footer-widget-nav">
-                <h6 className="footer-widget__title">Departments</h6>
+                <h6 className="footer-widget__title">Quick Links</h6>
                 <ul className="list-unstyled">
                   <li>
-                    <Link to="#">Neurology Clinic</Link>
+                    <Link to="/">Home</Link>
                   </li>
                   <li>
-                    <Link to="#">Cardiology Clinic</Link>
+                    <Link to="/about">About Us</Link>
                   </li>
                   <li>
-                    <Link to="#">Pathology Clinic</Link>
+                    <Link to="/packages">Packages</Link>
                   </li>
                   <li>
-                    <Link to="#">Laboratory Analysis</Link>
+                    <Link to="/services">Services</Link>
                   </li>
                   <li>
-                    <Link to="#">Pediatric Clinic</Link>
+                    <Link to="/doctors">Our Consultants</Link>
                   </li>
                   <li>
-                    <Link to="#">Cardiac Clinic</Link>
+                    <Link to="/gallery">Gallery</Link>
+                  </li>
+                  <li>
+                    <Link to="/blog">Blog</Link>
+                  </li>
+                  <li>
+                    <Link to="/contact">Contact</Link>
                   </li>
                 </ul>
               </div>
@@ -247,22 +254,16 @@ const Footer = () => {
             {/* Links */}
             <div className="col-sm-6 col-md-6 col-lg-2">
               <div className="footer-widget-nav">
-                <h6 className="footer-widget__title">Links</h6>
+                <h6 className="footer-widget__title">Other Links</h6>
                 <ul className="list-unstyled">
                   <li>
-                    <Link to="#">About Us</Link>
+                    <Link to="/appointment">Appointments</Link>
                   </li>
                   <li>
-                    <Link to="#">Our Clinic</Link>
+                    <Link to="#">Terms & Conditions</Link>
                   </li>
                   <li>
-                    <Link to="#">Our Doctors</Link>
-                  </li>
-                  <li>
-                    <Link to="#">News & Media</Link>
-                  </li>
-                  <li>
-                    <Link to="#">Appointments</Link>
+                    <Link to="#">Privacy Policy</Link>
                   </li>
                 </ul>
               </div>
@@ -281,13 +282,26 @@ const Footer = () => {
                     our team.
                   </li>
                   <li>
-                    <a href="tel:01061245741" className="phone__number">
+                    <Link to="tel:01061245741" className="phone__number mb-0">
                       <i className="icon-phone"></i>
                       <span>01061245741</span>
-                    </a>
+                    </Link>
                   </li>
+                  <li>
+                    <Link
+                      to="mailto:info@unityhealthcentre.com"
+                      className="phone__number"
+                    >
+                      <i
+                        className="icon-email"
+                        style={{ fontSize: "14px" }}
+                      ></i>
+                      <span className="fs-5">info@unityhealthcentre.com</span>
+                    </Link>
+                  </li>
+
                   <li className="color-body">
-                    2307 Beverley Rd Brooklyn, New York 11226 United States.
+                    Near Circuit House, Gaital, Kishoreganj
                   </li>
                 </ul>
 
@@ -313,7 +327,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link to="#">
-                        <i className="fab fa-twitter"></i>
+                        <i className="fab fa-x"></i>
                       </Link>
                     </li>
                   </ul>
@@ -328,16 +342,24 @@ const Footer = () => {
       <div className="footer-secondary">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-md-6">
-              <span className="fz-14">
-                © 2020 DataSoft, All Rights Reserved. With Love by{" "}
+            {/* <div className="col-md-12 d-flex justify-content-center align-items-center">
+              <span className="fz-14 mr-1">
+                © 2020 DataSoft, All Rights Reserved. With Love by
               </span>
               <Link to="#" className="fz-14 color-primary">
                 7oroof.com
               </Link>
+            </div> */}
+            <div className="col-md-12 d-flex justify-content-center align-items-center">
+              <span className="fz-14 mr-1">
+                Copyright © 2026 Unity Health Centre. Developed By
+              </span>
+              <Link to="#" className="fz-14 color-primary">
+                ToxiCoder
+              </Link>
             </div>
 
-            <div className="col-md-6">
+            {/* <div className="col-md-6">
               <ul className="list-unstyled footer__copyright-links d-flex justify-content-end mb-0">
                 <li>
                   <Link to="#">Terms & Conditions</Link>
@@ -349,7 +371,7 @@ const Footer = () => {
                   <Link to="#">Cookies</Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

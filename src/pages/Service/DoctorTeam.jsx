@@ -6,7 +6,7 @@ import { Autoplay } from "swiper/modules"; // ✅ v11+
 import "swiper/css";
 import "swiper/css/navigation";
 
-const Packages = () => {
+const DoctorTeam = () => {
   const members = [
     {
       name: "Mike Dooley",
@@ -47,13 +47,13 @@ const Packages = () => {
   ];
 
   return (
-    <Wrapper style={{ paddingBottom: "0" }}>
-      <section className="team-layout1 pb-80">
+    <Wrapper style={{ paddingTop: "0", paddingBottom: "0" }}>
+      <section className="team-layout2 pb-80">
         <div className="container">
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
               <div className="heading text-center mb-40">
-                <h3 className="heading__title">Our Packages</h3>
+                <h3 className="heading__title">Meet Our Doctors</h3>
                 <p className="heading__desc">
                   Our administration and support staff all have exceptional
                   people skills and trained to assist you with all medical
@@ -66,7 +66,9 @@ const Packages = () => {
           <div className="row">
             <div className="col-12">
               <Swiper
+                // modules={[Navigation, Autoplay]}
                 modules={[Autoplay]}
+                // navigation
                 autoplay={{
                   delay: 3000,
                   disableOnInteraction: false,
@@ -96,8 +98,8 @@ const Packages = () => {
                           <Link to="#">{member.name}</Link>
                         </h5>
                         <p className="member__job">{member.job}</p>
-                        {/* <p className="member__desc">{member.desc}</p> */}
-                        {/* <div className="mt-20 d-flex flex-wrap justify-content-between align-items-center">
+                        <p className="member__desc">{member.desc}</p>
+                        <div className="mt-20 d-flex flex-wrap justify-content-between align-items-center">
                           <Link
                             to="#"
                             className="btn btn__secondary btn__link btn__rounded"
@@ -122,7 +124,7 @@ const Packages = () => {
                               </Link>
                             </li>
                           </ul>
-                        </div> */}
+                        </div>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -150,4 +152,4 @@ const Wrapper = styled.section`
   }
 `;
 
-export default Packages;
+export default DoctorTeam;
