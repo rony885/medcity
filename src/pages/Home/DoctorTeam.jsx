@@ -141,6 +141,13 @@ const DoctorTeam = () => {
                             </li>
                           </ul>
                         </div>
+                        <Link
+                          to="/appointment"
+                          className="btn btn__secondary btn__link btn__rounded w-100 mt-4"
+                        >
+                          <span>Appointment</span>
+                          <i className="icon-arrow-right"></i>
+                        </Link>
                       </div>
                     </div>
                   </SwiperSlide>

@@ -20,6 +20,7 @@ import Top from "./components/Top";
 import NotFound from "./components/NotFound";
 import Appointment from "./pages/Appointment/Appointment";
 import Gallery from "./pages/Gallery/Gallery";
+import DoctorsTimetable from "./pages/Doctors/DoctorsTimetable";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -67,6 +68,10 @@ function App() {
             <Route path="/blog" element={<Blog />}></Route>
             <Route path="/blog-details" element={<BlogDetails />}></Route>
             <Route path="/appointment" element={<Appointment />}></Route>
+            <Route
+              path="/doctors-timetable"
+              element={<DoctorsTimetable />}
+            ></Route>
             <Route path="*" element={<NotFound />}></Route>
           </Routes>
           <Footer />

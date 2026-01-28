@@ -61,7 +61,7 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
                   <li>
                     <i className="icon-phone"></i>
                     <Link to="tel:01936209467">
-                      Emergency Line: 01936209467
+                       01936209467
                     </Link>
                   </li>
                   <li>
@@ -192,7 +192,7 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
                   }
                   onClick={closeMenu}
                 >
-                  Doctors
+                  Our Consultants
                 </NavLink>
               </li>
 
@@ -233,7 +233,7 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
               </li>
               <li className="nav__item d-lg-none d-md-block">
                 <NavLink
-                  to="/appointmen"
+                  to="/appointment"
                   className={({ isActive }) =>
                     `nav__item-link ${isActive ? "active" : ""}`
                   }

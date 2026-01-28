@@ -1,164 +1,11 @@
-// import React from "react";
 
-// const Blog = () => {
-//   return (
-//     <section className="blog-grid pb-50">
-//       <div className="container">
-//         <div className="row">
-//           <div className="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-//             <div className="heading text-center mb-40">
-//               <h2 className="heading__subtitle">Resource Library</h2>
-//               <h3 className="heading__title">Recent Articles</h3>
-//             </div>
-//           </div>
-//         </div>
-
-//         <div className="row">
-//           <div className="col-sm-12 col-md-6 col-lg-4">
-//             <div className="post-item">
-//               <div className="post__img">
-//                 <Link href="blog-single-post.html">
-//                   <img
-//                     src="assets/images/blog/grid/1.jpg"
-//                     alt="post image"
-//                     loading="lazy"
-//                   />
-//                 </Link>
-//               </div>
-
-//               <div className="post__body">
-//                 <div className="post__meta-cat">
-//                   <Link href="#">Mental Health</Link>
-//                 </div>
-
-//                 <div className="post__meta d-flex">
-//                   <span className="post__meta-date">Jan 30, 2022</span>
-//                   <Link className="post__meta-author" href="#">
-//                     Martin King
-//                   </Link>
-//                 </div>
-//                 <h4 className="post__title">
-//                   <Link href="#">
-//                     6 Tips to Protect Your Mental Health When You’re Sick
-//                   </Link>
-//                 </h4>
-
-//                 <p className="post__desc">
-//                   It’s normal to feel anxiety, worry and grief any time you’re
-//                   diagnosed with Link condition that’s certainly true if you test
-//                   positive for COVID-19, or are presumed to be positive...
-//                 </p>
-//                 <Link
-//                   href="blog-single-post.html"
-//                   className="btn btn__secondary btn__link btn__rounded"
-//                 >
-//                   <span>Read More</span>
-//                   <i className="icon-arrow-right"></i>
-//                 </Link>
-//               </div>
-//             </div>
-//           </div>
-
-//           <div className="col-sm-12 col-md-6 col-lg-4">
-//             <div className="post-item">
-//               <div className="post__img">
-//                 <Link href="blog-single-post.html">
-//                   <img
-//                     src="assets/images/blog/grid/2.jpg"
-//                     alt="post image"
-//                     loading="lazy"
-//                   />
-//                 </Link>
-//               </div>
-
-//               <div className="post__body">
-//                 <div className="post__meta-cat">
-//                   <Link href="#">Infectious</Link>
-//                   <Link href="#">Tips</Link>
-//                 </div>
-
-//                 <div className="post__meta d-flex">
-//                   <span className="post__meta-date">Jan 30, 2022</span>
-//                   <Link className="post__meta-author" href="#">
-//                     John Ezak
-//                   </Link>
-//                 </div>
-//                 <h4 className="post__title">
-//                   <Link href="#">
-//                     Unsure About Wearing Link Face Mask? Here’s How and Why
-//                   </Link>
-//                 </h4>
-//                 <p className="post__desc">
-//                   That means that you should still be following any
-//                   shelter-in-place orders in your community. But when you’re
-//                   venturing out to the grocery store, pharmacy or hospital..
-//                 </p>
-//                 <Link
-//                   href="blog-single-post.html"
-//                   className="btn btn__secondary btn__link btn__rounded"
-//                 >
-//                   <span>Read More</span>
-//                   <i className="icon-arrow-right"></i>
-//                 </Link>
-//               </div>
-//             </div>
-//           </div>
-
-//           <div className="col-sm-12 col-md-6 col-lg-4">
-//             <div className="post-item">
-//               <div className="post__img">
-//                 <Link href="blog-single-post.html">
-//                   <img
-//                     src="assets/images/blog/grid/3.jpg"
-//                     alt="post image"
-//                     loading="lazy"
-//                   />
-//                 </Link>
-//               </div>
-
-//               <div className="post__body">
-//                 <div className="post__meta-cat">
-//                   <Link href="#">Life Style</Link>
-//                   <Link href="#">Nutrition</Link>
-//                 </div>
-
-//                 <div className="post__meta d-flex">
-//                   <span className="post__meta-date">Jan 28, 2022</span>
-//                   <Link className="post__meta-author" href="#">
-//                     Saul Wade
-//                   </Link>
-//                 </div>
-//                 <h4 className="post__title">
-//                   <Link href="#">
-//                     Tips for Eating Healthy When You’re Working From Home
-//                   </Link>
-//                 </h4>
-
-//                 <p className="post__desc">
-//                   It’s normal to feel anxiety, worry and grief any time you’re
-//                   diagnosed with Link condition that’s certainly true if you test
-//                   positive for COVID-19, or are presumed to be positive...
-//                 </p>
-//                 <Link
-//                   href="blog-single-post.html"
-//                   className="btn btn__secondary btn__link btn__rounded"
-//                 >
-//                   <span>Read More</span>
-//                   <i className="icon-arrow-right"></i>
-//                 </Link>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Blog;
 
 import React from "react";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+
+import "swiper/css";
 
 const Blog = () => {
   const posts = [
@@ -169,7 +16,7 @@ const Blog = () => {
       date: "Jan 30, 2022",
       author: "Martin King",
       title: "6 Tips to Protect Your Mental Health When You’re Sick",
-      desc: "It’s normal to feel anxiety, worry and grief any time you’re diagnosed with Link condition that’s certainly true if you test positive for COVID-19, or are presumed to be positive...",
+      desc: "It’s normal to feel anxiety, worry and grief any time you’re diagnosed with a condition...",
     },
     {
       id: 2,
@@ -177,8 +24,8 @@ const Blog = () => {
       category: ["Infectious", "Tips"],
       date: "Jan 30, 2022",
       author: "John Ezak",
-      title: "Unsure About Wearing Link Face Mask? Here’s How and Why",
-      desc: "That means that you should still be following any shelter-in-place orders in your community. But when you’re venturing out to the grocery store, pharmacy or hospital...",
+      title: "Unsure About Wearing a Face Mask? Here’s How and Why",
+      desc: "That means that you should still be following any shelter-in-place orders...",
     },
     {
       id: 3,
@@ -187,15 +34,34 @@ const Blog = () => {
       date: "Jan 28, 2022",
       author: "Saul Wade",
       title: "Tips for Eating Healthy When You’re Working From Home",
-      desc: "It’s normal to feel anxiety, worry and grief any time you’re diagnosed with Link condition that’s certainly true if you test positive for COVID-19, or are presumed to be positive...",
+      desc: "It’s normal to feel anxiety, worry and grief any time you’re diagnosed...",
+    },
+    {
+      id: 4,
+      image: "assets/images/blog/grid/2.jpg",
+      category: ["Infectious", "Tips"],
+      date: "Jan 30, 2022",
+      author: "John Ezak",
+      title: "Unsure About Wearing a Face Mask? Here’s How and Why",
+      desc: "That means that you should still be following any shelter-in-place orders...",
+    },
+    {
+      id: 5,
+      image: "assets/images/blog/grid/2.jpg",
+      category: ["Infectious", "Tips"],
+      date: "Jan 30, 2022",
+      author: "John Ezak",
+      title: "Unsure About Wearing a Face Mask? Here’s How and Why",
+      desc: "That means that you should still be following any shelter-in-place orders...",
     },
   ];
 
   return (
     <section className="blog-grid pb-50">
       <div className="container">
+        {/* Heading */}
         <div className="row">
-          <div className="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+          <div className="col-lg-6 offset-lg-3">
             <div className="heading text-center mb-40">
               <h2 className="heading__subtitle">Resource Library</h2>
               <h3 className="heading__title">Recent Articles</h3>
@@ -203,13 +69,27 @@ const Blog = () => {
           </div>
         </div>
 
-        <div className="row">
+        {/* Slider */}
+        <Swiper
+          modules={[Autoplay]}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          spaceBetween={30}
+          slidesPerView={3}
+          breakpoints={{
+            0: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+        >
           {posts.map((post) => (
-            <div key={post.id} className="col-sm-12 col-md-6 col-lg-4">
+            <SwiperSlide key={post.id}>
               <div className="post-item">
                 <div className="post__img">
                   <Link to="/blog-details">
-                    <img src={post.image} alt="post imagee" loading="lazy" />
+                    <img src={post.image} alt={post.title} loading="lazy" />
                   </Link>
                 </div>
 
@@ -244,9 +124,9 @@ const Blog = () => {
                   </Link>
                 </div>
               </div>
-            </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
     </section>
   );

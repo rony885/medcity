@@ -1,108 +1,3 @@
-// import React from "react";
-
-// const Testimonials = () => {
-//   return (
-//     <section className="testimonials-layout2 pt-40 pb-40">
-//       <div className="container">
-//         <div className="testimonials-wrapper">
-//           <div className="row">
-//             <div className="col-sm-12 col-md-12 col-lg-5">
-//               <div className="heading-layout2">
-//                 <h3 className="heading__title">Inspiring Stories!</h3>
-//               </div>
-//             </div>
-
-//             <div className="col-sm-12 col-md-12 col-lg-7">
-//               <div className="slider-with-navs">
-//                 <div className="testimonial-item">
-//                   <h3 className="testimonial__title">
-//                     “Their doctors include highly qualified practitioners who
-//                     come from a range of backgrounds and bring with them a
-//                     diversity of skills and special interests. They also have
-//                     registered nurses on staff who are available to triage any
-//                     urgent matters, and the administration and support staff all
-//                     have exceptional people skills”
-//                   </h3>
-//                 </div>
-
-//                 <div className="testimonial-item">
-//                   <h3 className="testimonial__title">
-//                     “Their doctors include highly qualified practitioners who
-//                     come from a range of backgrounds and bring with them a
-//                     diversity of skills and special interests. They also have
-//                     registered nurses on staff who are available to triage any
-//                     urgent matters, and the administration and support staff all
-//                     have exceptional people skills”
-//                   </h3>
-//                 </div>
-
-//                 <div className="testimonial-item">
-//                   <h3 className="testimonial__title">
-//                     “Their doctors include highly qualified practitioners who
-//                     come from a range of backgrounds and bring with them a
-//                     diversity of skills and special interests. They also have
-//                     registered nurses on staff who are available to triage any
-//                     urgent matters, and the administration and support staff all
-//                     have exceptional people skills”
-//                   </h3>
-//                 </div>
-//               </div>
-
-//               <div className="slider-nav mb-60">
-//                 <div className="testimonial__meta">
-//                   <div className="testimonial__thmb">
-//                     <img
-//                       src="assets/images/testimonials/thumbs/1.png"
-//                       alt="author thumb"
-//                     />
-//                   </div>
-
-//                   <div>
-//                     <h4 className="testimonial__meta-title">Sami Wade</h4>
-//                     <p className="testimonial__meta-desc">7oroof Inc</p>
-//                   </div>
-//                 </div>
-
-//                 <div className="testimonial__meta">
-//                   <div className="testimonial__thmb">
-//                     <img
-//                       src="assets/images/testimonials/thumbs/2.png"
-//                       alt="author thumb"
-//                     />
-//                   </div>
-
-//                   <div>
-//                     <h4 className="testimonial__meta-title">Ahmed</h4>
-//                     <p className="testimonial__meta-desc">Web Inc</p>
-//                   </div>
-//                 </div>
-
-//                 <div className="testimonial__meta">
-//                   <div className="testimonial__thmb">
-//                     <img
-//                       src="assets/images/testimonials/thumbs/3.png"
-//                       alt="author thumb"
-//                     />
-//                   </div>
-
-//                   <div>
-//                     <h4 className="testimonial__meta-title">Sonia Blake</h4>
-//                     <p className="testimonial__meta-desc">Web Inc</p>
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Testimonials;
-
-
-
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import { Navigation, Thumbs } from "swiper";
@@ -190,7 +85,9 @@ const Testimonials = () => {
                         <img src={item.thumb} alt="author thumb" />
                       </div>
                       <div className="ms-3">
-                        <h4 className="testimonial__meta-title">{item.author}</h4>
+                        <h4 className="testimonial__meta-title">
+                          {item.author}
+                        </h4>
                         <p className="testimonial__meta-desc">{item.role}</p>
                       </div>
                     </div>

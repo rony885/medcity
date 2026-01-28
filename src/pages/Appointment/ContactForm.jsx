@@ -143,22 +143,28 @@ const ContactForm = () => {
                   <ul className="contact__list list-unstyled mb-30">
                     <li>
                       <i className="icon-phone"></i>
-                      <Link to="tel:+5565454117">
-                        Emergency Line: (002) 01061245741
+                      <Link to="tel:01936209467">01936209467</Link>
+                    </li>
+                    <li>
+                      <i className="icon-location"></i>
+                      <Link to="mailto:info@unityhealthcentre.com">
+                        info@unityhealthcentre.com
                       </Link>
                     </li>
                     <li>
                       <i className="icon-location"></i>
-                      <Link to="#">Location: Brooklyn, New York</Link>
+                      <Link to="#">
+                        Near Circuit House, Gaital, Kishoreganj
+                      </Link>
                     </li>
                     <li>
                       <i className="icon-clock"></i>
-                      <Link to="/contact-us">Mon - Fri: 8:00 am - 7:00 pm</Link>
+                      <Link to="/contact">SAT - THU : 8:00 am - 10:00 pm</Link>
                     </li>
                   </ul>
 
                   <Link
-                    to="#"
+                    to="/contact"
                     className="btn btn__white btn__rounded btn__outlined"
                   >
                     Contact Us

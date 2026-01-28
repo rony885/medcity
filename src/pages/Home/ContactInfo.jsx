@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const ContactInfo = () => {
@@ -19,9 +20,9 @@ const ContactInfo = () => {
                     Please feel free to contact our friendly reception staff
                     with any general or medical enquiry.
                   </p>
-                  <a href="tel:+201061245741" className="phone__number">
-                    <i className="icon-phone"></i> <span>01061245741</span>
-                  </a>
+                  <Link to="tel:01936209467" className="phone__number">
+                    <i className="icon-phone"></i> <span>01936209467</span>
+                  </Link>
                 </div>
                 {/* <!-- /.contact__content --> */}
               </div>
@@ -37,16 +38,16 @@ const ContactInfo = () => {
                 <div className="contact__content">
                   <h2 className="contact__title">Doctors Timetable</h2>
                   <p className="contact__desc">
-                    Qualified doctors available six days a week, view our
+                    Qualified doctors available six days Link week, view our
                     timetable to make an appointment.
                   </p>
-                  <a
-                    href="doctors-timetable.html"
+                  <Link
+                    to="/doctors-timetable"
                     className="btn btn__white btn__outlined btn__rounded"
                   >
                     <span>View Timetable</span>
                     <i className="icon-arrow-right"></i>
-                  </a>
+                  </Link>
                 </div>
                 {/* <!-- /.contact__content --> */}
               </div>

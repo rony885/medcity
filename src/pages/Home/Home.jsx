@@ -7,6 +7,7 @@ import DoctorTeam from "./DoctorTeam";
 import Notses from "./Notses";
 import Blog from "./Blog";
 import Packages from "./Packages";
+import Testimonials from "./Testimonials";
 
 const Home = () => {
   return (
@@ -18,7 +19,7 @@ const Home = () => {
       <Services />
       <Notses />
       <DoctorTeam />
-
+      <Testimonials />
       <Blog />
     </div>
   );

@@ -113,9 +113,7 @@ const ContactForm = () => {
                   <ul className="contact__list list-unstyled mb-30">
                     <li>
                       <i className="icon-phone"></i>
-                      <Link to="tel:01936209467">
-                        Emergency Line: 01936209467
-                      </Link>
+                      <Link to="tel:01936209467">01936209467</Link>
                     </li>
                     <li>
                       <i
@@ -123,14 +121,14 @@ const ContactForm = () => {
                         style={{ fontSize: "12px" }}
                       ></i>
                       <Link to="mailto:info@unityhealthcentre.com">
-                        Email: info@unityhealthcentre.com
+                        info@unityhealthcentre.com
                       </Link>
                     </li>
 
                     <li>
                       <i className="icon-location"></i>
                       <Link to="#">
-                        Location: Near Circuit House, Gaital, Kishoreganj
+                        Near Circuit House, Gaital, Kishoreganj
                       </Link>
                     </li>
                     <li>
@@ -138,12 +136,6 @@ const ContactForm = () => {
                       <Link to="/contact">SAT - THU : 8:00 am - 10:00 pm</Link>
                     </li>
                   </ul>
-                  {/* <Link
-                    to="#"
-                    className="btn btn__white btn__rounded btn__outlined"
-                  >
-                    Contact Us
-                  </Link> */}
                 </div>
               </div>
             </div>
