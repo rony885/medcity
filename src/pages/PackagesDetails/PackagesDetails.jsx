@@ -494,7 +494,7 @@ const PackagesDetails = () => {
                           will receive or return any urgent calls.
                         </p>
                       </div>
-                      <div className="col-sm-6 col-md-6 col-lg-6">
+                      {/* <div className="col-sm-6 col-md-6 col-lg-6">
                         <div className="form-group">
                           <i className="icon-widget form-group-icon"></i>
                           <select className="form-control">
@@ -503,9 +503,9 @@ const PackagesDetails = () => {
                             <option value="2">Pathology Clinic</option>
                           </select>
                         </div>
-                      </div>
+                      </div> */}
 
-                      <div className="col-sm-6 col-md-6 col-lg-6">
+                      <div className="col-sm-6 col-md-6 col-lg-12">
                         <div className="form-group">
                           <i className="icon-user form-group-icon"></i>
                           <select className="form-control">
@@ -530,7 +530,7 @@ const PackagesDetails = () => {
                         </div>
                       </div>
 
-                      <div className="col-sm-6 col-md-6 col-lg-6">
+                      {/* <div className="col-sm-6 col-md-6 col-lg-6">
                         <div className="form-group">
                           <i className="icon-email form-group-icon"></i>
                           <input
@@ -542,9 +542,9 @@ const PackagesDetails = () => {
                             required
                           />
                         </div>
-                      </div>
+                      </div> */}
 
-                      <div className="col-sm-4 col-md-4 col-lg-4">
+                      <div className="col-sm-4 col-md-4 col-lg-6">
                         <div className="form-group">
                           <i className="icon-phone form-group-icon"></i>
                           <input
@@ -558,7 +558,7 @@ const PackagesDetails = () => {
                         </div>
                       </div>
 
-                      <div className="col-sm-4 col-md-4 col-lg-4">
+                      <div className="col-sm-4 col-md-4 col-lg-6">
                         <div className="form-group form-group-date">
                           <i className="icon-calendar form-group-icon"></i>
                           <input
@@ -571,7 +571,7 @@ const PackagesDetails = () => {
                         </div>
                       </div>
 
-                      <div className="col-sm-4 col-md-4 col-lg-4">
+                      <div className="col-sm-4 col-md-4 col-lg-6">
                         <div className="form-group form-group-date">
                           <i className="icon-clock form-group-icon"></i>
                           <input

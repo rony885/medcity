@@ -13,14 +13,14 @@ import Home from "./pages/Home/Home";
 import DoctorsTimetable from "./pages/DoctorsTimetable/DoctorsTimetable";
 import About from "./pages/About/About";
 import Packages from "./pages/Packages/Packages";
-// import PackagesDetails from "./pages/PackagesDetails/PackagesDetails";
+import PackagesDetails from "./pages/PackagesDetails/PackagesDetails";
 import Service from "./pages/Service/Service";
 import ServiceDetails from "./pages/ServiceDetails/ServiceDetails";
 import Doctors from "./pages/Doctors/Doctors";
-// import DoctorDetails from "./pages/DoctorDetails/DoctorDetails";
+import DoctorDetails from "./pages/DoctorDetails/DoctorDetails";
 import Gallery from "./pages/Gallery/Gallery";
 import Blog from "./pages/Blog/Blog";
-// import BlogDetails from "./pages/BlogDetails/BlogDetails";
+import BlogDetails from "./pages/BlogDetails/BlogDetails";
 import Contact from "./pages/Contact/Contact";
 import Appointment from "./pages/Appointment/Appointment";
 
@@ -92,7 +92,7 @@ function App() {
                 </>
               }
             ></Route>
-            {/* <Route
+            <Route
               path="/package-details"
               element={
                 <>
@@ -100,7 +100,7 @@ function App() {
                   <PackagesDetails />
                 </>
               }
-            ></Route> */}
+            ></Route>
 
             <Route
               path="/services"
@@ -131,7 +131,7 @@ function App() {
                 </>
               }
             ></Route>
-            {/* <Route
+            <Route
               path="/doctor-details"
               element={
                 <>
@@ -139,7 +139,7 @@ function App() {
                   <DoctorDetails />
                 </>
               }
-            ></Route> */}
+            ></Route>
 
             <Route
               path="/gallery"
@@ -160,7 +160,7 @@ function App() {
                 </>
               }
             ></Route>
-            {/* <Route
+            <Route
               path="/blog-details"
               element={
                 <>
@@ -168,7 +168,7 @@ function App() {
                   <BlogDetails />
                 </>
               }
-            ></Route> */}
+            ></Route>
 
             <Route
               path="/contact"
