@@ -10,39 +10,39 @@ const DoctorTeam = () => {
   const members = [
     {
       name: "Mike Dooley",
-      job: "Cardiology Specialist",
+      job: "Chairman",
       desc: "Muldoone obtained his undergraduate degree in Biomedical Engineering at Tulane University prior to attending St George's University School of Medicine",
-      img: "assets/images/team/1.jpg",
+      img: "/assets/images/team/1.jpg",
     },
     {
       name: "Dermatologists",
-      job: "Cardiology Specialist",
+      job: "Managing Director",
       desc: "Brian specializes in treating skin, hair, nail, and mucous membrane. He also address cosmetic issues, helping to revitalize the appearance of the skin",
-      img: "assets/images/team/2.jpg",
+      img: "/assets/images/team/2.jpg",
     },
     {
       name: "Maria Andaloro",
-      job: "Pediatrician",
+      job: "Director",
       desc: "Andaloro graduated from medical school and completed 3 years residency program in pediatrics. She passed rigorous exams by the American Board of Pediatrics.",
-      img: "assets/images/team/3.jpg",
+      img: "/assets/images/team/3.jpg",
     },
     {
       name: "Dupree Black",
-      job: "Urologist",
+      job: "Director",
       desc: "Black diagnose and treat diseases of the urinary tract in both men and women. He also diagnose and treat anything involving the reproductive tract in men.",
-      img: "assets/images/team/4.jpg",
+      img: "/assets/images/team/4.jpg",
     },
     {
       name: "Markus skar",
-      job: "Laboratory",
+      job: "Executive Director",
       desc: "Skar play a very important role in your health care. People working in the clinical laboratory are responsible for conducting tests that provide crucial information.",
-      img: "assets/images/team/5.jpg",
+      img: "/assets/images/team/5.jpg",
     },
     {
       name: "Kiano Barker",
-      job: "Pathologist",
+      job: "Executive Director",
       desc: "Barker help care for patients every day by providing their doctors with the information needed to ensure appropriate care. He also valuable resources for other physicians.",
-      img: "assets/images/team/6.jpg",
+      img: "/assets/images/team/6.jpg",
     },
   ];
 
@@ -53,11 +53,9 @@ const DoctorTeam = () => {
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
               <div className="heading text-center mb-40">
-                <h3 className="heading__title">Meet Our Doctors</h3>
+                <h3 className="heading__title">Meet Our Management Team</h3>
                 <p className="heading__desc">
-                  Our administration and support staff all have exceptional
-                  people skills and trained to assist you with all medical
-                  enquiries.
+                  Our Administration and Support Staff
                 </p>
               </div>
             </div>
@@ -99,7 +97,7 @@ const DoctorTeam = () => {
                         </h5>
                         <p className="member__job">{member.job}</p>
                         {/* <p className="member__desc">{member.desc}</p> */}
-                        <div className="mt-20 d-flex flex-wrap justify-content-between align-items-center">
+                        <div className="mt-20 flex-wrap justify-content-between align-items-center d-none">
                           <Link
                             to="#"
                             className="btn btn__secondary btn__link btn__rounded"

@@ -1,57 +1,18 @@
+import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styled from "styled-components";
 import { Autoplay } from "swiper/modules"; // ✅ use /modules
 import "swiper/css";
 // import "swiper/css/pagination";
 import { Link } from "react-router-dom";
+import servicesArray from "../../services.js";
 
 const Services = () => {
-  const services = [
-    {
-      icon: "icon-head",
-      title: "Neurology Clinic",
-      desc: "Some neurologists receive subspecialty training focusing on Link particular area of the fields, these training programs are called fellowships, and are one to two years.",
-      items: ["Neurocritical Care", "Neuro Oncology", "Geriatric Neurology"],
-    },
-    {
-      icon: "icon-heart",
-      title: "Cardiology Clinic",
-      desc: "All cardiologists study the disorders of the heart, but the study of adult and child heart disorders are trained to take care of small children and adult heart disease.",
-      items: ["Neurocritical Care", "Neuro Oncology", "Geriatric Neurology"],
-    },
-    {
-      icon: "icon-microscope",
-      title: "Pathology Clinic",
-      desc: "Pathology is the study of disease, it is the bridge between science and medicine. Also it underpins every aspect of patient care, from diagnostic testing and treatment.",
-      items: ["Surgical Pathology", "Histopathology", "Cytopathology"],
-    },
-    {
-      icon: "icon-dropper",
-      title: "Laboratory Analysis",
-      desc: "Analyzing the radon or radon progeny concentrations with passive devices, or the act of calibrating radon or radon progeny measurement devices.",
-      items: [
-        "Newborn Care",
-        "Umbilical Cord Appearance",
-        "Repositioning Techniques",
-      ],
-    },
-    {
-      icon: "icon-heart3",
-      title: "Pediatric Clinic",
-      desc: "Pediatric providers see patients from birth into early adulthood to make sure children achieve stay healthy. Our care includes preventive health checkups.",
-      items: ["Clinical laboratory", "Research Analyst", "Quality Assurance"],
-    },
-    {
-      icon: "icon-heart2",
-      title: "Cardiac Clinic",
-      desc: "For people requiring additional follow up, the Cardiac Clinic provides rapid access to professionals specialized in diagnosing and treating heart disease.",
-      items: [
-        "Macular degeneration",
-        "Diabetic retinopathy",
-        "Excessive tearing",
-      ],
-    },
-  ];
+  const [services, setServices] = useState([]);
+
+  useEffect(() => {
+    setServices(servicesArray);
+  }, []);
 
   return (
     <Wrapper style={{ paddingTop: "0", paddingBottom: "0" }}>
@@ -67,12 +28,7 @@ const Services = () => {
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
               <div className="heading text-center mb-60">
-                <h2 className="heading__subtitle">
-                  The Best Medical And General Practice Care!
-                </h2>
-                <h3 className="heading__title">
-                  Providing Medical Care For The Sickest In Our Community.
-                </h3>
+                <h3 className="heading__title">The Best Services We Offer</h3>
               </div>
             </div>
           </div>
@@ -103,16 +59,18 @@ const Services = () => {
               >
                 {services.map((service, index) => (
                   <SwiperSlide key={index}>
-                    <div className="service-item">
+                    <div className="service-item" style={{ height: "650px" }}>
                       <div className="service__icon">
                         <i className={service.icon}></i>
                         <i className={service.icon}></i>
                       </div>
                       <div className="service__content">
-                        <h4 className="service__title">{service.title}</h4>
-                        <p className="service__desc">{service.desc}</p>
+                        <h4 className="service__title fs-5">{service.title}</h4>
+                        <p className="service__desc">
+                          {service.desc.slice(0, 150)}...
+                        </p>
                         <ul className="list-items list-items-layout1 list-unstyled">
-                          {service.items.map((item, i) => (
+                          {service.list.map((item, i) => (
                             <li key={i}>{item}</li>
                           ))}
                         </ul>

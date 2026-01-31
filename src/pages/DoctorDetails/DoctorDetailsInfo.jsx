@@ -440,7 +440,7 @@ const DoctorDetailsInfo = () => {
 
             <section className="contact-layout4 bg-overlay bg-overlay-secondary-gradient pb-50 pb-50">
               <div className="bg-img">
-                <img src="assets/images/banners/3.jpg" alt="banner" />
+                <img src="/assets/images/banners/3.jpg" alt="banner" />
               </div>
               <div className="contact-panel mb-0">
                 <form className="contact-panel__form" id="contactForm">

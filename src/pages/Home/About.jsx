@@ -9,8 +9,7 @@ const About = () => {
           <div className="col-sm-12 col-md-12 col-lg-7 offset-lg-1">
             <div className="heading-layout2">
               <h3 className="heading__title mb-60">
-                Improving The Quality Of Your <br />
-                Life Through Better Health.
+                Compassionate Mental Health & Addiction Recovery Care
               </h3>
             </div>
           </div>
@@ -26,17 +25,17 @@ const About = () => {
 
               <div className="text__content">
                 <p className="heading__desc font-weight-bold color-secondary mb-30">
-                  Our goal is to deliver quality of care in Link courteous,
-                  respectful, and compassionate manner. We hope you will allow
-                  us to care for you and strive to be the first and best choice
-                  for healthcare.
+                  Unity Health Centre is a specialized mental health,
+                  psychiatric, and addiction treatment hospital committed to
+                  ethical care, confidentiality, and long-term recovery through
+                  evidence-based and holistic treatment approaches.
                 </p>
 
                 <Link
-                  to="/doctors-timetable"
+                  to="/appointment"
                   className="btn btn__secondary btn__rounded mb-70"
                 >
-                  <span>Find A Doctor</span>
+                  <span>Make Appointment</span>
                   <i className="icon-arrow-right"></i>
                 </Link>
               </div>
@@ -69,32 +68,28 @@ const About = () => {
           <div className="col-sm-12 col-md-12 col-lg-7">
             <div className="about__text bg-white">
               <p className="heading__desc mb-30">
-                Our goal is to deliver quality of care in Link courteous,
-                respectful, and compassionate manner. We hope you will allow us
-                to care for you and to be the first and best choice for
-                healthcare.
+                Unity Health Centre is a professional mental health and
+                addiction treatment hospital dedicated to ethical care,
+                confidentiality, and long-term recovery. Our experienced team
+                ensures compassionate treatment following international
+                standards.
               </p>
 
               <p className="heading__desc mb-30">
-                We will work with you to develop individualised care plans,
-                including management of chronic diseases. We are committed to
-                being the region’s premier healthcare network providing patient
-                centered care that inspires clinical and service excellence.
+                Unity Health Centre provides comprehensive psychiatric care,
+                addiction rehabilitation, and psychological counseling in a safe
+                and supportive environment. Our multidisciplinary team ensures
+                personalized treatment plans for every patient, promoting
+                dignity, healing, and sustainable recovery.
               </p>
 
               <ul className="list-items list-unstyled">
-                <li>
-                  We conduct Link range of tests to help us work out why you're
-                  not feeling well and determine the right treatment for you.
-                </li>
-                <li>
-                  Our expert doctors, nurses and allied health professionals
-                  manage patients with Link broad range of medical issues.
-                </li>
-                <li>
-                  We offer Link wide range of care and support to our patients,
-                  from diagnosis to treatment and rehabilitation.
-                </li>
+                <li>Experienced Psychiatrists & Specialists</li>
+                <li>Evidence-Based Treatment Protocols</li>
+                <li>Separate & Secure Units</li>
+                <li>Confidential & Ethical Care</li>
+                <li>Affordable Treatment Packages</li>
+                <li>Family-Centered Recovery Approach</li>
               </ul>
             </div>
           </div>

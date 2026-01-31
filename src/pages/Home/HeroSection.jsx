@@ -12,24 +12,24 @@ import "swiper/css/effect-fade";
 const slides = [
   {
     image: "/assets/images/sliders/1.jpg",
-    title: "Providing Best Medical Care",
-    desc: "The health and well-being of our patients and their care team will always be our priority, so we follow best practices for cleanliness.",
+    title: "Compassionate Mental Health Care",
+    desc: "The health and recovery of our patients and their families will always be our priority, so we follow ethical and evidence-based treatment practices.",
     features: [
-      { icon: "icon-heart", title: "Examination" },
-      { icon: "icon-medicine", title: "Prescription" },
-      { icon: "icon-heart2", title: "Cardiogram" },
-      { icon: "icon-blood-test", title: "Blood Pressure" },
+      { icon: "icon-heart", title: "Psychiatry" },
+      { icon: "icon-medicine", title: "Medication" },
+      { icon: "icon-heart2", title: "Therapy" },
+      { icon: "icon-blood-test", title: "Wellness" },
     ],
   },
   {
     image: "/assets/images/sliders/2.jpg",
-    title: "All Aspects Of Medical Practice",
-    desc: "The health and well-being of our patients and their care team will always be our priority, so we follow best practices for cleanliness.",
+    title: "Complete Psychiatric Treatment",
+    desc: "The health and recovery of our patients and their families will always be our priority, so we ensure safe, confidential, and supportive care.",
     features: [
-      { icon: "icon-heart", title: "Examination" },
-      { icon: "icon-medicine", title: "Prescription" },
-      { icon: "icon-heart2", title: "Cardiogram" },
-      { icon: "icon-blood-test", title: "Blood Pressure" },
+      { icon: "icon-heart", title: "Addiction" },
+      { icon: "icon-medicine", title: "Counseling" },
+      { icon: "icon-heart2", title: "Recovery" },
+      { icon: "icon-blood-test", title: "Support" },
     ],
   },
 ];
@@ -63,7 +63,7 @@ const HeroSection = () => {
                   <div className="row align-items-center">
                     <div className="col-xl-7 col-lg-12 col-md-12 col-sm-12">
                       <div className="slide__content">
-                        <h2 className="slide__title">{slide.title}</h2>
+                        <h2 className="slide__title fs-1">{slide.title}</h2>
                         <p className="slide__desc">{slide.desc}</p>
                         <ul className="features-list list-unstyled mb-0 d-flex flex-wrap">
                           {slide.features.map((feature, i) => (

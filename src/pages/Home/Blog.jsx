@@ -1,60 +1,16 @@
-
-
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-
 import "swiper/css";
+import blogsArray from "../../blogs.js";
 
 const Blog = () => {
-  const posts = [
-    {
-      id: 1,
-      image: "assets/images/blog/grid/1.jpg",
-      category: ["Mental Health"],
-      date: "Jan 30, 2022",
-      author: "Martin King",
-      title: "6 Tips to Protect Your Mental Health When You’re Sick",
-      desc: "It’s normal to feel anxiety, worry and grief any time you’re diagnosed with a condition...",
-    },
-    {
-      id: 2,
-      image: "assets/images/blog/grid/2.jpg",
-      category: ["Infectious", "Tips"],
-      date: "Jan 30, 2022",
-      author: "John Ezak",
-      title: "Unsure About Wearing a Face Mask? Here’s How and Why",
-      desc: "That means that you should still be following any shelter-in-place orders...",
-    },
-    {
-      id: 3,
-      image: "assets/images/blog/grid/3.jpg",
-      category: ["Life Style", "Nutrition"],
-      date: "Jan 28, 2022",
-      author: "Saul Wade",
-      title: "Tips for Eating Healthy When You’re Working From Home",
-      desc: "It’s normal to feel anxiety, worry and grief any time you’re diagnosed...",
-    },
-    {
-      id: 4,
-      image: "assets/images/blog/grid/2.jpg",
-      category: ["Infectious", "Tips"],
-      date: "Jan 30, 2022",
-      author: "John Ezak",
-      title: "Unsure About Wearing a Face Mask? Here’s How and Why",
-      desc: "That means that you should still be following any shelter-in-place orders...",
-    },
-    {
-      id: 5,
-      image: "assets/images/blog/grid/2.jpg",
-      category: ["Infectious", "Tips"],
-      date: "Jan 30, 2022",
-      author: "John Ezak",
-      title: "Unsure About Wearing a Face Mask? Here’s How and Why",
-      desc: "That means that you should still be following any shelter-in-place orders...",
-    },
-  ];
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+    setBlogs(blogsArray);
+  }, []);
 
   return (
     <section className="blog-grid pb-50">
@@ -63,8 +19,7 @@ const Blog = () => {
         <div className="row">
           <div className="col-lg-6 offset-lg-3">
             <div className="heading text-center mb-40">
-              <h2 className="heading__subtitle">Resource Library</h2>
-              <h3 className="heading__title">Recent Articles</h3>
+              <h3 className="heading__title">LATEST BLOGS</h3>
             </div>
           </div>
         </div>
@@ -84,18 +39,18 @@ const Blog = () => {
             1024: { slidesPerView: 3 },
           }}
         >
-          {posts.map((post) => (
+          {blogs.map((post) => (
             <SwiperSlide key={post.id}>
-              <div className="post-item">
+              <div className="post-item" style={{ height: "650px" }}>
                 <div className="post__img">
                   <Link to="/blog-details">
-                    <img src={post.image} alt={post.title} loading="lazy" />
+                    <img src={post.img} alt={post.title} loading="lazy" />
                   </Link>
                 </div>
 
                 <div className="post__body">
                   <div className="post__meta-cat">
-                    {post.category.map((cat, index) => (
+                    {post.categories.map((cat, index) => (
                       <Link key={index} to="#">
                         {cat}
                       </Link>

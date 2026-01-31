@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ContactForm = () => {
   return (
-    <section className="contact-layout2 pt-0">
+    <section className="contact-layout2">
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -159,7 +159,7 @@ const ContactForm = () => {
                     </li>
                     <li>
                       <i className="icon-clock"></i>
-                      <Link to="/contact">SAT - THU : 8:00 am - 10:00 pm</Link>
+                      <Link to="#">SAT - THU : 8:00 am - 10:00 pm</Link>
                     </li>
                   </ul>
 

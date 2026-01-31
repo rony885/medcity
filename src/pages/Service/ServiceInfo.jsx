@@ -1,56 +1,14 @@
-
-
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import servicesArray from "../../services.js";
 
 const ServiceInfo = () => {
-  const services = [
-    {
-      icon: "icon-head",
-      title: "Neurology Clinic",
-      desc: "Some neurologists receive subspecialty training focusing on a particular area of the fields, these training programs are called fellowships, and are one to two years.",
-      list: ["Neurocritical Care", "Neuro Oncology", "Geriatric Neurology"],
-    },
-    {
-      icon: "icon-heart",
-      title: "Cardiology Clinic",
-      desc: "All cardiologists study the disorders of the heart, but the study of adult and child heart disorders are trained to take care of small children and adult heart disease.",
-      list: ["Neurocritical Care", "Neuro Oncology", "Geriatric Neurology"],
-    },
-    {
-      icon: "icon-microscope",
-      title: "Pathology Clinic",
-      desc: "Pathology is the study of disease, it is the bridge between science and medicine. Also it underpins every aspect of patient care.",
-      list: ["Surgical Pathology", "Histopathology", "Cytopathology"],
-    },
-    {
-      icon: "icon-dropper",
-      title: "Laboratory Analysis",
-      desc: "Analyzing the radon or radon progeny concentrations with passive devices, or calibrating radon measurement devices.",
-      list: [
-        "Newborn Care",
-        "Umbilical Cord Appearance",
-        "Repositioning Techniques",
-      ],
-    },
-    {
-      icon: "icon-heart3",
-      title: "Pediatric Clinic",
-      desc: "Pediatric providers see patients from birth into early adulthood to make sure children stay healthy.",
-      list: ["Clinical laboratory", "Research Analyst", "Quality Assurance"],
-    },
-    {
-      icon: "icon-heart2",
-      title: "Cardiac Clinic",
-      desc: "The Cardiac Clinic provides rapid access to professionals specialized in diagnosing and treating heart disease.",
-      list: [
-        "Macular degeneration",
-        "Diabetic retinopathy",
-        "Excessive tearing",
-      ],
-    },
-  ];
+  const [services, setServices] = useState([]);
+
+  useEffect(() => {
+    setServices(servicesArray);
+  }, []);
 
   return (
     <Wrapper style={{ paddingTop: "0", paddingBottom: "0" }}>
@@ -65,14 +23,14 @@ const ServiceInfo = () => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <h1 className="pagetitle__heading">Our Service</h1>
+              <h1 className="pagetitle__heading">Services</h1>
               <nav>
                 <ol className="breadcrumb mb-0">
                   <li className="breadcrumb-item">
                     <Link to="/">Home</Link>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
-                    Service
+                    Services
                   </li>
                 </ol>
               </nav>
@@ -82,7 +40,7 @@ const ServiceInfo = () => {
       </section>
 
       <section
-        className="services-layout1 pt-130"
+        className="services-layout1"
         style={{
           backgroundImage: 'url("/assets/images/backgrounds/2.jpg")',
           backgroundSize: "cover",
@@ -91,14 +49,12 @@ const ServiceInfo = () => {
       >
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 offset-lg-3">
-              <div className="heading text-center mb-60">
-                <h2 className="heading__subtitle">
-                  The Best Medical And General Practice Care!
-                </h2>
-                <h3 className="heading__title">
-                  Providing Medical Care For The Sickest In Our Community.
-                </h3>
+            <div className="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+              <div className="heading text-center mb-40">
+                <h3 className="heading__title">Our Services</h3>
+                <p className="heading__desc">
+                  Explore The Best Services We Offer
+                </p>
               </div>
             </div>
           </div>
@@ -106,15 +62,17 @@ const ServiceInfo = () => {
           <div className="row">
             {services.map((item, index) => (
               <div className="col-sm-12 col-md-6 col-lg-4" key={index}>
-                <div className="service-item">
+                <div className="service-item" style={{ height: "650px" }}>
                   <div className="service__icon">
                     <i className={item.icon}></i>
                     <i className={item.icon}></i>
                   </div>
 
                   <div className="service__content">
-                    <h4 className="service__title">{item.title}</h4>
-                    <p className="service__desc">{item.desc}</p>
+                    <h4 className="service__title fs-5">{item.title}</h4>
+                    <p className="service__desc">
+                      {item.desc.slice(0, 150)}...
+                    </p>
 
                     <ul className="list-items list-items-layout1 list-unstyled">
                       {item.list.map((li, i) => (
@@ -122,13 +80,13 @@ const ServiceInfo = () => {
                       ))}
                     </ul>
 
-                    <a
-                      href="services-single.html"
+                    <Link
+                      to="/service-details"
                       className="btn btn__secondary btn__outlined btn__rounded"
                     >
                       <span>Read More</span>
                       <i className="icon-arrow-right"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

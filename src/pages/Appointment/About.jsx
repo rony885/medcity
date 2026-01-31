@@ -9,7 +9,7 @@ const About = () => {
           <div className="col-sm-12 col-md-12 col-lg-5">
             <div className="heading-layout2">
               <h3 className="heading__title mb-80">
-                Helping Patients From Around the Globe!!
+                Compassionate Mental Health Care
               </h3>
             </div>
 
@@ -22,7 +22,7 @@ const About = () => {
                 </div>
                 <div className="tooltip__panel">
                   <p className="tooltip__title mb-0">
-                    2307 Beverley Rd Brooklyn, New York 11226 U.S.
+                    Near Circuit House, Gaital, Kishoreganj, Bangladesh
                   </p>
                 </div>
               </div>
@@ -33,7 +33,7 @@ const About = () => {
                 </div>
                 <div className="tooltip__panel">
                   <p className="tooltip__title mb-0">
-                    2307 Beverley Rd Brooklyn, New York 11226 U.S.
+                    Near Circuit House, Gaital, Kishoreganj, Bangladesh
                   </p>
                 </div>
               </div>
@@ -44,7 +44,7 @@ const About = () => {
                 </div>
                 <div className="tooltip__panel">
                   <p className="tooltip__title mb-0">
-                    2307 Beverley Rd Brooklyn, New York 11226 U.S.
+                    Near Circuit House, Gaital, Kishoreganj, Bangladesh
                   </p>
                 </div>
               </div>
@@ -53,32 +53,29 @@ const About = () => {
 
           <div className="col-sm-12 col-md-12 col-lg-6 offset-lg-1">
             <p className="heading__desc color-secondary font-weight-bold mb-30">
-              We will work with you to develop individualised care plans,
-              management of chronic diseases. If we cannot assist, we can
-              provide referrals or advice about the type of practitioner you
-              require.
+              We work closely with patients to develop personalized psychiatric
+              and addiction treatment plans. When needed, we also guide families
+              with referrals and continued care support.
             </p>
 
             <p className="heading__desc mb-30">
-              We are committed to being the region’s premier healthcare network
-              by providing patient-centered care that inspires clinical and
-              service excellence, making us the first and best choice for our
-              patients, employees, physicians, employers, volunteers and
-              communities. We serve the community by improving the quality of
-              life through better health.
+              Unity Health Centre is committed to providing ethical,
+              confidential, and patient-centered mental healthcare. Our goal is
+              to promote healing, dignity, and long-term recovery through
+              evidence-based treatment and compassionate support.
             </p>
 
             <div className="d-flex align-items-center mb-60">
               <Link
-                to="/contact-us"
+                to="/contact"
                 className="btn btn__secondary btn__rounded mr-30"
               >
                 <i className="fas fa-heart"></i>
-                <span> Make A Gift</span>
+                <span> Get Support</span>
               </Link>
 
               <Link
-                to="/contact-us"
+                to="/about"
                 className="btn btn__secondary btn__outlined btn__rounded mr-30"
               >
                 More About Us
@@ -87,16 +84,16 @@ const About = () => {
 
             <ul className="list-items list-items-layout3 list-unstyled">
               <li>
-                We conduct Link range of tests to help us work out why you're
-                not feeling well and determine the right treatment for you.
+                We conduct comprehensive psychiatric assessments to understand
+                mental health conditions and treatment needs.
               </li>
               <li>
-                Our expert doctors, nurses and allied health professionals
-                manage patients with Link broad range of medical issues.
+                Our experienced psychiatrists, psychologists, and care staff
+                manage a wide range of mental health and addiction disorders.
               </li>
               <li>
-                We offer Link wide range of care and support to our patients,
-                from diagnosis to treatment and rehabilitation.
+                We provide continuous care and rehabilitation support, from
+                diagnosis to recovery and relapse prevention.
               </li>
             </ul>
           </div>

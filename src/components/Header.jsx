@@ -60,9 +60,7 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
 
                   <li>
                     <i className="icon-phone"></i>
-                    <Link to="tel:01936209467">
-                       01936209467
-                    </Link>
+                    <Link to="tel:01936209467">01936209467</Link>
                   </li>
                   <li>
                     <i className="icon-location"></i>
@@ -70,7 +68,7 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
                   </li>
                   <li>
                     <i className="icon-clock"></i>
-                    <Link to="/contact-us">SAT - THU : 8:00 am - 10:00 pm</Link>
+                    <Link to="#">SAT - THU : 8:00 am - 10:00 pm</Link>
                   </li>
                 </ul>
 
@@ -114,15 +112,11 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             <img
-              src="/assets/images/logo/logo-light.png"
+              src="/images/logo_light.png"
               className="logo-light"
               alt="logo"
             />
-            <img
-              src="/assets/images/logo/logo-dark.png"
-              className="logo-dark"
-              alt="logo"
-            />
+            <img src="/images/logo_main.png" className="logo-dark" alt="logo" />
           </Link>
           <button className="navbar-toggler" type="button" onClick={toggleMenu}>
             <span className="menu-lines">

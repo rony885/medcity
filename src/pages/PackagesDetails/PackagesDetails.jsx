@@ -43,7 +43,7 @@ const PackagesDetails = () => {
                 <div className="widget widget-member">
                   <div className="member mb-0">
                     <div className="member__img">
-                      <img src="assets/images/team/2.jpg" alt="member img" />
+                      <img src="/assets/images/team/2.jpg" alt="member img" />
                     </div>
 
                     <div className="member__info">
@@ -81,7 +81,7 @@ const PackagesDetails = () => {
 
                 <div className="widget widget-help bg-overlay bg-overlay-primary-gradient">
                   <div className="bg-img">
-                    <img src="assets/images/banners/5.jpg" alt="background" />
+                    <img src="/assets/images/banners/5.jpg" alt="background" />
                   </div>
                   <div className="widget-content">
                     <div className="widget__icon">
@@ -479,7 +479,7 @@ const PackagesDetails = () => {
 
               <section className="contact-layout4 bg-overlay bg-overlay-secondary-gradient pb-50 pb-50">
                 <div className="bg-img">
-                  <img src="assets/images/banners/3.jpg" alt="banner" />
+                  <img src="/assets/images/banners/3.jpg" alt="banner" />
                 </div>
                 <div className="contact-panel mb-0">
                   <form className="contact-panel__form" id="contactForm">

@@ -65,11 +65,14 @@ const ContactForm = () => {
                   <div className="col-sm-6 col-md-6 col-lg-6">
                     <div className="form-group">
                       <i className="icon-news form-group-icon"></i>
-                      <select className="form-control" defaultValue="0">
-                        <option value="0">Subject</option>
-                        <option value="1">Subject 1</option>
-                        <option value="2">Subject 2</option>
-                      </select>
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Subject"
+                        id="contact-subject"
+                        name="contact-subject"
+                        required
+                      />
                     </div>
                   </div>
 
@@ -98,7 +101,7 @@ const ContactForm = () => {
               {/* Contact Info Panel */}
               <div className="contact-panel__info d-flex flex-column justify-content-between bg-overlay bg-overlay-primary-gradient">
                 <div className="bg-img">
-                  <img src="assets/images/banners/1.jpg" alt="banner" />
+                  <img src="/assets/images/banners/1.jpg" alt="banner" />
                 </div>
                 <div>
                   <h4 className="contact-panel__title color-white">
@@ -133,7 +136,7 @@ const ContactForm = () => {
                     </li>
                     <li>
                       <i className="icon-clock"></i>
-                      <Link to="/contact">SAT - THU : 8:00 am - 10:00 pm</Link>
+                      <Link to="#">SAT - THU : 8:00 am - 10:00 pm</Link>
                     </li>
                   </ul>
                 </div>

@@ -4,7 +4,7 @@ import About from "./About";
 import ContactInfo from "./ContactInfo";
 import Services from "./Services";
 import DoctorTeam from "./DoctorTeam";
-import Notses from "./Notses";
+import BookingForm from "./BookingForm";
 import Blog from "./Blog";
 import Packages from "./Packages";
 import Testimonials from "./Testimonials";
@@ -17,7 +17,7 @@ const Home = () => {
       <About />
       <Packages />
       <Services />
-      <Notses />
+      <BookingForm />
       <DoctorTeam />
       <Testimonials />
       <Blog />

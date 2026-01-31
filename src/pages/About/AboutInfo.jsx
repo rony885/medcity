@@ -22,7 +22,7 @@ const AboutInfo = () => {
                     <Link to="/">Home</Link>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
-                    About
+                    About Us
                   </li>
                 </ol>
               </nav>
@@ -37,7 +37,7 @@ const AboutInfo = () => {
             <div className="col-sm-12 col-md-12 col-lg-6">
               <div className="heading-layout2">
                 <h3 className="heading__title mb-40">
-                  Improving The Quality Of Your Life Through Better Health.
+                  Compassionate Mental Health & Addiction Recovery Care
                 </h3>
               </div>
             </div>
@@ -46,37 +46,51 @@ const AboutInfo = () => {
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-6">
               <div className="about__Text">
-                <p className="mb-30">
-                  Our goal is to deliver quality of care in Link courteous,
-                  respectful, and compassionate manner. We hope you will allow
-                  us to care for you and to be the first and best choice for
-                  healthcare.
+                <p className="mb-30 text-justify">
+                  Unity Health Centre is a specialized mental health,
+                  psychiatric, and addiction treatment hospital committed to
+                  ethical care, confidentiality, and long-term recovery through
+                  evidence-based and holistic treatment approaches.
                 </p>
-                <p className="mb-30">
-                  We will work with you to develop individualised care plans,
-                  including management of chronic diseases. We are committed to
-                  being the region’s premier healthcare network providing
-                  patient centered care that inspires clinical and service
-                  excellence.
+                <p className="mb-30 text-justify">
+                  Unity Health Centre is a professional mental health and
+                  addiction treatment hospital dedicated to ethical care,
+                  confidentiality, and long-term recovery. Our experienced team
+                  ensures compassionate treatment following international
+                  standards.
+                </p>
+                <p className="mb-30 text-justify">
+                  Unity Health Centre provides comprehensive psychiatric care,
+                  addiction rehabilitation, and psychological counseling in a
+                  safe and supportive environment. Our multidisciplinary team
+                  ensures personalized treatment plans for every patient,
+                  promoting dignity, healing, and sustainable recovery.
                 </p>
                 <div className="d-flex align-items-center mb-30">
                   <Link
-                    to="/doctors-grid"
+                    to="/doctors"
                     className="btn btn__primary btn__outlined btn__rounded mr-30"
                   >
-                    Meet Our Doctors
+                    Meet Our Consultants
                   </Link>
-                  <img
+                  {/* <img
                     src="/assets/images/about/singnture.png"
                     alt="singnture"
-                  />
+                  /> */}
+                  <Link
+                    to="/appointment"
+                    className="btn btn__primary btn__rounded mr-30"
+                  >
+                    <span>Make Appointment</span>
+                    <i className="icon-arrow-right"></i>
+                  </Link>
                 </div>
               </div>
             </div>
 
             <div className="col-sm-12 col-md-12 col-lg-6">
               <div className="video-banner">
-                <img src="assets/images/about/1.jpg" alt="about" />
+                <img src="/assets/images/about/1.jpg" alt="about" />
                 <Link
                   className="video__btn video__btn-white popup-video"
                   to="https://www.youtube.com/watch?v=nrJtHemSPW4"

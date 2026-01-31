@@ -20,7 +20,7 @@ const Gallery = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <Wrapper style={{ marginTop: "0", paddingTop: "0" }}>
+    <Wrapper style={{ marginTop: "0", paddingTop: "50px" }}>
       <section className="gallery pt-0 pb-0">
         <div className="container">
           <div className="row">

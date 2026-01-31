@@ -1,7 +1,6 @@
 import React from "react";
 import PackageInfo from "./PackageInfo";
 import BookingForm from "./BookingFrom";
-import Testimonials from "./Testimonials";
 import Gallery from "./Gallery";
 
 const Package = () => {
@@ -9,7 +8,6 @@ const Package = () => {
     <div>
       <PackageInfo />
       <BookingForm />
-      <Testimonials />
       <Gallery />
     </div>
   );

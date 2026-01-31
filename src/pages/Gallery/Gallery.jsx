@@ -9,12 +9,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const galleryImages = [
-  { id: 1, img: "assets/images/gallery/1.jpg", name: "Mike Dooley" },
-  { id: 2, img: "assets/images/gallery/2.jpg", name: "Sarah Johnson" },
-  { id: 3, img: "assets/images/gallery/3.jpg", name: "David Smith" },
-  { id: 4, img: "assets/images/gallery/4.jpg", name: "Emma Wilson" },
-  { id: 5, img: "assets/images/gallery/5.jpg", name: "John Carter" },
-  { id: 6, img: "assets/images/gallery/6.jpg", name: "Olivia Brown" },
+  { id: 1, img: "/assets/images/gallery/1.jpg", name: "Reception Area" },
+  { id: 2, img: "/assets/images/gallery/2.jpg", name: "Consultation Room" },
+  { id: 3, img: "/assets/images/gallery/3.jpg", name: "Patient Room" },
+  { id: 4, img: "/assets/images/gallery/4.jpg", name: "Therapy Room" },
+  { id: 5, img: "/assets/images/gallery/5.jpg", name: "Outdoor Area" },
+  { id: 6, img: "/assets/images/gallery/6.jpg", name: "Reception Area" },
 ];
 
 const Gallery = () => {
@@ -27,7 +27,7 @@ const Gallery = () => {
   };
 
   return (
-    <Wrapper style={{ paddingTop: "0", paddingBottom: "0" }}>
+    <>
       <section
         className="page-title page-title-layout5 bg-overlay bg-img"
         style={{
@@ -49,58 +49,77 @@ const Gallery = () => {
         </div>
       </section>
 
-      <section className="gallery-layout2 pt-130 pb-90">
-        <div className="container">
-          <div className="row">
-            {galleryImages.map(({ id, img, name }, index) => (
-              <div className="col-sm-6 col-md-4 col-lg-4" key={id}>
-                <div className="gallery-card">
-                  <div className="gallery-img" onClick={() => openPopup(index)}>
-                    <span className="popup-gallery-item">
-                      <i className="fas fa-eye text-dark"></i>
-                    </span>
-                    <img src={img} alt={`Gallery ${id}`} />
-                  </div>
-
-                  <h5 className="member__name">
-                    <Link to="#" className="text-dark">
-                      {name}
-                    </Link>
-                  </h5>
+      <Wrapper>
+        <section className="gallery-layout2">
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+                <div className="heading text-center mb-40">
+                  <h3 className="heading__title">Our Gallery</h3>
+                  <p className="heading__desc">
+                    Explore Our Images, Videos & Clients
+                  </p>
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
+            </div>
 
-        {/* Popup Slider */}
-        {isOpen && (
-          <div className="popup-overlay">
-            <button className="popup-close" onClick={() => setIsOpen(false)}>
-              ×
-            </button>
+            <div className="row">
+              {galleryImages.map(({ id, img, name }, index) => (
+                <div className="col-sm-6 col-md-4 col-lg-4" key={id}>
+                  <div className="gallery-card">
+                    <div
+                      className="gallery-img"
+                      onClick={() => openPopup(index)}
+                    >
+                      <span className="popup-gallery-item">
+                        <i className="fas fa-eye text-dark"></i>
+                      </span>
+                      <img src={img} alt={`Gallery ${id}`} />
+                    </div>
 
-            <Swiper
-              modules={[Navigation]}
-              navigation
-              initialSlide={activeIndex}
-              slidesPerView={1}
-              className="popup-swiper"
-            >
-              {galleryImages.map(({ img, name }, index) => (
-                <SwiperSlide key={index}>
-                  <img src={img} alt={name} className="popup-img" />
-                </SwiperSlide>
+                    <h5 className="member__name">
+                      <Link to="#" className="text-dark">
+                        {name}
+                      </Link>
+                    </h5>
+                  </div>
+                </div>
               ))}
-            </Swiper>
+            </div>
           </div>
-        )}
-      </section>
-    </Wrapper>
+
+          {/* Popup Slider */}
+          {isOpen && (
+            <div className="popup-overlay">
+              <button className="popup-close" onClick={() => setIsOpen(false)}>
+                ×
+              </button>
+
+              <Swiper
+                modules={[Navigation]}
+                navigation
+                initialSlide={activeIndex}
+                slidesPerView={1}
+                className="popup-swiper"
+              >
+                {galleryImages.map(({ img, name }, index) => (
+                  <SwiperSlide key={index}>
+                    <img src={img} alt={name} className="popup-img" />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          )}
+        </section>
+      </Wrapper>
+    </>
   );
 };
 
 const Wrapper = styled.section`
+  padding-top: 0px;
+  padding-bottom: 0px;
+
   .gallery-card {
     margin-bottom: 30px;
     text-align: center;

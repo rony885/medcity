@@ -7,16 +7,14 @@ const WorkProcess = () => {
     {
       number: "01",
       icon: "icon-health-report",
-      title: "Fill In Our Medical Application",
-      desc: "Medcity offers low-cost health coverage for adults with limited income, you can enroll.",
-      btnText: "Doctors’ Timetable",
+      title: "Mission",
+      desc: "To become a benchmark of excellence in mental healthcare. To provide affordable, ethical, and patient-centric service. To ensure long-term recovery and relapse prevention",
     },
     {
       number: "02",
       icon: "icon-dna",
-      title: "Review Your Family Medical History",
-      desc: "Regular health exams can help find all the problems, also can find it early chances.",
-      btnText: "Start A Check Up",
+      title: "Vision",
+      desc: "To be recognized as one of the most trusted mental health and rehabilitation centres in Bangladesh, delivering world-class care with compassion and integrity.",
     },
   ];
 
@@ -47,31 +45,6 @@ const WorkProcess = () => {
             </div>
           </div>
 
-          {/* Process Cards */}
-          {/* <div className="row mt-90">
-            {processSteps.map((step, idx) => (
-              <div
-                key={idx}
-                className="col-12 col-md-6 col-lg-4 col-xl-3 mb-4"
-              >
-                <div className="process-item h-100">
-                  <span className="process__number">{step.number}</span>
-
-                  <div className="process__icon">
-                    <i className={step.icon}></i>
-                  </div>
-
-                  <h4 className="process__title">{step.title}</h4>
-                  <p className="process__desc">{step.desc}</p>
-
-                  <Link to="#" className="btn btn__secondary btn__link">
-                    <span>{step.btnText}</span>
-                    <i className="icon-arrow-right"></i>
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div> */}
           <div className="row mt-90">
             {processSteps.map((step, idx) => (
               <div key={idx} className="col-12 col-md-6 mb-4">
@@ -84,11 +57,6 @@ const WorkProcess = () => {
 
                   <h4 className="process__title">{step.title}</h4>
                   <p className="process__desc">{step.desc}</p>
-
-                  <Link to="#" className="btn btn__secondary btn__link">
-                    <span>{step.btnText}</span>
-                    <i className="icon-arrow-right"></i>
-                  </Link>
                 </div>
               </div>
             ))}
@@ -117,10 +85,10 @@ const WorkProcess = () => {
 
               <div className="col-md-3">
                 <Link
-                  to="/appointment"
+                  to="/packages"
                   className="btn btn__secondary btn__secondary-style2 btn__rounded"
                 >
-                  <span>Healthcare Programs</span>
+                  <span>Our Packages</span>
                   <i className="icon-arrow-right"></i>
                 </Link>
               </div>
@@ -133,6 +101,9 @@ const WorkProcess = () => {
 };
 
 const Wrapper = styled.section`
+  padding-top: 0px;
+  padding-bottom: 0px;
+
   .process-item {
     height: 100%;
   }

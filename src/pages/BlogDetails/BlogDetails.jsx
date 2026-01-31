@@ -39,7 +39,7 @@ const BlogDetails = () => {
                 <div className="post__img">
                   <Link to="#">
                     <img
-                      src="assets/images/blog/single/1.jpg"
+                      src="/assets/images/blog/single/1.jpg"
                       alt="post imagee"
                       loading="lazy"
                     />
@@ -147,7 +147,7 @@ const BlogDetails = () => {
               <div className="widget-nav d-flex justify-content-between mb-40">
                 <Link to="#" className="widget-nav__prev d-flex flex-wrap">
                   <div className="widget-nav__img">
-                    <img src="assets/images/blog/grid/2.jpg" alt="blog thumb" />
+                    <img src="/assets/images/blog/grid/2.jpg" alt="blog thumb" />
                   </div>
                   <div className="widget-nav__content">
                     <span>Previous Post</span>
@@ -158,7 +158,7 @@ const BlogDetails = () => {
                 </Link>
                 <Link to="#" className="widget-nav__next d-flex flex-wrap">
                   <div className="widget-nav__img">
-                    <img src="assets/images/blog/grid/3.jpg" alt="blog thumb" />
+                    <img src="/assets/images/blog/grid/3.jpg" alt="blog thumb" />
                   </div>
                   <div className="widget-nav__content">
                     <span>Next Post</span>
@@ -170,7 +170,7 @@ const BlogDetails = () => {
               </div>
               <div className="blog-author d-flex flex-wrap mb-70">
                 <div className="blog-author__avatar">
-                  <img src="assets/images/blog/author/1.jpg" alt="avatar" />
+                  <img src="/assets/images/blog/author/1.jpg" alt="avatar" />
                 </div>
 
                 <div className="blog-author__content">
@@ -210,7 +210,7 @@ const BlogDetails = () => {
                 <ul className="comments-list list-unstyled">
                   <li className="comment__item">
                     <div className="comment__avatar">
-                      <img src="assets/images/blog/author/2.jpg" alt="avatar" />
+                      <img src="/assets/images/blog/author/2.jpg" alt="avatar" />
                     </div>
                     <div className="comment__content">
                       <h5 className="comment__author">Richard Muldoone</h5>
@@ -232,7 +232,7 @@ const BlogDetails = () => {
                       <li className="comment__item">
                         <div className="comment__avatar">
                           <img
-                            src="assets/images/blog/author/3.jpg"
+                            src="/assets/images/blog/author/3.jpg"
                             alt="avatar"
                           />
                         </div>
@@ -341,7 +341,7 @@ const BlogDetails = () => {
                       <div className="widget-post__img">
                         <Link to="#">
                           <img
-                            src="assets/images/blog/grid/2.jpg"
+                            src="/assets/images/blog/grid/2.jpg"
                             alt="thumb"
                           />
                         </Link>
@@ -361,7 +361,7 @@ const BlogDetails = () => {
                       <div className="widget-post__img">
                         <Link to="#">
                           <img
-                            src="assets/images/blog/grid/3.jpg"
+                            src="/assets/images/blog/grid/3.jpg"
                             alt="thumb"
                           />
                         </Link>
@@ -381,7 +381,7 @@ const BlogDetails = () => {
                       <div className="widget-post__img">
                         <Link to="#">
                           <img
-                            src="assets/images/blog/grid/6.jpg"
+                            src="/assets/images/blog/grid/6.jpg"
                             alt="thumb"
                           />
                         </Link>

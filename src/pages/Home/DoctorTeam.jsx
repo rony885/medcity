@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -6,46 +6,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules"; // ✅ v11+
 import "swiper/css";
 import "swiper/css/navigation";
+import doctorsArray from "../../doctors.js";
 
 const DoctorTeam = () => {
-  const members = [
-    {
-      name: "Mike Dooley",
-      job: "Cardiology Specialist",
-      desc: "Muldoone obtained his undergraduate degree in Biomedical Engineering at Tulane University prior to attending St George's University School of Medicine",
-      img: "assets/images/team/1.jpg",
-    },
-    {
-      name: "Dermatologists",
-      job: "Cardiology Specialist",
-      desc: "Brian specializes in treating skin, hair, nail, and mucous membrane. He also address cosmetic issues, helping to revitalize the appearance of the skin",
-      img: "assets/images/team/2.jpg",
-    },
-    {
-      name: "Maria Andaloro",
-      job: "Pediatrician",
-      desc: "Andaloro graduated from medical school and completed 3 years residency program in pediatrics. She passed rigorous exams by the American Board of Pediatrics.",
-      img: "assets/images/team/3.jpg",
-    },
-    {
-      name: "Dupree Black",
-      job: "Urologist",
-      desc: "Black diagnose and treat diseases of the urinary tract in both men and women. He also diagnose and treat anything involving the reproductive tract in men.",
-      img: "assets/images/team/4.jpg",
-    },
-    {
-      name: "Markus skar",
-      job: "Laboratory",
-      desc: "Skar play a very important role in your health care. People working in the clinical laboratory are responsible for conducting tests that provide crucial information.",
-      img: "assets/images/team/5.jpg",
-    },
-    {
-      name: "Kiano Barker",
-      job: "Pathologist",
-      desc: "Barker help care for patients every day by providing their doctors with the information needed to ensure appropriate care. He also valuable resources for other physicians.",
-      img: "assets/images/team/6.jpg",
-    },
-  ];
+  const [doctors, setDoctors] = useState([]);
+
+  useEffect(() => {
+    setDoctors(doctorsArray);
+  }, []);
 
   return (
     <Wrapper
@@ -69,12 +37,7 @@ const DoctorTeam = () => {
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
               <div className="heading text-center mb-40">
-                <h3 className="heading__title">Meet Our Consultants</h3>
-                <p className="heading__desc">
-                  Our administration and support staff all have exceptional
-                  people skills and trained to assist you with all medical
-                  enquiries.
-                </p>
+                <h3 className="heading__title">MEET OUR CONSULTANTS</h3>
               </div>
             </div>
           </div>
@@ -103,7 +66,7 @@ const DoctorTeam = () => {
                   },
                 }}
               >
-                {members.map((member, idx) => (
+                {doctors.map((member, idx) => (
                   <SwiperSlide key={idx}>
                     <div className="member">
                       <div className="member__img">
@@ -111,13 +74,22 @@ const DoctorTeam = () => {
                       </div>
                       <div className="member__info">
                         <h5 className="member__name">
-                          <Link to="#">{member.name}</Link>
+                          <Link to="doctor-details">{member.name}</Link>
                         </h5>
                         <p className="member__job">{member.job}</p>
                         {/* <p className="member__desc">{member.desc}</p> */}
+
+                        <Link
+                          to="/appointment"
+                          className="btn btn__primary btn__link btn__rounded w-100 mt-4"
+                        >
+                          <span>Appointment</span>
+                          <i className="icon-arrow-right"></i>
+                        </Link>
+
                         <div className="mt-20 d-flex flex-wrap justify-content-between align-items-center">
                           <Link
-                            to="#"
+                            to="doctor-details"
                             className="btn btn__secondary btn__link btn__rounded"
                           >
                             <span>Read More</span>
@@ -141,13 +113,6 @@ const DoctorTeam = () => {
                             </li>
                           </ul>
                         </div>
-                        <Link
-                          to="/appointment"
-                          className="btn btn__secondary btn__link btn__rounded w-100 mt-4"
-                        >
-                          <span>Appointment</span>
-                          <i className="icon-arrow-right"></i>
-                        </Link>
                       </div>
                     </div>
                   </SwiperSlide>

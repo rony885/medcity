@@ -4,34 +4,68 @@ import styled from "styled-components";
 
 const NotFound = () => {
   return (
-    <Wrapper>
-      <section className="error-page">
+    <>
+      <section
+        className="page-title page-title-layout5 bg-overlay bg-img"
+        style={{
+          backgroundImage: 'url("/assets/images/page-titles/8.jpg")',
+          backgroundSize: "cover",
+          backgroundPosition: "center center",
+        }}
+      >
         <div className="container">
-          <div className="error-content text-center">
-            <h1 className="error-code">404</h1>
-            <h2 className="error-title">Page Not Found</h2>
-            <p className="error-desc">
-              Oops! The page you’re looking for doesn’t exist or has been moved.
-            </p>
-
-            <div className="error-actions">
-              <Link to="/" className="btn btn__primary btn__rounded">
-                Go to Home
-              </Link>
-              <Link to="/contact" className="btn btn__secondary btn__rounded">
-                Contact Support
-              </Link>
+          <div className="row">
+            <div className="col-12">
+              <h1 className="pagetitle__heading">Not Found</h1>
+              <nav>
+                <ol className="breadcrumb mb-0">
+                  <li className="breadcrumb-item">
+                    <Link to="/">Home</Link>
+                  </li>
+                  <li className="breadcrumb-item active" aria-current="page">
+                    Not Found
+                  </li>
+                </ol>
+              </nav>
             </div>
           </div>
         </div>
       </section>
-    </Wrapper>
+
+      <Wrapper>
+        <section className="error-page">
+          <div className="container">
+            <div className="error-content text-center">
+              <img src="/images/error.png" alt="" />
+
+              <h2 className="error-title">Page Not Found</h2>
+              <p className="error-desc">
+                Oops! The page you’re looking for doesn’t exist or has been
+                moved.
+              </p>
+
+              <div className="error-actions">
+                <Link to="/" className="btn btn__primary btn__rounded">
+                  Go to Home
+                </Link>
+                <Link to="/contact" className="btn btn__secondary btn__rounded">
+                  Contact Support
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      </Wrapper>
+    </>
   );
 };
 
 const Wrapper = styled.section`
+  padding-top: 0px;
+  padding-bottom: 0px;
+
   .error-page {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     align-items: center;
     background: linear-gradient(135deg, #21cdc0, #1baaa0);

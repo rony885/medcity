@@ -1,16 +1,6 @@
-
-import React from "react";
-
 const BookingForm = () => {
   return (
-    <section
-      className="contact-layout3 bg-overlay bg-overlay-primary-gradient pb-60"
-      // style={{
-      //   backgroundImage: 'url("/assets/images/banners/3.jpg")',
-      //   backgroundSize: "cover",
-      //   backgroundPosition: "center center",
-      // }}
-    >
+    <section className="contact-layout3 bg-overlay bg-overlay-primary-gradient pb-60">
       <div className="container">
         <div className="row">
           {/* LEFT FORM */}
@@ -120,21 +110,18 @@ const BookingForm = () => {
           <div className="col-sm-12 col-md-12 col-lg-5">
             <div className="heading heading-light mb-30">
               <h3 className="heading__title mb-30">
-                Helping Patients From Around the Globe!!
+                Supporting Mental Health & Recovery
               </h3>
               <p className="heading__desc">
-                Our staff strives to make each interaction with patients clear,
-                concise, and inviting.
+                Our team is committed to making every interaction respectful,
+                clear, supportive, and compassionate.
               </p>
             </div>
 
             <div className="d-flex align-items-center">
-              <a
-                href="contact-us.html"
-                className="btn btn__white btn__rounded mr-30"
-              >
+              <a href="/contact" className="btn btn__white btn__rounded mr-30">
                 <i className="fas fa-heart"></i>
-                <span> Make A Gift</span>
+                <span> Get Support</span>
               </a>
 
               <a
@@ -144,18 +131,23 @@ const BookingForm = () => {
                 <div className="video__player">
                   <i className="fa fa-play"></i>
                 </div>
-                <span className="video__btn-title color-white">Play Video</span>
+                <span className="video__btn-title color-white">
+                  Watch Video
+                </span>
               </a>
             </div>
 
             <div className="text__block">
               <p className="text__block-desc color-white font-weight-bold">
-                We provide a comprehensive range of plans for families and
-                individuals at every stage of life.
+                We provide ethical psychiatric care guided by medical standards
+                and compassion. We support addiction recovery through structured
+                treatment and therapy programs. We help individuals and families
+                build stability, healing, and long-term wellness.
               </p>
+
               <div className="sinature color-white">
-                <span className="font-weight-bold">Martin Qube</span>
-                <span>, Medcity Manager</span>
+                <span className="font-weight-bold">Unity Health Centre</span>
+                <span>, Management Team</span>
               </div>
             </div>
 

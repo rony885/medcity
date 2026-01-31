@@ -1,46 +1,3 @@
-// import React from "react";
-// import { Link } from "react-router-dom";
-
-// const ContactInfo = () => {
-//   return (
-//     <>
-//       <section className="page-title page-title-layout5 bg-overlay">
-//         <div className="bg-img">
-//           <img src="/assets/images/page-titles/8.jpg" alt="background" />
-//         </div>
-//         <div className="container">
-//           <div className="row">
-//             <div className="col-12">
-//               <h1 className="pagetitle__heading">Contact Us</h1>
-//               <nav>
-//                 <ol className="breadcrumb mb-0">
-//                   <li className="breadcrumb-item">
-//                     <Link to="/">Home</Link>
-//                   </li>
-//                   <li className="breadcrumb-item active" aria-current="page">
-//                     Contact
-//                   </li>
-//                 </ol>
-//               </nav>
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-
-//             <section className="google-map py-0">
-//         <iframe
-//           frameborder="0"
-//           height="500"
-//           width="100%"
-//           src="https://maps.google.com/maps?q=Suite%20100%20San%20Francisco%2C%20LA%2094107%20United%20States&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near"
-//         ></iframe>
-//       </section>
-//     </>
-//   );
-// };
-
-// export default ContactInfo;
-
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
@@ -66,7 +23,7 @@ const ContactInfo = () => {
                     <Link to="/">Home</Link>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
-                    Contact
+                    Contact Us
                   </li>
                 </ol>
               </nav>
@@ -81,7 +38,7 @@ const ContactInfo = () => {
           frameBorder="0"
           height="500"
           width="100%"
-          src="https://maps.google.com/maps?q=Suite%20100%20San%20Francisco%2C%20LA%2094107%20United%20States&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d321.01090771624763!2d90.77597987691264!3d24.456896574068857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375692412f001e17%3A0x35f381b367f88b4d!2z4Ka44Ka-4Kaw4KeN4KaV4Ka_4KafIOCmueCmvuCmieCmuCwg4KaV4Ka_4Ka24KeL4Kaw4KaX4Kae4KeN4Kac!5e0!3m2!1sbn!2sbd!4v1769402250192!5m2!1sbn!2sbd"
           title="Google Map"
         ></iframe>
       </section>

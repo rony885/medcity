@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="col-sm-12 col-md-12 col-lg-3">
               <div className="footer-widget-about">
                 <img
-                  src="/assets/images/logo/logo-light.png"
+                  src="/images/logo_light.png"
                   alt="logo"
                   className="mb-30"
                 />
@@ -72,10 +72,16 @@ const Footer = () => {
                     <Link to="/appointment">Appointment</Link>
                   </li>
                   <li>
-                    <Link to="#">Terms & Conditions</Link>
+                    <Link to="#">Terms</Link>
                   </li>
                   <li>
-                    <Link to="#">Privacy Policy</Link>
+                    <Link to="#">Conditions</Link>
+                  </li>
+                  <li>
+                    <Link to="#">Privacy</Link>
+                  </li>
+                  <li>
+                    <Link to="#">Policy</Link>
                   </li>
                 </ul>
               </div>
@@ -93,72 +99,27 @@ const Footer = () => {
                     If you have any questions or need help, feel free to contact
                     our team.
                   </li>
-                  {/* <li>
-                    <Link to="tel:01061245741" className="phone__number mb-0">
-                      <i className="icon-phone"></i>
-                      <span>01061245741</span>
-                    </Link>
-                  </li>
-                  <li className="d-none">
-                    <Link
-                      to="mailto:info@unityhealthcentre.com"
-                      className="phone__number"
-                    >
-                      <i
-                        className="icon-email"
-                        style={{ fontSize: "14px" }}
-                      ></i>
-                      <span className="fs-5">info@unityhealthcentre.com</span>
-                    </Link>
-                  </li>
-
-                  <li className="color-body d-none">
-                    Near Circuit House, Gaital, Kishoreganj
-                  </li> */}
                 </ul>
-
-                {/* <ul className="contact__list list-unstyled mb-30">
-                    <li>
-                      <i className="icon-phone"></i>
-                      <Link to="tel:01936209467">01936209467</Link>
-                    </li>
-                    <li>
-                      <i
-                        className="icon-email"
-                        style={{ fontSize: "12px" }}
-                      ></i>
-                      <Link to="mailto:info@unityhealthcentre.com">
-                        info@unityhealthcentre.com
-                      </Link>
-                    </li>
-
-                    <li>
-                      <i className="icon-location"></i>
-                      <Link to="#">
-                        Near Circuit House, Gaital, Kishoreganj
-                      </Link>
-                    </li>
-                    <li>
-                      <i className="icon-clock"></i>
-                      <Link to="/contact">SAT - THU : 8:00 am - 10:00 pm</Link>
-                    </li>
-                  </ul> */}
 
                 <ul className="contact__list list-unstyled mb-30 w-bold">
                   <li
-                    className="d-flex align-items-center gap-2"
+                    className="d-flex align-items-center gap-2 mb-1"
                     style={{ color: "#1D2A4D" }}
                   >
                     <span style={{ width: "15px" }}>
                       <i className="icon-phone"></i>
                     </span>
-                    <Link   className="fw-bold" style={{ color: "#1D2A4D" }} to="tel:01061245741">
-                      01061245741
+                    <Link
+                      className="fw-bold"
+                      style={{ color: "#1D2A4D" }}
+                      to="tel:01936209467"
+                    >
+                      01936209467
                     </Link>
                   </li>
 
                   <li
-                    className="d-flex align-items-center gap-2"
+                    className="d-flex align-items-center gap-2 mb-1"
                     style={{ color: "#1D2A4D" }}
                   >
                     <span style={{ width: "15px" }}>
@@ -177,8 +138,7 @@ const Footer = () => {
                   </li>
 
                   <li
-
-                    className="d-flex align-items-center gap-2"
+                    className="d-flex align-items-center gap-2 mb-1"
                     style={{ color: "#1D2A4D" }}
                   >
                     <span style={{ width: "15px" }}>
@@ -186,19 +146,25 @@ const Footer = () => {
                     </span>
                     <Link
                       className="fw-bold"
-                     style={{ color: "#1D2A4D" }} to="#">
+                      style={{ color: "#1D2A4D" }}
+                      to="#"
+                    >
                       Near Circuit House, Gaital, Kishoreganj
                     </Link>
                   </li>
 
                   <li
-                    className="d-flex align-items-center gap-2"
+                    className="d-flex align-items-center gap-2 mb-1"
                     style={{ color: "#1D2A4D" }}
                   >
                     <span style={{ width: "15px" }}>
                       <i className="icon-clock"></i>
                     </span>
-                    <Link   className="fw-bold" style={{ color: "#1D2A4D" }} to="/contact">
+                    <Link
+                      className="fw-bold"
+                      style={{ color: "#1D2A4D" }}
+                      to="#"
+                    >
                       SAT - THU : 8:00 am - 10:00 pm
                     </Link>
                   </li>
@@ -206,7 +172,8 @@ const Footer = () => {
 
                 <div className="d-flex align-items-center">
                   <Link
-                    to="/contact"
+                    to="https://www.google.com/maps?ll=24.456752,90.776374&z=20&t=m&hl=bn&gl=BD&mapclient=embed&cid=3887593510894340941"
+                    target="_blank"
                     className="btn btn__primary btn__link mr-30"
                   >
                     <i className="icon-arrow-right"></i>
@@ -241,38 +208,21 @@ const Footer = () => {
       <div className="footer-secondary">
         <div className="container">
           <div className="row align-items-center">
-            {/* <div className="col-md-12 d-flex justify-content-center align-items-center">
-              <span className="fz-14 mr-1">
-                © 2020 DataSoft, All Rights Reserved. With Love by
-              </span>
-              <Link to="#" className="fz-14 color-primary">
-                7oroof.com
-              </Link>
-            </div> */}
             <div className="col-md-12 d-flex justify-content-center align-items-center">
-              <span className="fz-14 mr-1">
+              <span className="fz-14 mr-1 text-center">
                 Copyright © 2026{" "}
                 <span style={{ color: "#1D2A4D" }}>Unity Health Centre</span>.
-                Developed By
+                Developed By{" "}
+                <Link
+                  to="https://www.astrosoftbd.com"
+                  target="_blank"
+                  className="fz-14"
+                  style={{ color: "#1D2A4D" }}
+                >
+                  ASTROSOFT BD
+                </Link>
               </span>
-              <Link to="#" className="fz-14" style={{ color: "#1D2A4D" }}>
-                ToxiCoder.
-              </Link>
             </div>
-
-            {/* <div className="col-md-6">
-              <ul className="list-unstyled footer__copyright-links d-flex justify-content-end mb-0">
-                <li>
-                  <Link to="#">Terms & Conditions</Link>
-                </li>
-                <li>
-                  <Link to="#">Privacy Policy</Link>
-                </li>
-                <li>
-                  <Link to="#">Cookies</Link>
-                </li>
-              </ul>
-            </div> */}
           </div>
         </div>
       </div>

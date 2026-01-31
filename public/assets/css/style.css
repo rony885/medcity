@@ -4738,6 +4738,22 @@ input[type="radio"] {
   color: #ffffff !important;
   background-color: #21cdc0 !important;
 }
+.member {
+  box-shadow: 0px 5px 83px 0px rgba(9, 29, 62, 0.15);
+}
+.member .member__hover,
+.member .social-icons li {
+  opacity: 1;
+}
+.member .btn__link.btn__secondary {
+  padding: 12px 15px;
+  color: #ffffff;
+  background-color: #213360;
+}
+.member .btn__link.btn__secondary i {
+  color: #ffffff;
+}
+
 .member:hover {
   box-shadow: 0px 5px 83px 0px rgba(9, 29, 62, 0.15);
 }
@@ -5140,6 +5156,18 @@ input[type="radio"] {
   color: #ffffff !important;
   background-color: #21cdc0 !important;
 }
+.post-item {
+  box-shadow: 0px 5px 83px 0px rgba(9, 29, 62, 0.15);
+}
+.post-item .btn__link.btn__secondary {
+  padding: 12px 20px;
+  color: #ffffff;
+  background-color: #213360;
+}
+.post-item .btn__link.btn__secondary i {
+  color: #ffffff;
+}
+
 .post-item:hover {
   box-shadow: 0px 5px 83px 0px rgba(9, 29, 62, 0.15);
 }
