@@ -22,9 +22,9 @@ const ServiceDetails = () => {
                   <li className="breadcrumb-item">
                     <Link to="/">Home</Link>
                   </li>
-                  {/* <li className="breadcrumb-item">
-                    <Link to="#">Doctors</Link>
-                  </li> */}
+                  <li className="breadcrumb-item">
+                    <Link to="/services">Services</Link>
+                  </li>
                   <li className="breadcrumb-item active" aria-current="page">
                     Service Details
                   </li>

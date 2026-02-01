@@ -58,13 +58,13 @@ const Doctor = () => {
 
                   <div className="member__info">
                     <h5 className="member__name">
-                      <Link to="/doctor-details">{member.name}</Link>
+                      <Link to="/doctors/doctor-details">{member.name}</Link>
                     </h5>
                     <p className="member__job">{member.job}</p>
                     {/* <p className="member__desc">{member.desc}</p> */}
 
                     <Link
-                      to="/appointment"
+                      to={`/appointment-doctor/${member.id}`}
                       className="btn btn__primary btn__link btn__rounded w-100 mt-4"
                     >
                       <span>Appointment</span>
@@ -73,7 +73,7 @@ const Doctor = () => {
 
                     <div className="mt-20 d-flex flex-wrap justify-content-between align-items-center">
                       <Link
-                        to="/doctor-details"
+                        to="/doctors/doctor-details"
                         className="btn btn__secondary btn__link btn__rounded"
                       >
                         <span>Read More</span>

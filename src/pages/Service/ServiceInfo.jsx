@@ -62,7 +62,7 @@ const ServiceInfo = () => {
           <div className="row">
             {services.map((item, index) => (
               <div className="col-sm-12 col-md-6 col-lg-4" key={index}>
-                <div className="service-item" style={{ height: "650px" }}>
+                <div className="service-item">
                   <div className="service__icon">
                     <i className={item.icon}></i>
                     <i className={item.icon}></i>
@@ -81,7 +81,7 @@ const ServiceInfo = () => {
                     </ul>
 
                     <Link
-                      to="/service-details"
+                      to="/services/service-details"
                       className="btn btn__secondary btn__outlined btn__rounded"
                     >
                       <span>Read More</span>

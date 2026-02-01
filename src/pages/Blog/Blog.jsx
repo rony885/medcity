@@ -53,9 +53,9 @@ const Blog = () => {
             {blogs.map((post) => (
               // <div className="col-sm-12 col-md-6 col-lg-4" key={post.id}>
               <div className="col-sm-12 col-md-6 col-lg-6" key={post.id}>
-                <div className="post-item" style={{ height: "750px" }}>
+                <div className="post-item">
                   <div className="post__img">
-                    <Link to="/blog-details">
+                    <Link to={`/blog/blog-details/${post.id}`}>
                       <img src={post.img} alt={post.title} loading="lazy" />
                     </Link>
                   </div>
@@ -71,19 +71,23 @@ const Blog = () => {
 
                     <div className="post__meta d-flex">
                       <span className="post__meta-date">{post.date}</span>
-                      <Link className="post__meta-author" to="#">
+                      <Link
+                        className="post__meta-author"
+                        to={`/blog/blog-details/${post.id}`}
+                      >
                         {post.author}
                       </Link>
                     </div>
 
                     <h4 className="post__title">
-                      <Link to="#">{post.title}</Link>
+                      <Link to={`/blog/blog-details/${post.id}`}>
+                        {post.title.slice(0, 50)}...
+                      </Link>
                     </h4>
 
-                    <p className="post__desc">{post.desc}</p>
-
+                    <p className="post__desc">{post.desc1.slice(0, 100)}...</p>
                     <Link
-                      to="/blog-details"
+                      to={`/blog/blog-details/${post.id}`}
                       className="btn btn__secondary btn__link btn__rounded"
                     >
                       <span>Read More</span>

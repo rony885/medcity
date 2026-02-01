@@ -56,9 +56,19 @@ const Packages = () => {
                       </div>
                       <div className="member__info">
                         <h5 className="member__name">
-                          <Link to="/package-details">{member.name}</Link>
+                          <Link to={`/packages/package-details/${member.id}`}>
+                            {member.name}
+                          </Link>
                         </h5>
                         <p className="member__job">{member.job}</p>
+
+                        <Link
+                          to={`/packages/package-details/${member.id}`}
+                          className="btn btn__secondary btn__link btn__rounded"
+                        >
+                          <span>More Details</span>
+                          <i className="icon-arrow-right"></i>
+                        </Link>
                       </div>
                     </div>
                   </SwiperSlide>

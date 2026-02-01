@@ -89,46 +89,16 @@ const DoctorDetailsInfo = () => {
                 </div>
               </div>
 
-              <div className="widget widget-reports">
+              {/* <div className="widget widget-reports">
                 <Link to="#" className="btn btn__primary btn__block">
                   <i className="icon-pdf-file"></i>
                   <span>2020 Patient Reports</span>
                 </Link>
-              </div>
+              </div> */}
             </aside>
           </div>
 
           <div className="col-sm-12 col-md-12 col-lg-8">
-            <div className="text-block mb-50">
-              <h5 className="text-block__title">Biography</h5>
-              <p className="text-block__desc mb-20 font-weight-bold color-secondary">
-                A neurologist is Link medical doctor with specialized training
-                in diagnosing, treating, and managing disorders of the brain and
-                nervous system including, but not limited to, Alzheimer’s
-                disease, amyotrophic lateral sclerosis (ALS), concussion,
-                epilepsy, migraine, multiple sclerosis, Parkinson’s disease, and
-                stroke.
-              </p>
-              <p className="text-block__desc mb-20">
-                He then traveled to Philadelphia, Pennsylvania to complete Link
-                Fellowship in Intervention Cardiology at Hahnemann Hospital in
-                conjunction with Drexel University, where he received extensive
-                training in coronary as well as peripheral interventions and
-                limb salvage procedures. He actively participates in clinical
-                research trials and has been published in peer reviewed journals
-                such as the Journal of the State Medical Society and Baylor
-                University Medical Center's Proceedings.
-              </p>
-              <p className="text-block__desc mb-20">
-                In his spare time, watches college and professional football and
-                enjoys traveling, swimming and playing chess. He is currently
-                Board Certified in Cardiovascular Disease and Interventional
-                Cardiology. He moved to California where he completed both his
-                Internship ('85-'86) and Residency ('87-'89) at the University
-                of California.
-              </p>
-            </div>
-
             <ul className="details-list list-unstyled mb-60">
               <li>
                 <h5 className="details__title">Speciality</h5>
@@ -168,93 +138,6 @@ const DoctorDetailsInfo = () => {
                 </div>
               </li>
             </ul>
-            <div className="text-block mb-50">
-              <h5 className="text-block__title">Doctor’s Services</h5>
-              <p className="text-block__desc mb-20">
-                He actively participates in clinical research trials and has
-                been published in peer reviewed journals such as the Journal of
-                the State Medical Society and Baylor University Medical Center’s
-                Proceedings. At Hahnemann Hospital in conjunction with Drexel
-                University, where he received extensive training in coronary as
-                well as peripheral interventions and limb salvage procedures.
-              </p>
-            </div>
-
-            <div className="pricing-widget-layout3 mb-70">
-              <h5 className="pricing__title">Treatments Price List</h5>
-              <div className="row">
-                <div className="col-md-6">
-                  <ul className="pricing__list list-unstyled mb-0">
-                    <li>
-                      <span>Umbilical Cord Appearance</span>
-                      <span className="price">$50</span>
-                    </li>
-                    <li>
-                      <span>Cardiac Electrophysiology</span>
-                      <span className="price">$45</span>
-                    </li>
-                    <li>
-                      <span>Repositioning Techniques</span>
-                      <span className="price">$60</span>
-                    </li>
-                    <li>
-                      <span>Geriatric Neurology</span>
-                      <span className="price">$65</span>
-                    </li>
-                    <li>
-                      <span>Nuclear Cardiology</span>
-                      <span className="price">$40</span>
-                    </li>
-                    <li>
-                      <span>Nuclear Cardiology</span>
-                      <span className="price">$55</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="col-md-6">
-                  <ul className="pricing__list list-unstyled mb-0">
-                    <li>
-                      <span>Umbilical Cord Appearance</span>
-                      <span className="price">$50</span>
-                    </li>
-                    <li>
-                      <span>Cardiac Electrophysiology</span>
-                      <span className="price">$45</span>
-                    </li>
-                    <li>
-                      <span>Repositioning Techniques</span>
-                      <span className="price">$60</span>
-                    </li>
-                    <li>
-                      <span>Geriatric Neurology</span>
-                      <span className="price">$65</span>
-                    </li>
-                    <li>
-                      <span>Nuclear Cardiology</span>
-                      <span className="price">$40</span>
-                    </li>
-                    <li>
-                      <span>Nuclear Cardiology</span>
-                      <span className="price">$55</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-block mb-50">
-              <h5 className="text-block__title">Awards And Honours</h5>
-              <p className="text-block__desc mb-20">
-                Today the hospital is recognised as Link world renowned
-                institution, not only providing outstanding care and treatment,
-                but improving the outcomes for all through Link comprehensive
-                medical research. For over 20 years, our hospital has touched
-                lives of millions of people, and provide care and treatment for
-                the sickest in our community including rehabilitation and aged
-                care.
-              </p>
-            </div>
 
             <div className="fancybox-layout2">
               <div className="row">
@@ -322,13 +205,6 @@ const DoctorDetailsInfo = () => {
 
             <div className="text-block mb-40">
               <h5 className="text-block__title">Medical Education</h5>
-              <p className="text-block__desc mb-20">
-                She then went to LSU Medical School in New Orleans where she was
-                an Honors Program Graduate and finished in the top quartile of
-                his graduating class. She completed his Internal Medicine
-                Residency at the University of Alabama in Birmingham, AL where
-                he was selected as Link Chief Internal Medicine Resident.
-              </p>
             </div>
 
             <div className="timeline-wrapper mb-60">
@@ -439,9 +315,6 @@ const DoctorDetailsInfo = () => {
             </div>
 
             <section className="contact-layout4 bg-overlay bg-overlay-secondary-gradient pb-50 pb-50">
-              <div className="bg-img">
-                <img src="/assets/images/banners/3.jpg" alt="banner" />
-              </div>
               <div className="contact-panel mb-0">
                 <form className="contact-panel__form" id="contactForm">
                   <div className="row">
@@ -455,16 +328,6 @@ const DoctorDetailsInfo = () => {
                         will receive or return any urgent calls.
                       </p>
                     </div>
-                    {/* <div className="col-sm-6 col-md-6 col-lg-6">
-                      <div className="form-group">
-                        <i className="icon-widget form-group-icon"></i>
-                        <select className="form-control">
-                          <option value="0">Choose Clinic</option>
-                          <option value="1">Pathology Clinic</option>
-                          <option value="2">Pathology Clinic</option>
-                        </select>
-                      </div>
-                    </div> */}
 
                     <div className="col-sm-6 col-md-6 col-lg-12">
                       <div className="form-group">
@@ -490,20 +353,6 @@ const DoctorDetailsInfo = () => {
                         />
                       </div>
                     </div>
-
-                    {/* <div className="col-sm-6 col-md-6 col-lg-6">
-                      <div className="form-group">
-                        <i className="icon-email form-group-icon"></i>
-                        <input
-                          type="email"
-                          className="form-control"
-                          placeholder="Email"
-                          id="contact-email"
-                          name="contact-email"
-                          required
-                        />
-                      </div>
-                    </div> */}
 
                     <div className="col-sm-4 col-md-4 col-lg-6">
                       <div className="form-group">

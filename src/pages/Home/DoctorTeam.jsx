@@ -80,7 +80,7 @@ const DoctorTeam = () => {
                         {/* <p className="member__desc">{member.desc}</p> */}
 
                         <Link
-                          to="/appointment"
+                          to={`/appointment-doctor/${member.id}`}
                           className="btn btn__primary btn__link btn__rounded w-100 mt-4"
                         >
                           <span>Appointment</span>

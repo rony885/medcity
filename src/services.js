@@ -8,7 +8,6 @@ const services = [
       "Major Depressive Disorder",
       "Anxiety & Panic Disorders",
       "Bipolar Disorder",
-      "More",
     ],
   },
   {
@@ -27,7 +26,6 @@ const services = [
       "Cognitive Behavioral Therapy (CBT)",
       "Dialectical Behavior Therapy (DBT)",
       "Motivational Interviewing (MI)",
-      "More",
     ],
   },
   {
@@ -39,7 +37,6 @@ const services = [
       "24/7 medical & nursing supervision",
       "Secure and confidential accommodation",
       "Separate units for addiction & psychiatric patients",
-      "More",
     ],
   },
   {
@@ -51,7 +48,6 @@ const services = [
       "Education about mental illness & addiction",
       "Improved family communication",
       "Emotional support for caregivers",
-      "More",
     ],
   },
   {
@@ -63,7 +59,6 @@ const services = [
       "Yoga & Meditation",
       "Physical Fitness & Exercise Training",
       "Relaxation & Mindfulness Therapy",
-      "More",
     ],
   },
 ];

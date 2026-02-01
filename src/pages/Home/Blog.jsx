@@ -41,9 +41,9 @@ const Blog = () => {
         >
           {blogs.map((post) => (
             <SwiperSlide key={post.id}>
-              <div className="post-item" style={{ height: "650px" }}>
+              <div className="post-item">
                 <div className="post__img">
-                  <Link to="/blog-details">
+                  <Link to={`/blog/blog-details/${post.id}`}>
                     <img src={post.img} alt={post.title} loading="lazy" />
                   </Link>
                 </div>
@@ -65,13 +65,15 @@ const Blog = () => {
                   </div>
 
                   <h4 className="post__title">
-                    <Link to="#">{post.title}</Link>
+                    <Link to={`/blog/blog-details/${post.id}`}>
+                      {post.title.slice(0, 50)}...
+                    </Link>
                   </h4>
 
-                  <p className="post__desc">{post.desc}</p>
+                  <p className="post__desc">{post.desc1.slice(0, 100)}...</p>
 
                   <Link
-                    to="/blog-details"
+                    to={`/blog/blog-details/${post.id}`}
                     className="btn btn__secondary btn__link btn__rounded"
                   >
                     <span>Read More</span>

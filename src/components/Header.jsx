@@ -132,7 +132,6 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
               <li className="nav__item">
                 <NavLink
                   to="/"
-                  end
                   className={({ isActive }) =>
                     `nav__item-link ${isActive ? "active" : ""}`
                   }

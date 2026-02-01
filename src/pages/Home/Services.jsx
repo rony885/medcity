@@ -59,7 +59,7 @@ const Services = () => {
               >
                 {services.map((service, index) => (
                   <SwiperSlide key={index}>
-                    <div className="service-item" style={{ height: "650px" }}>
+                    <div className="service-item">
                       <div className="service__icon">
                         <i className={service.icon}></i>
                         <i className={service.icon}></i>

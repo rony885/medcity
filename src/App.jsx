@@ -23,6 +23,7 @@ import Blog from "./pages/Blog/Blog";
 import BlogDetails from "./pages/BlogDetails/BlogDetails";
 import Contact from "./pages/Contact/Contact";
 import Appointment from "./pages/Appointment/Appointment";
+import AppointmentDoctor from "./pages/AppointmentDoctor/AppointmentDoctor";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -93,7 +94,7 @@ function App() {
               }
             ></Route>
             <Route
-              path="/package-details"
+              path="/packages/package-details/:id"
               element={
                 <>
                   <PageTitle title={"PACKAGE DETAILS"} />
@@ -113,7 +114,7 @@ function App() {
             ></Route>
 
             <Route
-              path="/service-details"
+              path="/services/service-details"
               element={
                 <>
                   <PageTitle title={"SERVICE DETAILS"} />
@@ -132,7 +133,7 @@ function App() {
               }
             ></Route>
             <Route
-              path="/doctor-details"
+              path="/doctors/doctor-details"
               element={
                 <>
                   <PageTitle title={"CONSULTANT DETAILS"} />
@@ -161,7 +162,7 @@ function App() {
               }
             ></Route>
             <Route
-              path="/blog-details"
+              path="/blog/blog-details/:id"
               element={
                 <>
                   <PageTitle title={"BLOG DETAILS"} />
@@ -179,12 +180,23 @@ function App() {
                 </>
               }
             ></Route>
+
             <Route
               path="/appointment"
               element={
                 <>
                   <PageTitle title={"APPOINTMENT"} />
                   <Appointment />
+                </>
+              }
+            ></Route>
+
+            <Route
+              path="/appointment-doctor/:id"
+              element={
+                <>
+                  <PageTitle title={"APPOINTMENT"} />
+                  <AppointmentDoctor />
                 </>
               }
             ></Route>

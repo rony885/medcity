@@ -1,13 +1,21 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import doctorsArray from "../../doctors.js";
 
 const ContactForm = () => {
   const [doctors, setDoctors] = useState([]);
+  const [selectedDoctor, setSelectedDoctor] = useState("");
+  const { id } = useParams();
 
   useEffect(() => {
     setDoctors(doctorsArray);
   }, []);
+
+  useEffect(() => {
+    if (id) {
+      setSelectedDoctor(id);
+    }
+  }, [id]);
 
   return (
     <section className="contact-layout2">
@@ -28,30 +36,22 @@ const ContactForm = () => {
                     </p>
                   </div>
 
-                  {/* <div className="col-sm-6 col-md-6 col-lg-6">
-                    <div className="form-group">
-                      <i className="icon-widget form-group-icon"></i>
-                      <select className="form-control">
-                        <option value="0">Choose Clinic</option>
-                        <option value="1">Pathology Clinic</option>
-                        <option value="2">Pathology Clinic</option>
-                      </select>
-                    </div>
-                  </div> */}
-
                   <div className="col-sm-6 col-md-6 col-lg-12">
                     <div className="form-group">
                       <i className="icon-user form-group-icon"></i>
-                      <select className="form-control">
-                        <option value="0">Choose Doctor</option>
-                        {doctors.map((doctor) => {
-                          return (
-                            <option key={doctor.id} value={doctor.id}>
-                              {doctor.name}
-                            </option>
-                          );
-                        })}
-                        <option value="1">Ahmed Abdallah</option>
+                      <select
+                        className="form-control"
+                        value={selectedDoctor}
+                        onChange={(e) => setSelectedDoctor(e.target.value)}
+                        disabled
+                      >
+                        <option value="">Choose Doctor</option>
+
+                        {doctors.map((doctor) => (
+                          <option key={doctor.id} value={doctor.id}>
+                            {doctor.name}
+                          </option>
+                        ))}
                       </select>
                     </div>
                   </div>
