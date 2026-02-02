@@ -28,17 +28,6 @@ const ContactForm = () => {
                     </p>
                   </div>
 
-                  {/* <div className="col-sm-6 col-md-6 col-lg-6">
-                    <div className="form-group">
-                      <i className="icon-widget form-group-icon"></i>
-                      <select className="form-control">
-                        <option value="0">Choose Clinic</option>
-                        <option value="1">Pathology Clinic</option>
-                        <option value="2">Pathology Clinic</option>
-                      </select>
-                    </div>
-                  </div> */}
-
                   <div className="col-sm-6 col-md-6 col-lg-12">
                     <div className="form-group">
                       <i className="icon-user form-group-icon"></i>
@@ -70,19 +59,7 @@ const ContactForm = () => {
                     </div>
                   </div>
 
-                  {/* <div className="col-sm-6 col-md-6 col-lg-6">
-                    <div className="form-group">
-                      <i className="icon-email form-group-icon"></i>
-                      <input
-                        type="email"
-                        className="form-control"
-                        placeholder="Email"
-                        id="contact-email"
-                        name="contact-email"
-                        required
-                      />
-                    </div>
-                  </div> */}
+             
 
                   <div className="col-sm-4 col-md-4 col-lg-6">
                     <div className="form-group">
@@ -160,8 +137,8 @@ const ContactForm = () => {
                     </li>
                     <li>
                       <i className="icon-location"></i>
-                      <Link to="mailto:info@unityhealthcentre.com">
-                        info@unityhealthcentre.com
+                      <Link to="mailto:info@unityhealthbd.com">
+                        info@unityhealthbd.com
                       </Link>
                     </li>
                     <li>

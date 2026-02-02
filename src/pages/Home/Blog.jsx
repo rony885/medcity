@@ -66,12 +66,11 @@ const Blog = () => {
 
                   <h4 className="post__title">
                     <Link to={`/blog/blog-details/${post.id}`}>
-                      {post.title.slice(0, 50)}...
+                      {post.title.slice(0, 40)}...
                     </Link>
                   </h4>
 
-                  <p className="post__desc">{post.desc1.slice(0, 100)}...</p>
-
+                  <p className="post__desc">{post.desc1.slice(0, 120)}...</p>
                   <Link
                     to={`/blog/blog-details/${post.id}`}
                     className="btn btn__secondary btn__link btn__rounded"

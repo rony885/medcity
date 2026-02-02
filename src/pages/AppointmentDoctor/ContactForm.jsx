@@ -160,8 +160,8 @@ const ContactForm = () => {
                     </li>
                     <li>
                       <i className="icon-location"></i>
-                      <Link to="mailto:info@unityhealthcentre.com">
-                        info@unityhealthcentre.com
+                      <Link to="mailto:info@unityhealthbd.com">
+                        info@unityhealthbd.com
                       </Link>
                     </li>
                     <li>

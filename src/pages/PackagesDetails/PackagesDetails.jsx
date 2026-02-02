@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import packagesArray from "../../packages.js";
+import doctorsArray from "../../doctors.js";
 
 const PackagesDetails = () => {
   const { id } = useParams();
   const [packages, setPackages] = useState([]);
+  const [doctors, setDoctors] = useState([]);
 
   useEffect(() => {
     setPackages(packagesArray);
+  }, []);
+
+  useEffect(() => {
+    setDoctors(doctorsArray);
   }, []);
 
   const findPackages = packages.find((pkg) => pkg.id === parseInt(id));
@@ -53,10 +59,10 @@ const PackagesDetails = () => {
                 <div className="post__img w-100 mb-4">
                   <Link to="#">
                     <img
-                      src= {findPackages && findPackages.img}
+                      src={findPackages && findPackages.img}
                       alt="post imagee"
                       loading="lazy"
-                      className="w-100"
+                      className=""
                       style={{ height: "500px" }}
                     />
                   </Link>
@@ -130,8 +136,13 @@ const PackagesDetails = () => {
                           <i className="icon-user form-group-icon"></i>
                           <select className="form-control">
                             <option value="0">Choose Doctor</option>
-                            <option value="1">Ahmed Abdallah</option>
-                            <option value="2">Mahmoud Begha</option>
+                            {doctors.map((doctor) => {
+                              return (
+                                <option key={doctor.id} value={doctor.id}>
+                                  {doctor.name}
+                                </option>
+                              );
+                            })}
                           </select>
                         </div>
                       </div>

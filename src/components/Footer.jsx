@@ -131,9 +131,9 @@ const Footer = () => {
                     <Link
                       className="fw-bold"
                       style={{ color: "#1D2A4D" }}
-                      to="mailto:info@unityhealthcentre.com"
+                      to="mailto:info@unityhealthbd.com"
                     >
-                      info@unityhealthcentre.com
+                      info@unityhealthbd.com
                     </Link>
                   </li>
 

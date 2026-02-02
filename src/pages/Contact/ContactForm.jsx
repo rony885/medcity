@@ -123,8 +123,8 @@ const ContactForm = () => {
                         className="icon-email"
                         style={{ fontSize: "12px" }}
                       ></i>
-                      <Link to="mailto:info@unityhealthcentre.com">
-                        info@unityhealthcentre.com
+                      <Link to="mailto:info@unityhealthbd.com">
+                        info@unityhealthbd.com
                       </Link>
                     </li>
 

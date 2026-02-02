@@ -1,4 +1,13 @@
+import React, { useEffect, useState } from "react";
+import doctorsArray from "../../doctors.js";
+
 const BookingForm = () => {
+  const [doctors, setDoctors] = useState([]);
+
+  useEffect(() => {
+    setDoctors(doctorsArray);
+  }, []);
+
   return (
     <section className="contact-layout3 bg-overlay bg-overlay-primary-gradient pb-60">
       <div className="container">
@@ -19,24 +28,19 @@ const BookingForm = () => {
                     </p>
                   </div>
 
-                  <div className="col-sm-6 col-md-6 col-lg-6">
-                    <div className="form-group">
-                      <i className="icon-widget form-group-icon"></i>
-                      <select className="form-control">
-                        <option value="0">Choose Clinic</option>
-                        <option value="1">Pathology Clinic</option>
-                        <option value="2">Pathology Clinic</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div className="col-sm-6 col-md-6 col-lg-6">
+                  <div className="col-sm-6 col-md-6 col-lg-12">
                     <div className="form-group">
                       <i className="icon-user form-group-icon"></i>
                       <select className="form-control">
                         <option value="0">Choose Doctor</option>
+                        {doctors.map((doctor) => {
+                          return (
+                            <option key={doctor.id} value={doctor.id}>
+                              {doctor.name}
+                            </option>
+                          );
+                        })}
                         <option value="1">Ahmed Abdallah</option>
-                        <option value="2">Mahmoud Begha</option>
                       </select>
                     </div>
                   </div>
@@ -48,46 +52,50 @@ const BookingForm = () => {
                         type="text"
                         className="form-control"
                         placeholder="Name"
+                        id="contact-name"
+                        name="contact-name"
                         required
                       />
                     </div>
                   </div>
 
-                  <div className="col-sm-6 col-md-6 col-lg-6">
-                    <div className="form-group">
-                      <i className="icon-email form-group-icon"></i>
-                      <input
-                        type="email"
-                        className="form-control"
-                        placeholder="Email"
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div className="col-sm-4 col-md-4 col-lg-4">
+                  <div className="col-sm-4 col-md-4 col-lg-6">
                     <div className="form-group">
                       <i className="icon-phone form-group-icon"></i>
                       <input
                         type="text"
                         className="form-control"
                         placeholder="Phone"
+                        id="contact-phone"
+                        name="contact-phone"
                         required
                       />
                     </div>
                   </div>
 
-                  <div className="col-sm-4 col-md-4 col-lg-4">
+                  <div className="col-sm-4 col-md-4 col-lg-6">
                     <div className="form-group form-group-date">
                       <i className="icon-calendar form-group-icon"></i>
-                      <input type="date" className="form-control" required />
+                      <input
+                        type="date"
+                        className="form-control"
+                        id="contact-date"
+                        name="contact-date"
+                        required
+                      />
                     </div>
                   </div>
 
-                  <div className="col-sm-4 col-md-4 col-lg-4">
+                  <div className="col-sm-4 col-md-4 col-lg-6">
                     <div className="form-group form-group-date">
                       <i className="icon-clock form-group-icon"></i>
-                      <input type="time" className="form-control" required />
+                      <input
+                        type="time"
+                        className="form-control"
+                        id="contact-time"
+                        name="contact-time"
+                        required
+                      />
                     </div>
                   </div>
 
