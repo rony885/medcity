@@ -13,7 +13,7 @@ const ContactInfo = () => {
                 <div className="contact__icon">
                   <i className="icon-call3"></i>
                 </div>
-                {/* <!-- /.contact__icon --> */}
+
                 <div className="contact__content">
                   <h2 className="contact__title">Emergency Cases</h2>
                   <p className="contact__desc">
@@ -24,17 +24,15 @@ const ContactInfo = () => {
                     <i className="icon-phone"></i> <span>01936209467</span>
                   </a>
                 </div>
-                {/* <!-- /.contact__content --> */}
               </div>
-              {/* <!-- /.contact-box --> */}
             </div>
-            {/* <!-- /.col-md-4 --> */}
+
             <div className="col-sm-12 col-md-4">
               <div className="contact-box d-flex">
                 <div className="contact__icon">
                   <i className="icon-health-report"></i>
                 </div>
-                {/* <!-- /.contact__icon --> */}
+
                 <div className="contact__content">
                   <h2 className="contact__title">Doctors Timetable</h2>
                   <p className="contact__desc">
@@ -49,17 +47,15 @@ const ContactInfo = () => {
                     <i className="icon-arrow-right"></i>
                   </Link>
                 </div>
-                {/* <!-- /.contact__content --> */}
               </div>
-              {/* <!-- /.contact-box --> */}
             </div>
-            {/* <!-- /.col-md-4 --> */}
+
             <div className="col-sm-12 col-md-4">
               <div className="contact-box d-flex">
                 <div className="contact__icon">
                   <i className="icon-heart2"></i>
                 </div>
-                {/* <!-- /.contact__icon --> */}
+
                 <div className="contact__content">
                   <h2 className="contact__title">Opening Hours</h2>
                   <ul className="time__list list-unstyled mb-0">
@@ -77,15 +73,10 @@ const ContactInfo = () => {
                     </li>
                   </ul>
                 </div>
-                {/* <!-- /.contact__content --> */}
               </div>
-              {/* <!-- /.contact-box --> */}
             </div>
-            {/* <!-- /.col-md-4 --> */}
           </div>
-          {/* <!-- /.row --> */}
         </div>
-        {/* <!-- /.container --> */}
       </section>
     </Wrapper>
   );

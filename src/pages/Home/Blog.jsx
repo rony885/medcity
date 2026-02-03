@@ -15,7 +15,6 @@ const Blog = () => {
   return (
     <section className="blog-grid pb-50">
       <div className="container">
-        {/* Heading */}
         <div className="row">
           <div className="col-lg-6 offset-lg-3">
             <div className="heading text-center mb-40">
@@ -24,7 +23,6 @@ const Blog = () => {
           </div>
         </div>
 
-        {/* Slider */}
         <Swiper
           modules={[Autoplay]}
           autoplay={{

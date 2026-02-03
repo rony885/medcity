@@ -8,6 +8,7 @@ const Doctor = () => {
   useEffect(() => {
     setDoctors(doctorsArray);
   }, []);
+
   return (
     <>
       <section

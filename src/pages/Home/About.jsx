@@ -16,7 +16,6 @@ const About = () => {
         </div>
 
         <div className="row">
-          {/* LEFT SIDE */}
           <div className="col-sm-12 col-md-12 col-lg-5">
             <div className="text-with-icon">
               <div className="text__icon">
@@ -64,7 +63,6 @@ const About = () => {
             </div>
           </div>
 
-          {/* RIGHT SIDE */}
           <div className="col-sm-12 col-md-12 col-lg-7">
             <div className="about__text bg-white">
               <p className="heading__desc mb-30">
