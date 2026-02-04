@@ -140,7 +140,6 @@ const Testimonials = () => {
                 </div>
               </div>
             </div>
-            {/* END */}
           </div>
         </div>
       </div>

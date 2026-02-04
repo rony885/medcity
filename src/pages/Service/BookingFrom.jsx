@@ -12,7 +12,6 @@ const BookingForm = () => {
     <section className="contact-layout3 bg-overlay bg-overlay-primary-gradient pb-60">
       <div className="container">
         <div className="row">
-          {/* LEFT FORM */}
           <div className="col-sm-12 col-md-12 col-lg-7">
             <div className="contact-panel mb-50">
               <form className="contact-panel__form" id="contactForm">
@@ -114,7 +113,6 @@ const BookingForm = () => {
             </div>
           </div>
 
-          {/* RIGHT CONTENT */}
           <div className="col-sm-12 col-md-12 col-lg-5">
             <div className="heading heading-light mb-30">
               <h3 className="heading__title mb-30">

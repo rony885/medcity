@@ -89,7 +89,7 @@ const DoctorTeam = () => {
 
                         <div className="mt-20 d-flex flex-wrap justify-content-between align-items-center">
                           <Link
-                            to="doctor-details"
+                            to="/doctor-details"
                             className="btn btn__secondary btn__link btn__rounded"
                           >
                             <span>Read More</span>

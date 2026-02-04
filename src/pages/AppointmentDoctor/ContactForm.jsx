@@ -70,20 +70,6 @@ const ContactForm = () => {
                     </div>
                   </div>
 
-                  {/* <div className="col-sm-6 col-md-6 col-lg-6">
-                    <div className="form-group">
-                      <i className="icon-email form-group-icon"></i>
-                      <input
-                        type="email"
-                        className="form-control"
-                        placeholder="Email"
-                        id="contact-email"
-                        name="contact-email"
-                        required
-                      />
-                    </div>
-                  </div> */}
-
                   <div className="col-sm-4 col-md-4 col-lg-6">
                     <div className="form-group">
                       <i className="icon-phone form-group-icon"></i>

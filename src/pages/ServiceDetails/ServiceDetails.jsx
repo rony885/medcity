@@ -49,7 +49,7 @@ const ServiceDetails = () => {
                   and stroke.
                 </p>
                 <div className="video-banner-layout3 bg-overlay mb-50">
-                  <img src="assets/images/banners/7.jpg" alt="banner" />
+                  <img src="/assets/images/banners/7.jpg" alt="banner" />
                   <Link
                     className="video__btn video__btn-white popup-video"
                     to="https://www.youtube.com/watch?v=nrJtHemSPW4"

@@ -77,7 +77,6 @@ const PackageInfo = () => {
             ))}
           </div>
 
-          {/* Pagination */}
           <div className="row d-none">
             <div className="col-12 text-center">
               <nav className="pagination-area">

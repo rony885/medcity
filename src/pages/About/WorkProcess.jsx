@@ -5,12 +5,14 @@ import { Link } from "react-router-dom";
 const WorkProcess = () => {
   const processSteps = [
     {
+      id: 1,
       number: "01",
       icon: "icon-health-report",
       title: "Mission",
       desc: "To become a benchmark of excellence in mental healthcare. To provide affordable, ethical, and patient-centric service. To ensure long-term recovery and relapse prevention",
     },
     {
+      id: 2,
       number: "02",
       icon: "icon-dna",
       title: "Vision",
@@ -22,7 +24,6 @@ const WorkProcess = () => {
     <Wrapper>
       <section className="work-process pt-130 pb-0 bg-overlay bg-overlay-secondary">
         <div className="container">
-          {/* Heading */}
           <div className="row heading-layout2">
             <div className="col-lg-5">
               <h2 className="heading__subtitle color-primary">
