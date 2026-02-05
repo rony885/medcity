@@ -478,7 +478,7 @@ const ServiceDetails = () => {
                 >
                   <div className="member">
                     <div className="member__img">
-                      <img src="assets/images/team/1.jpg" alt="member img" />
+                      <img src="/assets/images/team/1.jpg" alt="member img" />
                     </div>
 
                     <div className="member__info">
@@ -493,7 +493,7 @@ const ServiceDetails = () => {
 
                   <div className="member">
                     <div className="member__img">
-                      <img src="assets/images/team/2.jpg" alt="member img" />
+                      <img src="/assets/images/team/2.jpg" alt="member img" />
                     </div>
 
                     <div className="member__info">
@@ -508,7 +508,7 @@ const ServiceDetails = () => {
 
                   <div className="member">
                     <div className="member__img">
-                      <img src="assets/images/team/3.jpg" alt="member img" />
+                      <img src="/assets/images/team/3.jpg" alt="member img" />
                     </div>
 
                     <div className="member__info">
@@ -523,12 +523,12 @@ const ServiceDetails = () => {
 
                   <div className="member">
                     <div className="member__img">
-                      <img src="assets/images/team/4.jpg" alt="member img" />
+                      <img src="/assets/images/team/4.jpg" alt="member img" />
                     </div>
 
                     <div className="member__info">
                       <h5 className="member__name">
-                        <Link to="doctors-single-doctor1.html">
+                        <Link to="/doctors-single-doctor1">
                           Dupree Black
                         </Link>
                       </h5>
@@ -538,12 +538,12 @@ const ServiceDetails = () => {
 
                   <div className="member">
                     <div className="member__img">
-                      <img src="assets/images/team/5.jpg" alt="member img" />
+                      <img src="/assets/images/team/5.jpg" alt="member img" />
                     </div>
 
                     <div className="member__info">
                       <h5 className="member__name">
-                        <Link to="doctors-single-doctor1.html">
+                        <Link to="/doctors-single-doctor1">
                           Markus skar
                         </Link>
                       </h5>
@@ -553,12 +553,12 @@ const ServiceDetails = () => {
 
                   <div className="member">
                     <div className="member__img">
-                      <img src="assets/images/team/6.jpg" alt="member img" />
+                      <img src="/assets/images/team/6.jpg" alt="member img" />
                     </div>
 
                     <div className="member__info">
                       <h5 className="member__name">
-                        <Link to="doctors-single-doctor1.html">
+                        <Link to="/doctors-single-doctor1">
                           Kiano Barker
                         </Link>
                       </h5>
@@ -617,7 +617,7 @@ const ServiceDetails = () => {
 
                 <div className="widget widget-help bg-overlay bg-overlay-secondary-gradient">
                   <div className="bg-img">
-                    <img src="assets/images/banners/5.jpg" alt="background" />
+                    <img src="/assets/images/banners/5.jpg" alt="background" />
                   </div>
                   <div className="widget-content">
                     <div className="widget__icon">
